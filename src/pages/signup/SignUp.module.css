@@ -1,0 +1,117 @@
+.SignUpWrapper {
+    margin: 40px 0 100px;
+}
+
+.SignUpWrapper .SignUpHeader {
+    font-weight: bold;
+    font-size: 24px;
+    color: #4A3A2F;
+    margin-bottom: 17px;
+}
+
+.SignUpWrapper .SignUpText {
+    font-size: 14px;
+    margin-top: 17px;
+    color: #6D6969;
+}
+
+.SignUpWrapper label {
+    font-size: 11px;
+    color: #6D6969;
+}
+
+.SignUpWrapper label span { display: flex;}
+
+.SignUpWrapper input[type="email"] {
+    display: block;
+    border: 1px solid #8E8E8E;
+    margin-top: 7px;
+    width: 100%;
+    max-width: 480px;
+    padding: 15px 32px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+
+.SignUpWrapper .SignUpWith {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 12px;
+    color: #6D6969;
+    width: 100%;
+    max-width: 480px;
+}
+
+.SignUpWrapper .SignUpLogos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 480px;
+    margin-top: 20px;
+}
+
+.SignUpWrapper .SignUpLogos span:not(:last-child) { margin-right: 43px; }
+.SignUpWrapper .SignUpLogos span { cursor: pointer; }
+
+.SignUpWrapper .CreateAccountQuery {
+    display: inline-block;
+    font-size: 12px;
+    color: #6D6969; 
+    margin-top: 8px;
+    margin-bottom: 60px;
+    line-height: 150%;
+}
+
+.SignUpWrapper .CreateAccountLink {
+    font-weight: bold;
+    color: #A95E1A;
+    cursor: pointer;
+}
+
+.SignUpWrapper .CreateAccountLink:hover {
+    color: #572c04;
+}
+
+@media (max-width: 1090px){
+    .SignUpWrapper {
+        align-self: center;
+        padding: 0 60px;
+        margin: 40px auto 100px;
+        justify-self: center;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 850px) {
+    .SignUpWrapper {
+        margin: 120px auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .SignUpWrapper { padding: 0 10px; }
+}
+
+@media (max-width: 500px) {
+    .SignUpWrapper {
+        padding: 0;
+        max-width: 95%;
+        margin: 80px auto;
+    }
+
+    .SignUpWrapper input[type="email"]::-webkit-input-placeholder { font-size: 13px; transform: translateX(-10px);}
+    .SignUpWrapper .SignUpText { font-size: 12px; }
+}
+
+@media (max-width: 360px) {
+    .SignUpWrapper { max-width: 100% }
+    .SignUpWrapper .SignUpHeader { font-size: 20px; }
+    .SignUpWrapper .SignUpText { font-size: 11px; }
+    .SignUpWrapper .CreateAccountQuery {
+        display: inline-block;
+        font-size: 11px;
+    }
+
+}

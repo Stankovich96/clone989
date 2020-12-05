@@ -1,0 +1,153 @@
+.meeting-types {
+  display: flex;
+  justify-content: space-between;
+  color: #3a2b20;
+
+  .content {
+    margin-right: 48px;
+    text-align: left;
+    line-height: 1.5;
+
+    &-header {
+      font-weight: 500;
+      font-size: 20px;
+      display: flex;
+
+      &-line {
+        border-bottom: 1px solid #3a2b20;
+        width: 20%;
+        margin-left: 20px;
+        align-self: center;
+      }
+    }
+
+    &-subheader {
+      font-size: 26px;
+      text-align: left;
+      margin: 22px 0;
+    }
+
+    &-message {
+      font-size: 16px;
+      color: #6d6969;
+      margin-bottom: 25px;
+      width: 500px;
+    }
+
+    &-location-ask {
+      font-weight: 600;
+      font-size: 16px;
+      color: #191e29;
+      margin-bottom: 32px;
+    }
+
+    &-cities {
+      max-width: 100%;
+      color: #3a2b20;
+      cursor: pointer;
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+
+      &__loc {
+        padding: 10px 40px;
+        border: 1px solid #3a2b20;
+        border-radius: 50px;
+        background-color: #ffffff;
+        text-align: center;
+        margin-left: 15px;
+        margin-bottom: 25px;
+        transition: background-color 0.2 ease-in, color 0.2 ease-in;
+
+        &:hover {
+          background-color: #3a2b20;
+          color: #ffffff;
+          border: none;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 4px #A95E1A;
+    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.08));
+    
+    img{
+      object-fit: cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      box-shadow: inset 0px 0px 4px #A95E1A;
+      -moz-box-shadow: inset 0px 0px 4px #A95E1A;
+      -webkit-box-shadow: inset 0px 0px 4px #A95E1A;
+      filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.08));
+    }
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .meeting-types {
+    .content {
+      margin-right: 30px;
+      width: 50%;
+  
+      &-subheader { font-size: 22px; }
+  
+      &-message { width: auto; }
+  
+      &-cities {
+        &__loc {
+          padding: 8px 30px;
+          margin-left: 10px;
+
+         &:nth-child(5) { order: 1;}
+        }
+      }
+    }
+
+    &__img { width: 50%; }
+  }
+}
+
+@media (max-width: 900px) {
+  .meeting-types {
+    flex-direction: column;
+
+    .content {
+      margin-right: 0;
+      width: 100%;
+      padding: 0 10px;
+      margin-bottom: 55px;
+  
+      &-header {
+        &-line { width: 15%; }
+      }
+  
+      &-subheader {
+        font-size: 27px;
+        text-align: left;
+        margin: 22px 0;
+      }
+  
+      &-message {
+        margin-bottom: 35px;
+        width: auto;
+      }
+  
+      &-cities {
+        &__loc {
+          padding: 10px 40px;
+
+          &:nth-child(4), &:nth-child(5){ order: 1; }
+        }
+      }
+    }
+
+    &__img { width: 100%;  }
+  }  
+}

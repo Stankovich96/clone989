@@ -1,0 +1,114 @@
+.PeriodChooser {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 70px;
+  padding-top: 10px;
+  padding-bottom: 28px;
+}
+
+.PeriodChooser > p {
+  font-weight: 500;
+  font-size: 17px;
+  color: #3a2b20;
+}
+
+.PeriodChooser > .PeriodRadioButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.PeriodChooser > .PeriodRadioButtons > div label {
+  cursor: pointer;
+}
+
+.PeriodChooser > .PeriodRadioButtons > div > input {
+  margin-right: 11px;
+}
+
+.PeriodChooser > .WeeklyPeriod {
+  background-color: #eeeeee;
+  padding: 18px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+  display: none;
+}
+
+.PeriodChooser > .WeeklyPeriod > div {
+  font-size: 13px;
+  margin: 10px;
+}
+
+.PeriodChooser > .WeeklyPeriod > div > label {
+  font-size: 13.5px;
+}
+
+.PeriodChooser > .MonthlyPeriod {
+  background-color: #eeeeee;
+  padding: 17px 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  display: none;
+}
+
+.PeriodChooser > .MonthlyPeriod > .SelectLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.PeriodChooser > .MonthlyPeriod > .SelectLayout > p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  color: #6d6969;
+}
+
+.PeriodChooser > .MonthlyPeriod > .SelectLayout > .SelectContainer {
+  display: flex;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.PeriodChooser > .MonthlyPeriod > .SelectLayout p {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.PeriodChooser > .MonthlyPeriod > .SelectLayout > .SelectContainer > .ImgHolder {
+  padding: 0px 12px;
+  background-color: #7f6858;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PeriodChooser
+  > .MonthlyPeriod
+  > .SelectLayout
+  > .SelectContainer
+  > .ImgHolder
+  > img {
+  width: 20px;
+  height: 20px;
+}
+
+.PeriodChooser > .MonthlyPeriod > .SelectLayout > .SelectContainer > .Range {
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.PeriodChooser > .MonthlyPeriod > .SelectLayout > .SelectContainer > .Range > img {
+  margin-left: 10px;
+}

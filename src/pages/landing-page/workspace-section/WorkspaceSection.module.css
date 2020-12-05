@@ -1,0 +1,81 @@
+.WorkspaceSection {
+  background-color: #faf9f8;
+  padding: 167px 0;
+  color: #3a2b20;
+  display: flex;
+}
+
+.WorkspaceSection .Left {
+  margin-top: 3%;
+  text-align: left;
+  padding-left: 132px;
+  font-size: 16px;
+}
+
+.WorkspaceSection .Left .WorkspaceTitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.WorkspaceSection .Left .WorkspaceDesc {
+  color: #6d6969;
+  line-height: 180%;
+  font-size: 16px;
+}
+
+.WorkspaceSection .Right {
+  background-color: #faf9f8;
+  width: 65%;
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 1430px) and (min-width:1201px) {
+  .WorkspaceSection .Left {
+    padding-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+
+  .WorkspaceSection {
+    padding: 167px 70px;
+  }
+
+  .WorkspaceSection .Left {
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
+  .WorkspaceSection .Right {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .WorkspaceSection {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .WorkspaceSection .Left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: unset;
+    /* padding-right: 60px; */
+    margin: 0px 10%;
+  }
+
+  .WorkspaceSection .Right {
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 50px;
+  }
+
+  .WorkspaceSection .Left .WorkspaceDesc {
+    color: #6d6969;
+    line-height: 180%;
+    font-size: 16px;
+    /*  width: 80%; */
+  }
+}

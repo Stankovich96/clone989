@@ -1,0 +1,6 @@
+.Body {
+    padding: 100px;
+    padding-top: 0;
+    background-color: white;
+    flex-direction: column;
+}

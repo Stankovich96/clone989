@@ -1,0 +1,50 @@
+.GroupHeading {
+  font-weight: bold;
+  color: #7c7979;
+  padding: 8px 0px;
+}
+
+.Option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Option > .TeammateLabel {
+    font-weight: 500;
+}
+
+.Option > .TeammateModifier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.Option > .TeammateModifier > .Number {
+    margin: 0 16px;
+    font-size: 18px;
+}
+
+.Option > .TeammateModifier > .Plus, .Minus {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #c4c4c4;
+    cursor: pointer;
+}
+
+
+.Option > .TeammateModifier > .Plus:hover, .Minus:hover {
+    border: 1.5px solid #575957;
+}
+
+.Option > .TeammateModifier  svg {
+    width: 13px;
+    height: 13px;
+}
+

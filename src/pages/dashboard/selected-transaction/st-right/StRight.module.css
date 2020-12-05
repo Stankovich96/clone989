@@ -1,0 +1,249 @@
+.Right {
+  flex-basis: 50%;
+  margin-left: 40px;
+  position: relative;
+}
+
+.Right > .Section1 {
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+
+.Right > .Section1 > .NameAndLocation {
+  display: flex;
+  flex-direction: column;
+}
+
+.Right > .Section1 > .NameAndLocation > .Name {
+  font-weight: 600;
+  font-size: 23.4515px;
+  color: #4a3a2f;
+  margin: 0;
+}
+
+.Right > .Section1 > .NameAndLocation > .Location {
+  font-weight: 500;
+  font-size: 15.2435px;
+  color: #989595;
+  margin: 6px;
+}
+
+.Right > .Section1 > .BookType {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14.0709px;
+  background-color: #f7f5f4;
+  color: #c4a287;
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.Right > .Section2 {
+  display: flex;
+  gap: 60px;
+  margin-top: 22px;
+}
+
+.Right > .Section2 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.Right > .Section2 > .RatingLayout {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Right > .Section2 > .RatingLayout > .Rating {
+  font-weight: 600;
+  font-size: 13.4618px;
+  color: #6f716f;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 7px;
+}
+
+.Right > .Section2 > .RatingLayout img {
+  width: 12px;
+}
+
+.Right > .Section2 > .TimeLayout,
+.DateLayout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Right > .Section2 > .TimeLayout > .Time {
+  font-size: 14.0709px;
+  color: #989595;
+}
+
+.Right > .Section2 > .DateLayout > .Date {
+  font-size: 14.0709px;
+  color: #989595;
+}
+
+.Right > .Section4 {
+  font-size: 14.0709px;
+  color: #989595;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 25px;
+}
+
+.Right > .Section4 .Sec4_Label {
+  font-size: 14.0709px;
+  color: #989595;
+}
+
+.Right > .Section4 p {
+  margin: 2px 0;
+}
+
+.Right > .Section4 > .Cost {
+  display: flex;
+  flex-direction: column;
+}
+
+.Right > .Section4 > .Cost > .CostValue {
+  font-weight: bold;
+  font-size: 22px;
+  color: #4a3a2f;
+}
+
+.Right > .Section4 > .AccessCode > .AccessCodeValue {
+  font-weight: 500;
+  font-size: 22px;
+  color: #4a3a2f;
+}
+
+.Right > .Section4 > .BookingOccurrence > .BookingOccurrenceValue {
+  font-weight: 500;
+  font-size: 22px;
+  color: #4a3a2f;
+}
+
+.Right > .Section5 {
+  display: flex;
+  gap: 47px;
+  color: white;
+  text-align: left;
+  padding-top: 50px;
+  margin-top: 30px;
+}
+
+.Right > .Section5 .PlanLayout,
+.TeammateLayout {
+  display: flex;
+  flex-direction: column;
+  background-color: #676967;
+  border-radius: 13px;
+  padding: 0px 36px;
+  padding-bottom: 12px;
+  width: 222px;
+  margin-bottom: 30px;
+}
+
+.Right > .Section5 .PlanLayout > .Plan,
+.TeammateLayout > .Teammate {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.Right > .Section5 .PlanLayout > .Plan > span,
+.TeammateLayout > .Teammate > span {
+  font-size: 14px;
+}
+
+.Right a {
+ text-decoration: none;
+ color: white;
+}
+
+.Right > .Section5 .Modify {
+  font-size: 14px;
+  color: #efeae6;
+  position: relative;
+  cursor: pointer;
+}
+
+.Right > .Section5 .Modify::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  border-radius: 20px;
+  bottom: -8px;
+  left: 0;
+}
+
+.Right > .Section5 > .TeammateLayout {
+  background-color: #979897;
+}
+
+.Right > .Section6 {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.Right > .Section6 p {
+  margin: 4px 0;
+  text-align: left;
+}
+
+.Right > .Section6 .LikeWorkspaceLayout,
+.CancelBookingLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.Right > .Section6 .LikeWorkspaceLayout > .LikeWorkspace,
+.CancelBookingLayout > .NoLongerInterested {
+  font-size: 12px;
+  color: #989595;
+}
+
+.Right > .Section6 > .LikeWorkspaceLayout > .LeaveReview {
+  font-weight: 600;
+  font-size: 16px;
+  color: #7f6858;
+  position: relative;
+  cursor: pointer;
+}
+
+.Right > .Section6 > .LikeWorkspaceLayout > .LeaveReview::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #7f6858;
+}
+
+.Right > .Section6 > .CancelBookingLayout > .CancelBooking {
+  font-weight: 500;
+  font-size: 14px;
+  color: #c4a287;
+  position: relative;
+  cursor: pointer;
+}
+
+.Right > .Section6 > .CancelBookingLayout > .CancelBooking::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 89%;
+  height: 3px;
+  background-color: #c4a287;
+}

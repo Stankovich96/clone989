@@ -1,0 +1,154 @@
+.DateTimeUpdate {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.DateTimeUpdate .UpdateText {
+  font-weight: 500;
+  font-size: 24px;
+  color: #4a3a2f;
+  margin-bottom: 36px;
+}
+
+.DateTimeUpdate > .DateAndTIme {
+  display: flex;
+  gap: 40px;
+}
+
+.DateTimeUpdate > .DateAndTIme > .DateLayout,
+.DateTimeUpdate > .DateAndTIme > .TimeLayout,
+.DateTimeUpdate > .EstimatedCostLayout {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(152, 149, 149, 0.06);
+  border-radius: 13px;
+  width: 337px;
+}
+
+.DateTimeUpdate > .DateAndTIme > .DateLayout > .ExpDateTop {
+  display: flex;
+  border-bottom: 1px solid rgba(241, 193, 157, 0.3);
+  padding: 15px 47px;
+  align-items: center;
+}
+
+.DateTimeUpdate > .DateAndTIme > .DateLayout > .ExpDateTop > .ExpDateLabel {
+  font-weight: 500;
+  font-size: 14.0709px;
+  color: #7f6858;
+}
+
+.DateTimeUpdate > .DateAndTIme > .DateLayout > .ExpDateTop > .DateIconBox {
+  width: 36px;
+  height: 36px;
+  border: 0.7px solid #c4a287;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.DateTimeUpdate > .DateAndTIme > .DateLayout > .ExpDateBtm {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 47px;
+  padding: 10px 0;
+  padding-bottom: 28px;
+  padding-right: 45px;
+}
+
+.DateTimeUpdate > .DateAndTIme > .DateLayout > .ExpDateBtm > .ExpDateValue {
+  font-size: 16px;
+  color: #7f6858;
+}
+
+.DateTimeUpdate
+  > .DateAndTIme
+  > .DateLayout
+  > .ExpDateBtm
+  > .ExpDateValue
+  > span {
+  margin-left: 10px;
+}
+
+.DateTimeUpdate
+  > .DateAndTIme
+  > .DateLayout
+  > .ExpDateBtm
+  > .ExpDateValue
+  > span {
+  font-size: 14px;
+  color: #989595;
+}
+
+.DateTimeUpdate > .EstimatedCostLayout {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 40px;
+  padding: 20px 0;
+  padding-left: 45px;
+  width: 470px;
+  align-items: flex-end;
+}
+
+.DateTimeUpdate > .EstimatedCostLayout > .EstCostLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.DateTimeUpdate > .EstimatedCostLayout > .EstCostLeft > .EstCostLabel {
+  font-size: 16px;
+  color: #7f6858;
+  margin-bottom: 0;
+}
+
+.DateTimeUpdate > .EstimatedCostLayout > .EstCostLeft > .EstCostVal {
+  font-weight: 600;
+  font-size: 22px;
+  color: #3e432f;
+  background-color: #fafafa;
+  padding: 16px 28px;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+.DateTimeUpdate > .EstimatedCostLayout > .Divider {
+    width: 1px;
+    height: 60%;
+    background-color: rgb(196, 162, 135, 0.4);
+    border-radius: 3px;
+  }
+.DateTimeUpdate > .EstimatedCostLayout > button {
+  background: #575957;
+  border-radius: 6px;
+  padding: 15px 45px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.DateTimeUpdate > .EstimatedCostLayout > button:hover {
+ background-color: #262A27;
+}
+
+.CustomInput {
+  border: 0.7px solid #E8E2DE;
+  box-sizing: border-box;
+  border-radius: 4.1579px;
+  padding: 14px 23px;
+  font-size: 16px;
+  color: #7f6858;
+  cursor: pointer;
+}
+
+.CustomInput::placeholder {
+    font-size: 13.8596px;
+    color: #989595;
+  }

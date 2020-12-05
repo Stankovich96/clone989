@@ -1,0 +1,298 @@
+.Footer {
+  font-size: 16px;
+  background-color: #0F1310;
+  height: 580px;
+  display: flex;
+  padding-left: 90px;
+  position: relative;
+  /* padding-right: 20px; */
+
+}
+
+
+.Footer footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  margin: 0;
+}
+
+.Footer .leftSection {
+  margin: 80px 0px 0px 0px;
+}
+
+.Footer .companyDetails {
+  margin-left: 10px;
+  display: flex;
+}
+
+.Footer .companySocials {
+  margin-left: 3px;
+  display: flex;
+}
+
+.Footer .companyStore {
+  margin-left: 7px;
+  display: flex;
+}
+
+.Footer .footerLogo {
+  width: 60px;
+  height: 60px;
+  align-self: center;
+  margin-left: 0px;
+}
+
+.Footer .footerName {
+  width: 120px;
+  height: 40px;
+  margin-left: 5px;
+  align-self: flex-end;
+}
+
+.Footer .socials {
+  margin: 65px 0px 0px 10px;
+  padding-left: 10px;
+}
+
+.Footer .store {
+  margin: 65px 0px 0px 10px;
+  padding-left: 5px;
+}
+
+.Footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Footer ul li {
+  float: left;
+}
+
+.Footer .subscription {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+.Footer .subscriptionText {
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  align-self: flex-start;
+  margin-left: 20px;
+}
+
+.Footer form {
+  /* This bit sets up the horizontal layout */
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10px;
+
+  /* This bit draws the box around it */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ffffff;
+
+}
+
+.Footer input:focus {
+  /* removing the input focus blue box. Put this on the form if you like. */
+  outline: none;
+  color: #ffffff;
+}
+
+.Footer .inputEmail {
+  background-color: #0F1310;
+  padding: 10px;
+  color: #ffffff;
+  width: 400px;
+  flex-grow: 2;
+  border: none;
+}
+
+.Footer button {
+  background-color: #0F1310;
+  border: none;
+  outline: none;
+}
+
+.Footer button:focus {
+  outline: none;
+}
+
+.Footer .rightSection {
+  margin: 80px 0px 0px 270px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Footer .footerDetails {
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.Footer .footerDetailsLeft {
+  margin: 10px;
+  padding: 20px 0px 20px 20px;
+  text-align: left;
+}
+
+.Footer .footerDetailsCenter {
+  margin: 10px;
+  padding: 20px 0px 20px 20px;
+  text-align: left;
+}
+
+.Footer .footerDetailsRight {
+  margin: 10px;
+  padding: 20px 0px 10px 20px;
+  text-align: left;
+}
+
+.Footer .footerDetailsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer .footerDetailsListItemTitle {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.Footer .footerDetailsListItem {
+  align-self: flex-start;
+  color: #9F9F9F;
+  padding: 8px 0px 8px 0px;
+}
+
+.Footer .footerDetailsListItem a {
+  color: #9F9F9F;
+  text-decoration: none;
+}
+
+.Footer .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrightIcon {
+  margin-left: 0px;
+}
+
+.Footer .arrowRight {
+  align-self: flex-end;
+}
+
+.Footer .arrowUp {
+  align-self: flex-end;
+}
+
+
+@media only screen and (max-width: 1350px) and (min-width:1170px) {
+  .Footer {
+    max-width: 100%;
+    padding-left: 45px;
+    padding-right: 10px;
+  }
+
+  .Footer footer {
+    margin: 0 40px;
+  }
+
+  .Footer .leftSection {
+    margin: 80px 0px 0px 10px;
+  }
+
+  .Footer .rightSection {
+    margin: 80px 0px 0px 150px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Footer .inputEmail {
+    width: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 1169px) and (min-width:850px) {
+  .Footer {
+    max-width: 100%;
+    padding-left: 10px;
+    height: unset;
+    padding: unset;
+  }
+
+  .Footer footer {
+    margin: 0 40px;
+  }
+
+  .Footer .rightSection {
+    margin: 80px 60px;
+  }
+
+  .Footer .footerDetails {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  .Footer .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Footer .subscription {
+    margin-top: 40px;
+  }
+
+  .Footer .inputEmail {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 949px) and (min-width:849px) {
+  .Footer .footerDetails {
+    display: flex;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 849px) {
+  .Footer {
+    height: unset;
+    padding: unset;
+  }
+
+  .Footer footer {
+    margin: 0 20px;
+  }
+
+  .Footer .footerDetailsCenter {
+    display: none;
+  }
+
+  .Footer .rightSection {
+    margin: 80px 30px;
+    width: 350px;
+  }
+
+  .Footer .footerDetails {
+    margin-bottom: 110px;
+  }
+
+  .Footer .inputEmail {
+    width: 100px;
+  }
+}

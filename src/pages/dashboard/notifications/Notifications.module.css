@@ -1,0 +1,255 @@
+.Parent {
+  background-color: #fafafa;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.Parent > .Header {
+  display: flex;
+  font-weight: 500;
+  font-size: 24px;
+  color: #4a3a2f;
+  margin-left: 120px;
+}
+
+.Parent > .Header > .HeaderText {
+  margin-left: 60px;
+  margin-top: 47px;
+}
+
+.Parent > .MainContent {
+  margin: 0 253px;
+  text-align: left;
+}
+
+.Parent > .MainContent > .SubHeading {
+  display: flex;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.Parent > .MainContent > .SubHeading > .UnreadLayout {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.Parent > .MainContent > .SubHeading > .UnreadLayout > .UnreadText {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4a3a2f;
+}
+
+.Parent > .MainContent > .SubHeading > .UnreadLayout > .UnreadValue {
+  font-weight: 500;
+  font-size: 11.5px;
+  color: #4a3a2f;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #efeae6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a3a2f;
+}
+
+.Notifications {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding-bottom: 32px;
+  max-width: 850px;
+}
+
+.Notifications svg {
+  -webkit-filter: contrast(150%) brightness(49%) saturate(82%) grayscale(17%);
+  filter: contrast(150%) brightness(49%) saturate(82%) grayscale(17%);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.Notifications svg:hover {
+  transform: scale(1.2)
+}
+
+.Notifications > .NotifOpen {
+  display: flex;
+  box-shadow: 0px 20px 20px rgba(74, 58, 47, 0.05);
+  border-radius: 15px 15px 0 0;
+  padding: 32px 57px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F5F5F5;
+  position: relative;
+  z-index: 1;
+}
+
+.Notifications > .NotifOpen > .Period {
+  font-weight: 500;
+  font-size: 13px;
+  color: #c4a287;
+}
+
+.Notifications > .NotifOpen > .ReserveExpText {
+  font-size: 16px;
+  color: #4a3a2f;
+}
+
+.Notifications > .NotifOpen > .ReserveExpText > .BookingPlace {
+  font-weight: 600;
+}
+.Notifications > .NotifClose {
+  display: flex;
+  gap: 41px;
+  padding-top: 49px;
+  padding-left: 32px;
+  background-color: #f6f6f6;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 50px;
+  border-radius: 0 0 15px 15px;
+}
+
+.Notifications .DelAndDropDown {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Notifications .DeleteIcon {
+  width: 18px;
+  height: 18px;
+  transition: transform .3s;
+}
+
+.Notifications .DeleteIcon:hover {
+  transform: scale(1.2);
+}
+
+.Notifications > .NotifClose > .Ntc_Left {
+  display: flex;
+  flex-basis: 20%;
+  gap: 14px;
+  padding-top: 15px;
+  margin-left: 30px;
+}
+
+.Notifications > .NotifClose > .Ntc_Left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+}
+
+.Notifications > .NotifClose .Name {
+  font-size: 15.4353px;
+  color: #4a3a2f;
+  margin: 0;
+}
+
+.Notifications > .NotifClose .Location {
+  font-size: 12px;
+  color: #989595;
+  margin-top: 5px;
+}
+
+.Notifications > .NotifClose > .Ntc_Right {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  padding: 34px;
+  flex-basis: 60%;
+}
+
+.Notifications > .NotifClose > .Ntc_Right > .Ntcr_Top,
+.Ntcr_Btm {
+  display: flex;
+  gap: 20px;
+}
+.Notifications > .NotifClose > .Ntc_Right > .Ntcr_Top > .Duration {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4a3a2f;
+}
+
+.Notifications > .NotifClose > .Ntc_Right > .Ntcr_Top > .Type {
+  font-weight: 500;
+  font-size: 11px;
+  color: #7f6858;
+  margin-left: auto;
+  background-color: #f2f2f2;
+  padding: 6px 17px;
+  border-radius: 9px;
+}
+
+.Notifications
+  > .NotifClose
+  > .Ntc_Right
+  > .Ntcr_Btm
+  > .VertLayout
+  > .CostText {
+  font-size: 14px;
+  color: #989595;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.Notifications > .NotifClose > .Ntc_Right > .Ntcr_Btm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.Notifications > .NotifClose > .Ntc_Right > .Ntcr_Btm p {
+  margin: 0;
+}
+
+.Notifications
+  > .NotifClose
+  > .Ntc_Right
+  > .Ntcr_Btm
+  > .VertLayout
+  > .CostValue {
+  font-weight: 700;
+  font-size: 15px;
+  color: #4a3a2f;
+  margin: 0;
+}
+
+.Notifications > .NotifClose > .Ntc_Right > .Ntcr_Btm .TeamateText {
+  font-size: 14px;
+  color: #989595;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.Notifications
+  > .NotifClose
+  > .Ntc_Right
+  > .Ntcr_Btm
+  > .VertLayout
+  > .TeamateValue {
+  font-size: 17x;
+  color: #4a3a2f;
+  font-weight: 600;
+}
+.Notifications > .NotifClose > .Ntc_Right > .Ntcr_Btm > .VertLayout > .Rating {
+  font-weight: 600;
+  font-size: 13.4618px;
+  color: #7f6858;
+margin-bottom: 2px;
+}
+
+.Notifications > .NotifClose > .Ntc_Right > .Ntcr_Btm > .VertLayout img {
+  width: 14.5px;
+  height: 14.5px;
+  margin: 4px;
+}

@@ -1,0 +1,7 @@
+.CustomTab {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-top: 10px;
+}

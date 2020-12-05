@@ -1,0 +1,54 @@
+.SingleReview {
+  display: flex;
+  border-bottom: 0.4px solid #c4c4c4;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.SingleReview > .Left {
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: 20px;
+}
+
+.SingleReview > .Left > .OpenQuote {
+  margin-right: auto;
+}
+.SingleReview > .Left > .Review {
+  font-size: 14px;
+  color: #6d6969;
+  text-align: left;
+  margin: 0 35px;
+  line-height: 30px;
+}
+.SingleReview > .Left > .CloseQuote {
+  margin-left: auto;
+  transform: rotateX(180deg);
+  transform: rotateY(180deg);
+}
+
+.SingleReview > .Right {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.SingleReview > .Right > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media(max-width: 670px) {
+  .SingleReview { padding-bottom: 30px; }
+
+  .SingleReview > .Left > .OpenQuote, 
+  .SingleReview > .Left > .CloseQuote {
+    width: 20px;
+    height: 20px;
+  }
+
+  .SingleReview > .Right > img {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,170 @@
+.ConfirmPay {
+  padding: 36px 135px;
+  margin-left: 120px;
+  padding-left: 0;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.ConfirmPay > .HeaderText {
+  font-weight: 600;
+  font-size: 25px;
+  color: #4a3a2f;
+  margin-bottom: 55px;
+}
+
+.ConfirmPay > .MainContent {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ConfirmPay > .MainContent > .Section1 {
+  display: flex;
+  border-bottom: 1px solid #d5cec9;
+  padding-bottom: 55px;
+}
+
+.ConfirmPay > .MainContent > .Section1 > .NameAndLocation {
+  display: flex;
+  align-items: center;
+}
+
+.ConfirmPay > .MainContent > .Section1 > .NameAndLocation > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 17px;
+}
+
+.ConfirmPay > .MainContent > .Section1 > .NameAndLocation > div > .Name {
+  font-weight: 500;
+  font-size: 17px;
+  color: #4a3a2f;
+  margin: 0;
+  padding: 0;
+}
+
+.ConfirmPay > .MainContent > .Section1 > .NameAndLocation > div > .Location {
+  margin-top: 4px;
+  font-size: 15px;
+  color: #4a3a2f;
+}
+
+.ConfirmPay > .MainContent > .Section1 > .NameAndLocation > div img {
+  width: 16px;
+  height: 16px;
+}
+
+.ConfirmPay > .MainContent > .Section1 > .NameAndLocation > img {
+  width: 94px;
+  height: 94px;
+}
+
+.ConfirmPay > .MainContent > .Section1 > .WorkspaceType {
+  margin: 0;
+  margin-left: auto;
+  margin-top: auto;
+  background-color: #f7f5f4;
+  color: #7f6858;
+  padding: 11px 22px;
+  border-radius: 5px;
+}
+
+.ConfirmPay > .MainContent > .Section2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.ConfirmPay > .MainContent > .Section2 p {
+  margin: 0;
+}
+
+.ConfirmPay > .MainContent > .Section2 > .DurationText {
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f6858;
+}
+
+.ConfirmPay > .MainContent > .Section2 > .DurationValue {
+  font-weight: 500;
+  font-size: 18px;
+  color: #4a3a2f;
+}
+
+.ConfirmPay > .MainContent > .Section3 {
+  display: flex;
+  border-bottom: 1px solid #d5cec9;
+  margin-top: 40px;
+  margin-bottom: 47px;
+  padding-bottom: 55px;
+}
+
+.ConfirmPay > .MainContent > .Section3 p {
+  margin: 0;
+}
+
+.ConfirmPay > .MainContent > .Section3 .Sec3Label {
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f6858;
+  text-align: left;
+}
+.ConfirmPay > .MainContent > .Section3 > .Time {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ConfirmPay > .MainContent > .Section3 > .Time > .TimeValue {
+  font-weight: 500;
+  font-size: 18px;
+  color: #4a3a2f;
+}
+
+.ConfirmPay > .MainContent > .Section3 > .Amount {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  gap: 5px;
+}
+
+.ConfirmPay > .MainContent > .Section3 > .Amount > .AmountValue {
+  font-weight: bold;
+  font-size: 21px;
+  color: #4a3a2f;
+}
+
+.ConfirmPay > .MainContent > .EditAndPayBtn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.ConfirmPay > .MainContent > .EditAndPayBtn > .EditBtn,
+.PayBtn {
+  padding: 16px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4.46667px;
+  cursor: pointer;
+}
+
+.ConfirmPay > .MainContent > .EditAndPayBtn > .EditBtn {
+  color: #6d6969;
+  border: 1.48889px solid #cbccd0;
+
+  background-color: transparent;
+}
+
+.ConfirmPay > .MainContent > .EditAndPayBtn > .PayBtn {
+  background: #575957;
+  color: #ffffff;
+}

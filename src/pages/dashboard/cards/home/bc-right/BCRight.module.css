@@ -1,0 +1,48 @@
+.BCRight {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 57%;
+  padding: 0 182px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.BCRight > .ManageCard {
+  font-weight: 500;
+  font-size: 22px;
+  color: #7f6858;
+  margin-top: 137px;
+}
+
+.BCRight > .Divider {
+    width: 100%;
+    background: #EFEAE6;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.BCRight > .SectionLayout {
+  display: flex;
+  width: 100%;
+  text-align: left;
+}
+
+.BCRight > .SectionLayout > .Text {
+  font-size: 15px;
+  color: #989595;
+}
+
+.BCRight > .SectionLayout > .Value {
+  font-weight: 500;
+  font-size: 17px;
+  color: #6f716f;
+  margin-left: auto;
+}
+
+.BCRight > .DeleteLayout {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;cursor: pointer;
+}

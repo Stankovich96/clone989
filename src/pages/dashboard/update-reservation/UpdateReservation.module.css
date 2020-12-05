@@ -1,0 +1,45 @@
+.Parent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 50px;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.UpdateReservation {
+    display: flex;
+    margin-left: 120px;
+    align-self: center;
+    justify-self: center;
+    gap: 102px;
+}
+
+.UpdateReservation > .CPlanLayout {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  align-self: center;
+}
+
+.UpdateReservation > .CPlanLayout p {
+    margin: 0;
+  }
+
+.UpdateReservation > .CPlanLayout > .CurrentPlan {
+    font-weight: 500;
+    font-size: 14.0709px;
+    color: #7F6858;
+}
+
+.UpdateReservation > .CPlanLayout > .CPlanValue {
+  font-weight: 500;
+  font-size: 30px;
+  color: #4a3a2f;
+}
+
+.UpdateReservation > .CPlanLayout > .CPlanDate {
+  font-size: 15px;
+  color: #989595;
+}

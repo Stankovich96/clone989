@@ -1,0 +1,57 @@
+.Header {
+    font-size: 16px;
+    background-color: #0F1310;
+    border-bottom: 1px solid #E2E2E7;
+}
+
+.Header header {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+header > a {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+.Header img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+.Header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Header ul li {
+    float: left;
+}
+
+.Header ul li a {
+    display: block;
+    padding: 23px;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.Header ul li a:hover {
+    color: #c4c4c4;
+    font-size: 16.6px;
+}
+
+.Header .LoginAndSignUp {
+    margin-left: auto;
+    margin-right: 124px;
+}

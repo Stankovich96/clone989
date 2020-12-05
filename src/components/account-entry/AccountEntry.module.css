@@ -1,0 +1,147 @@
+.Wrapbox {
+    display: flex;
+    height: 100vh;
+}
+
+.Wrapbox > .WrapboxLeft {
+    width: 43%;
+    text-align: left;
+    margin: 35px 90px 6px 130px;
+    position: relative;
+}
+
+.Wrapbox > .WrapboxLeft > .TermsAndCondition {
+    font-size: 12px;
+    line-height: 150%;
+    color: #6D6969;
+}
+
+.BrownRed {
+    color: #A95E1A;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.BrownRed:hover {
+    font-weight: bold;
+    border-bottom: 1px solid #A95E1A;
+    padding-bottom: 2px;
+    transform-origin: left;
+}
+
+.Wrapbox > .WrapboxRight {
+    width: 57%;
+    overflow: hidden;
+}
+
+.AlignDots { text-align: center; }
+
+.ImgWrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.ImgWrapper  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ImgWrapper .ImgWrapperOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ImgWrapper .Product {
+    text-align: left;
+    position: absolute;
+    left: 60px;
+    bottom: 25%;
+    color: #fff;
+}
+
+.ImgWrapper .Product .ProductLoc{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.ImgWrapper .Product .ProductType { font-size: 13px; }
+
+.ImgWrapper .ProductOverview {
+    position: absolute;
+    left: 60px;
+    bottom: 7%;
+    display: flex;
+    align-items: center ;
+    color: #fff;
+}
+
+.ImgWrapper .ProductOverview .ProductLink {
+    background: #3E432F;
+    padding: 11px 12px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.ImgWrapper .ProductOverview .ProductRating { 
+    display: flex;
+    font-size: 18px;
+}
+
+.ImgWrapper .ProductOverview .ProductRating span:first-child {
+    margin-right: 7px;
+}
+
+.ImgWrapper .ProductOverview .ProductRating span:last-child {
+    transform: translateY(2.5px);
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 1200px) {
+    .Wrapbox > .WrapboxLeft {
+        margin: 35px 80px 6px;
+    }  
+}
+
+@media (max-width: 1090px) { 
+    .Wrapbox { height: unset; min-height: 100vh;}
+    
+    .Wrapbox {
+        display: flex;
+        min-height: 100vh;
+    } 
+    .Wrapbox > .WrapboxRight { display: none; }
+
+    .Wrapbox > .WrapboxLeft {
+        width: 100%;
+        margin: 35px 90px 0px;
+    }
+    
+    .Wrapbox > .WrapboxLeft > .TermsAndCondition {
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    .Wrapbox > .WrapboxLeft {  margin: 35px 32px 0px; }
+}
+
+@media (max-width: 450px) {
+    .Wrapbox > .WrapboxLeft > .TermsAndCondition { font-size: 10px; }
+}
+
+@media (max-width: 380px) and (max-height: 670px) {
+    .Wrapbox { height: 100%; }
+}
+
+@media (max-width: 540px) and (max-height: 725px) {
+    .Wrapbox { height: 100%; }
+}

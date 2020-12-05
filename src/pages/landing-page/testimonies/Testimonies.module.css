@@ -1,0 +1,28 @@
+.Testimonies {
+    background-color: #FAF9F8;
+    padding: 153px 129px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Testimonies .Title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/* @media only screen and (max-width: 900px) and (min-width:600px) {} */
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+    .Testimonies {
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+    .Testimonies {
+        padding-left: unset;
+        padding-right: unset;
+        padding-bottom: unset;
+    }
+}

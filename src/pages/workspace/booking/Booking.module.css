@@ -1,0 +1,88 @@
+
+.Booking > .Body {
+  padding-top: 20px;
+  background-color: #f8f8f8;
+}
+
+.Booking > .Body > .BodyContent {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.Booking > .Body > .BodyContent > p {
+  font-weight: bold;
+  font-size: 23px;
+  color: #3a2b20;
+}
+
+.Booking > .Body > .BodyContent > .Form {
+  border: 0.4px solid #c4a287;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(127, 104, 88, 0.05);
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.Booking > .Body > .BodyContent > .Form > .OccurrenceRadioButtons {
+  padding: 30px 40px;
+  padding-bottom: 40px;
+  display: flex;
+  width: 100%;
+}
+
+.Booking > .Body > .BodyContent > .Form > .OccurrenceRadioButtons > div {
+  flex-basis: 30%;
+}
+
+.Booking > .Body > .BodyContent > .Form > .OccurrenceRadioButtons > div > input {
+  margin-right: 11px;
+  cursor: pointer;
+}
+
+.Booking > .Body > .BodyContent > .Form > a {
+  width: 100%;
+  font-weight: 600;
+  font-size: 19px;
+  color: #4a3a2f;
+  cursor: pointer;
+}
+
+.Booking > .Body > .BodyContent > .Form > a > button {
+  width: 100%;
+  padding: 24px 0;
+  font-weight: 600;
+  font-size: 19px;
+  color: #4a3a2f;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+  transition: background-color .3s, color .3s;
+}
+
+
+.Booking > .Body > .BodyContent > .Form > a > button:hover {
+  background-color: #575957;
+  color: white;
+}
+
+.Booking > .Body > .BodyContent > .Form > .OccurrenceRadioButtons label {
+  cursor: pointer;
+}
+
+.Booking .Body .BackButtonParent { margin-left: 100px;}
+
+@media (max-width: 800px){
+  .Booking .Body .BackButtonParent { margin-left: 48px;}
+}
+
+@media (max-width: 650px){
+  .Booking .Body .BackButtonParent { margin-left: 30px;}
+}

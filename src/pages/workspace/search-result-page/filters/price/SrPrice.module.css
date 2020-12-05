@@ -1,0 +1,69 @@
+.SrPrice {
+  margin-right: 15px;
+}
+
+.Options {
+  display: flex;
+  border-bottom: 1px solid #e7e9ed;
+  padding: 15px 20px;
+  padding-left: 20px;
+}
+.Options label {
+  color: #6d6969;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.Options > img {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.RadioContainer {
+  padding: 17px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.RadioContainer > div {
+    display: flex;
+  }
+
+.RadioContainer label {
+  font-size: 13px;
+  color: #989595;
+ 
+}
+
+.RadioContainer input {
+    margin-right: 5px;
+    width: 10px;
+    margin-left: 0;
+  }
+
+.Bottom {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+}
+
+.Bottom p {
+  font-size: 13px;
+  color: #3e432f;
+  cursor: pointer;
+}
+
+.Bottom button {
+  background-color: #575957;
+  padding: 12px 30px;
+  border-radius: 5px;
+  color: white;
+  margin-left: auto;
+  cursor: pointer;
+}

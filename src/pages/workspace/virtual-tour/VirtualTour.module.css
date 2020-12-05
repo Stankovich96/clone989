@@ -1,0 +1,175 @@
+.VirtualTour {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+.VirtualTour input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+  font-size: 20px;
+  line-height: 150%;
+  padding-bottom: 10px;
+  color: #3e432f;
+}
+
+.VirtualTour > img {
+  position: absolute;
+  right: 10%;
+  top: 19%;
+  cursor: pointer;
+}
+
+.VirtualTour ::-webkit-input-placeholder {
+  /* Edge */
+  font-weight: lighter;
+  color: #c4c4c4;
+}
+
+.VirtualTour :-ms-input-placeholder {
+  /* Internet Explorer */
+  font-weight: lighter;
+  color: #c4c4c4;
+}
+
+.VirtualTour ::placeholder {
+  font-weight: lighter;
+  color: #c4c4c4;
+}
+
+.VirtualTour > .Body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 600px;
+  align-self: center;
+  padding-bottom: 60px;
+}
+
+.VirtualTour > .Body > .Heading {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+  padding: 0;
+}
+
+.VirtualTour > .Body > .Heading > div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.VirtualTour > .Body > .Heading > div > .Title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #3a2b20;
+  margin-bottom: 0;
+}
+
+.VirtualTour > .Body > .Heading > div > .Description {
+  font-size: 15px;
+  color: #989595;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.VirtualTour > .Body > .Form {
+  border: 0.4px solid #cfcfcf;
+  box-shadow: 0px 4px 10px rgba(127, 104, 88, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.VirtualTour > .Body > .Form p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #989595;
+}
+
+.VirtualTour > .Body > .Form > .NameLayout {
+  padding: 20px 37px;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.VirtualTour > .Body > .Form > .NameLayout > input {
+  width: 100%;
+}
+
+.VirtualTour input:focus {
+  border-bottom: 1px solid #262A27;
+}
+
+.VirtualTour > .Body > .Form > .EmailAndNumber {
+  display: flex;
+  padding: 20px 37px;
+}
+
+.VirtualTour > .Body > .Form > .EmailAndNumber > .MobileNumber {
+  align-self: flex-end;
+  margin-left: 40px;
+}
+
+.VirtualTour > .Body > .Form > .DateAndAmt {
+  display: flex;
+  padding: 20px 37px;
+}
+
+.VirtualTour > .Body > .Form > .DateAndAmt > .TeammateAmount {
+  align-self: flex-end;
+  margin-left: 40px;
+}
+
+.VirtualTour > .Body > .Form > button {
+  width: 100%;
+  padding: 37px 0;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 19px;
+  color: #7f6858;
+  cursor: pointer;
+}
+
+@media (max-width: 1090px) {
+  .VirtualTour > img {
+    right: 5%;
+    top: 13%;
+  }
+}
+
+@media (max-width: 750px) {  
+  .VirtualTour input {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  
+  .VirtualTour ::-webkit-input-placeholder { transform: translateX(-5%); }
+  
+  .VirtualTour :-ms-input-placeholder { transform: translateX(-5%); }
+  
+  .VirtualTour ::placeholder { transform: translateX(-5%); }
+
+  .VirtualTour .Form .NameLayout input::-webkit-input-placeholder { transform: translateX(-2.3%); }
+  
+  .VirtualTour .Form .NameLayout input:-ms-input-placeholder { transform: translateX(-2.3%); }
+  
+  .VirtualTour .Form .NameLayout input::placeholder { transform: translateX(-2.3%); }
+  
+  .VirtualTour > .Body { max-width: 510px; }
+  
+  .VirtualTour > .Body > .Heading > div > .Title { font-size: 23px; }
+  
+  .VirtualTour > .Body > .Heading > div > .Description { font-size: 14px; }
+}

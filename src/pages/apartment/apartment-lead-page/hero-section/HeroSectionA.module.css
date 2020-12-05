@@ -1,0 +1,343 @@
+.HeroSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 700px;
+}
+
+
+.HeroSection .Left {
+    height: 95%;
+    width: 100%;
+    background: #fafafa;
+    border-radius: 0px 0px 60px 0px;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+
+}
+
+.HeroSection .booking {
+    padding: 60px 120px 0 100px;
+    text-align: left;
+    width: 740px;
+}
+
+.HeroSection .Left .Title {
+    line-height: 52px;
+    font-size: 35px;
+    color: #3a2b20;
+    font-weight: bold;
+    /* width: 500px; */
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.HeroSection .Left .Description {
+    line-height: 30px;
+    font-size: 16px;
+    color: #6d6969;
+    margin-bottom: 0;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50px) 60px;
+    row-gap: 27px;
+    column-gap: 20px;
+    align-items: stretch;
+}
+
+.HeroSection .Right {
+    position: relative;
+    margin-top: 60px;
+    height: 90%;
+    width: 100%;
+    z-index: 1;
+    grid-column: 5 / 10;
+    grid-row: 1 / 2;
+}
+
+.HeroSection .Right .Container {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* IE and Edge */
+    scroll-behavior: smooth;
+    /* IE and Edge */
+    -webkit-overflow-scrolling: touch;
+    gap: 25px;
+}
+
+.HeroSection .Right .Container::-webkit-scrollbar {
+    display: none;
+    /* Chrome */
+}
+
+.HeroSection .Container>div.ImgHolder {
+    min-width: calc(100% - 70px);
+    height: 550px;
+}
+
+.HeroSection .Container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.HeroSection .Container .Dummy {
+    min-width: 30px;
+    max-width: 30px;
+    height: 25px;
+}
+
+.HeroSection .Right .MoveRight {
+    position: absolute;
+    top: calc(50% - 70px);
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+}
+
+.HeroSection .Right .MoveLeft {
+    display: none;
+}
+
+.HeroSection .Right .MoveRight:hover {
+    background-color: #f6f6f6;
+}
+
+.HeroSection .Right .MoveRight>svg {
+    width: 22px;
+    height: 22px;
+    transform: rotate(180deg);
+}
+
+
+/* Find Space button */
+.button {
+    background-color: #3e432f;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #eedfd1;
+    cursor: pointer;
+}
+
+@media (max-width: 1475px) {
+    .HeroSection .Left .booking {
+        padding: 60px 5px 0 100px;
+        width: 550px;
+        margin-right: auto;
+    }
+
+    .HeroSection .Left .booking .Title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .HeroSection .Left .booking {
+        padding: 60px 40px 0 100px;
+    }
+
+    .HeroSection .Left .booking .Title {
+        font-size: 40px;
+    }
+
+    .HeroSection .Right .Container>div.ImgHolder {
+        min-width: calc(100% - 50px);
+        height: 500px;
+    }
+
+    .HeroSection .Right .MoveRight {
+        top: calc(40% - 60px);
+        right: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        margin: 0 48px;
+    }
+
+    .HeroSection {
+        grid-template-rows: 630px;
+    }
+
+    .HeroSection .Left .booking {
+        padding: 40px 220px 0 48px;
+        width: 680px;
+    }
+
+    .HeroSection .Left .booking .Title {
+        font-size: 29px;
+    }
+
+    .form {
+        column-gap: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .HeroSection {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .HeroSection .Left {
+        border-radius: 5px;
+        order: 1;
+        flex: 0 0 70%;
+        margin: 0 auto;
+        transform: translateY(-30%);
+        z-index: 2;
+    }
+
+    .HeroSection .Left .booking {
+        padding: 30px;
+        width: auto;
+    }
+
+    .HeroSection .Left .booking .Title {
+        font-size: 30px;
+    }
+
+    .HeroSection .Right {
+        position: relative;
+        /* overflow-x: hidden; */
+        /* overflow-y: hidden; */
+        margin-top: 60px;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        z-index: 0;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .HeroSection .Right .Container {
+        display: flex;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        -ms-overflow-style: hidden;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* IE and Edge */
+        scroll-behavior: smooth;
+        /* IE and Edge */
+        -webkit-overflow-scrolling: touch;
+        gap: 25px;
+    }
+
+
+
+    .Container>div.ImgHolder {
+        min-width: 100%;
+    }
+
+    .Container .Dummy {
+        display: none;
+    }
+
+    .HeroSection .Right .MoveRight {
+        top: calc(50% - 70px);
+    }
+
+    .HeroSection .Right .MoveLeft {
+        position: absolute;
+        top: calc(50% - 70px);
+        left: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+    }
+
+    .HeroSection .Right .MoveLeft:hover {
+        background-color: #f6f6f6;
+    }
+
+    .HeroSection .Right .MoveLeft>svg {
+        width: 22px;
+        height: 22px;
+        transform: rotate(0);
+    }
+
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 100%;
+        margin: 0 40px;
+    }
+
+    .HeroSection .Left .booking {
+        padding: 24px;
+    }
+
+    .HeroSection .Right {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    .HeroSection .Right .MoveRight,
+    .HeroSection .Right .MoveLeft {
+        width: 60px;
+        height: 60px;
+    }
+
+    .HeroSection .Right .MoveRight>svg,
+    .HeroSection .Right .MoveLeft>svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
+@media (min-width: 1700px) {
+    .HeroSection {
+        background: #fafafa;
+    }
+
+    .HeroSection .Left .booking {
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .HeroSection .Right {
+        margin-right: 100px;
+        width: auto;
+    }
+
+    .HeroSection .Right .MoveRight {
+        top: calc(50% - 80px);
+    }
+}

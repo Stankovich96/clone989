@@ -1,0 +1,54 @@
+.FinalBookingStage {
+	.ApartmentBody {
+		align-items: center;
+		.tablist {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 80px;
+			background-color: #f8f8f8;
+			padding: 0 450px 14px;
+			border-bottom: 1px solid #d6cfc8;
+			list-style-type: none;
+			@media only screen and (max-width: 1200px) and (min-width: 901px) {
+				padding: unset;
+				padding-bottom: 14px;
+			}
+			@media only screen and (max-width: 900px) and (min-width: 601px) {
+				padding: unset;
+				padding-bottom: 14px;
+			}
+			&-menu {
+				font-size: 20px;
+				line-height: 150%;
+				color: #4a3a2f;
+				background: unset;
+				align-self: center;
+				cursor: pointer;
+			}
+			&-menu:focus {
+				outline: none;
+			}
+		}
+
+		.active-tab {
+			font-weight: 500;
+			position: relative;
+		}
+
+		.active-tab::after {
+			position: absolute;
+			content: '';
+			display: block;
+			border: 3px solid #4a3a2f;
+			border-radius: 3px;
+			left: -60px;
+			right: -60px;
+			transform: translateY(25px);
+		}
+
+		.tab-content > * {
+			min-height: 520px;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.RecentBookingsLayout {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-top: 57px;
+  height: 100%;
+}
+
+.RecentBookingsLayout > .Top {
+  display: flex;
+}
+
+.RecentBookingsLayout > .Top > .RecentBookings {
+  font-weight: 600;
+  font-size: 20px;
+  color: #4a3a2f;
+  margin: 0;
+}
+
+.RecentBookingsLayout > .Top > .ViewAll {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: rgba(169, 94, 26, 0.6);
+  cursor: pointer;
+}
+
+.RecentBookingsLayout > .Top > .ViewAll > a {
+  color: rgba(169, 94, 26, 0.6);
+}
+
+.RecentBookingsLayout > .Top > .ViewAll > a:hover {
+  color: rgba(73, 38, 6, 0.6);
+}
+
+.RecentBookingsLayout > .Body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RecentBookingsLayout > .Body > .Body_Empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: inherit;
+  margin: 90px 0;
+}
+
+.RecentBookingsLayout > .Body > .Body_Empty > .Oh {
+  font-weight: 600;
+  font-size: 23px;
+  color: #4a3a2f;
+  margin: 0;
+}
+
+.RecentBookingsLayout > .Body > .Body_Empty > .NoBooking {
+  font-size: 17px;
+  text-align: center;
+  color: #989595;
+  margin: 0;
+  margin-bottom: 13px;
+}

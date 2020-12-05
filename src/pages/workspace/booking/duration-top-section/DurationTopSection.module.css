@@ -1,0 +1,236 @@
+.Top {
+  background-color: #575957;
+  color: white;
+  padding: 19px 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.Top > .WorkspaceInfo {
+  display: flex;
+  margin-right: auto;
+  align-self: center;
+}
+
+.Top > .WorkspaceInfo > img {
+  width: 94px;
+  height: 94px;
+  margin-right: 20px;
+}
+
+.Top > .WorkspaceInfo > .NameAndLocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Top > .WorkspaceInfo > .NameAndLocation > .Name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.Top > .WorkspaceInfo > .NameAndLocation > .Location {
+  font-size: 15px;
+  color: #efeae6;
+  margin: 0;
+  margin-right: auto;
+}
+
+.Top > .MoveInDateLayout {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  align-self: center;
+}
+
+.Top > .MoveInDateLayout > .MoveInDateLabel {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #efeae6;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.Top > .MoveInDateLayout > .MoveInDateSelector {
+  display: flex;
+  border: 1px solid white;
+  padding: 1px 10px;
+  border-radius: 5px;
+}
+
+.Top > .MoveInDateLayout > .MoveInDateSelector > img {
+  margin-left: 20px;
+  align-self: center;
+  width: 22px;
+  height: 22px;
+}
+
+.Top > .TeammateAmtLayout {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.Top > .TeammateAmtLayout > .TeammateAmtLabel {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #efeae6;
+  margin-top: 0;
+  margin-right: auto;
+}
+
+.Top > .TeammateAmtLayout > .TeammateChooser {
+  display: flex;
+  border: 1px solid white;
+  padding: 14px 10px;
+  border-radius: 5px;
+}
+
+.Top > .TeammateAmtLayout > .TeammateChooser > input {
+  background-color: #575957;
+  color: white;
+  border: none;
+  font-size: 16px;
+  width: 140px;
+}
+
+.Top > .TeammateAmtLayout > .TeammateChooser > button:first-of-type {
+  margin-right: 10px;
+}
+
+.CustomInput {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 20px 10px;
+  padding-left: 5px;
+  width: 120px;
+  font-size: 15px;
+}
+
+.CustomInput::placeholder {
+  color: white;
+  font-size: 15px;
+  padding: 0;
+}
+
+
+.Top > .TeammateAmtLayout > .TeammateChooser > input { width: 100px; }
+
+@media(max-width: 1250px) {
+  .Top > .WorkspaceInfo > .NameAndLocation > .Name { font-size: 18px; }
+
+  .Top > .MoveInDateLayout {
+    margin-left: 40px;
+    min-width: 220px;
+  }
+
+  .Top > .MoveInDateLayout > .MoveInDateLabel { font-size: 13px; }
+
+  .Top > .MoveInDateLayout > .MoveInDateSelector > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Top > .TeammateAmtLayout > .TeammateAmtLabel { font-size: 13px; }
+
+  .Top > .TeammateAmtLayout > .TeammateChooser { padding-left: 20px; }
+
+  .Top > .TeammateAmtLayout > .TeammateChooser > input { width: 100px; }
+}
+
+@media(max-width: 1000px) {
+  .Top > .WorkspaceInfo > img {
+    width: 80px;
+    height: 80px;
+    margin-right: 18px;
+  }
+  .Top > .WorkspaceInfo > .NameAndLocation > .Name { font-size: 16px; }
+  .Top > .WorkspaceInfo > .NameAndLocation > .Location { font-size: 14px; }
+
+  .Top > .MoveInDateLayout {
+    margin-left: 40px;
+    min-width: 200px;
+  }
+  
+  .Top > .MoveInDateLayout > .MoveInDateSelector { justify-content: center; }
+
+  .Top > .MoveInDateLayout > .MoveInDateSelector p { 
+    margin: 12px 0;
+    font-size: 14px;
+  }
+
+  .Top > .TeammateAmtLayout > .TeammateChooser { padding: 8px 10px; }
+
+  .Top > .TeammateAmtLayout > .TeammateChooser > input {
+    font-size: 15px;
+    width: 70px;
+    padding-left: 10px;
+  }
+}
+
+@media(max-width: 905px) {
+  .Top { 
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+    max-height: 200px;
+    align-items: center;
+   }
+
+  .Top > .WorkspaceInfo { flex: 1 0 100%; }
+
+  .Top > .MoveInDateLayout, .Top > .TeammateAmtLayout { margin-top: 10px; }
+
+  .Top > .WorkspaceInfo > img {
+    width: 125px;
+    height: 130px;
+    transform: translateY(30%);
+  }
+  .Top > .WorkspaceInfo > .NameAndLocation > .Name {margin-bottom: 2px; }
+
+  .Top > .MoveInDateLayout { margin-left: 0; transform: translate( 73%, -50%); }
+
+  .Top > .TeammateAmtLayout { transform: translate(90%, -50%); }
+
+  .Top > .TeammateAmtLayout > .TeammateAmtLabel,
+  .Top > .MoveInDateLayout > .MoveInDateLabel { margin-bottom: 5px; }
+}
+
+@media (max-width: 800px){
+  .Top { padding: 0px 42px 0px 48px; }
+}
+
+@media (max-width: 650px){
+  .Top > .WorkspaceInfo > img {
+    width: 95px;
+    height: 100px;
+    transform: translateY(40%);
+  }
+
+  .Top > .WorkspaceInfo > .NameAndLocation > .Name { font-size: 14px; }
+
+  .Top > .MoveInDateLayout { transform: translate( 58%, -30%); }
+
+  .Top > .TeammateAmtLayout { transform: translate(70%, -30%); }
+
+  .Top > .TeammateAmtLayout > .TeammateAmtLabel,
+  .Top > .MoveInDateLayout > .MoveInDateLabel { font-size: 11px; }
+
+  .Top > .MoveInDateLayout > .MoveInDateSelector p { 
+    margin: 10px 0;
+    font-size: 12px;
+  }
+
+  .Top > .TeammateAmtLayout > .TeammateChooser { padding: 6px 10px; }
+
+  .Top > .TeammateAmtLayout > .TeammateChooser > input {  font-size: 12px; }
+}

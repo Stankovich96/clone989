@@ -1,0 +1,85 @@
+.TeammateNumber {
+}
+
+.TeammateNumber .MainContent {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.TeammateNumber .MainContent p {
+  font-weight: 500;
+  font-size: 24px;
+  color: #3a2b20;
+  margin-top: 40px;
+}
+
+.TeammateNumber .MainContent .CardLayout {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 0.4px solid #cfcfcf;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(127, 104, 88, 0.05);
+  border-radius: 10px;
+  padding: 0 56px;
+  margin-top: 40px;
+}
+
+.TeammateNumber .MainContent .CardLayout .NoOfTeammateLabel {
+  font-weight: 500;
+  font-size: 14px;
+  color: #989595;
+}
+
+.TeammateNumber .MainContent .CardLayout .InputContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.TeammateNumber .MainContent .CardLayout .InputContainer input {
+  font-size: 24px;
+  color: #3e432f;
+  outline: none;
+  border: none;
+  margin-right: auto;
+}
+
+.TeammateNumber .MainContent .CardLayout .InputContainer button:last-child {
+  margin-left: 10px;
+}
+
+.TeammateNumber .MainContent .CardLayout .Divider {
+  width: 100%;
+  height: 1px;
+  background-color: #eedfd1;
+  margin-top: 15px;
+}
+
+.TeammateNumber .MainContent .CardLayout > a {
+  padding: 20px 0;
+  color: white;
+  background: #3e432f;
+  border-radius: 7px;
+  margin: 43px 0;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+}
+
+.TeammateNumber .MainContent .CardLayout > a:hover {
+  background: #262A27;
+}
+
+.TeammateNumber .MainContent .CardLayout > a > button{
+  color: white;
+  background: transparent;
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+

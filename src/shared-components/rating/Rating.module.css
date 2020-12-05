@@ -1,0 +1,7 @@
+.Rating {
+    display: flex;
+}
+
+.Rating img {
+    margin: 0 6px;
+}

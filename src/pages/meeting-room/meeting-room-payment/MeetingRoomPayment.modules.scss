@@ -1,0 +1,502 @@
+.mr-payment {
+    &-tablist {
+        background: #e7e7e7;
+        margin: 0;
+
+       div {
+            list-style-type: none;
+            display: flex; 
+            justify-content: center;
+        }
+
+        &-menu:first-child{ margin-right: 20px;}
+
+        &-menu {
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 28px;
+            color: #7F6858;
+            padding: 30px 60px 23px;
+            cursor: pointer;
+            border: 5px solid transparent;
+            transition: all .2s;
+        }
+    }
+
+    .mr-active-tab {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #4A3A2F;
+        border-bottom: 5px solid #878987;
+    }
+}
+
+.payment-detailed-info {
+    text-align: left;
+    margin: 0 52px 180px; 
+
+    .payment {
+        &-title-tag {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 45px;
+            color: #3A2B20;
+            margin: 66px 0 90px;
+        }
+
+        &-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 17px 35px;
+            border-bottom: 1px solid rgba(159,160,159,0.3);
+
+            &-overview {
+                display: flex;
+                color: #4A3A2F;
+            }
+
+            &-img {
+                width: 100px;
+                height: 94px;
+                margin-right: 24px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+
+            &-title {
+                font-weight: 600;
+                font-size: 18px;       
+            }
+
+            &-location {
+                margin: 6px 0 14px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &-properties {
+                font-size: 12px;
+                color: #7F6858;
+                
+                span { margin-right: 17px; }
+
+                .property-icon {
+                    width: 14px;
+                    height: 14px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+
+                .capacity-icon {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            &-type {
+                background: rgba(239, 234, 230, 0.3);
+                border-radius: 5px;
+                padding: 10px 19px 8px 29px;
+                font-size: 18px;
+                color: #7F6858;
+            }
+        }
+    }
+
+    .booking-timestamp-edit, 
+    .payment-item-edit,
+    .payment-plan-edit {
+        padding-bottom: 2px;
+        margin-bottom: 10px;
+        border-bottom: 3px solid #4A3A2F;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover { font-weight: 600; }
+    }
+
+    .booking-timestamp{
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 17px;
+        border-bottom: 1px solid rgba(159,160,159,0.3);
+
+        &-details{
+            display: flex;
+
+            & > div:not(:first-child) { padding-left: 22px; }
+
+            & > div:not(:last-child) { 
+                padding-right: 21px; 
+                border-right: 1px solid #EEDFD1;
+            }
+
+            .timestamp-title {
+                font-size: 14px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                color: #9F9F9F;
+                margin-bottom: 11px;
+            }
+
+            .timestamp-body {
+                font-weight: 600;
+                font-size: 16px;
+                color: #6D6969;
+            }
+        }
+
+        .booking-timestamp-edit { align-self: flex-end;}
+    }
+
+    .payment-plan {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 17px;
+        border-bottom: 1px solid rgba(159,160,159,0.3);
+        align-items: flex-end;
+
+        &-header {
+            font-weight: 600;
+            font-size: 16px;
+            color: #9FA09F;
+            margin-bottom: 12px;
+        }
+
+        &-content {
+            font-size: 18px;
+            color: #4A3A2F;
+        }
+
+        &-amount { 
+            .payment-plan-content { font-weight: bold; }
+        }
+    }
+
+    .payment-subtotal {
+        padding: 35px 17px;
+        border-bottom: 1px solid rgba(159,160,159,0.3);
+
+        &-1, &-2 {
+            font-weight: 600;
+            font-size: 18px;
+            color: #4A3A2F;
+            display: flex;
+            justify-content: space-between;
+
+            &:not(:last-child) { margin-bottom: 35px; }
+        }
+    }
+
+    .payment-total {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 17px;
+        font-weight: bold;
+        font-size: 22px;
+        color: #4A3A2F;
+    }
+
+    .pay-button {
+        text-align: right;
+        margin-top: 60px;
+
+        &-confirm, &-cancel {
+            font-weight: 500;
+            font-size: 23px;
+            background: transparent;
+            color: #6D6969;
+            padding: 16px 70px;
+            border: 1px solid #CBCCD0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+                background: #191e29;
+                color: #ffffff;
+            }
+        }
+
+        &-cancel { margin-right: 36px; }
+
+        &-confirm { background: #3E432F; color: #fff; }
+    }
+
+    .additional-services {
+        padding: 0 0 35px;
+        border-bottom: 1px solid rgba(159,160,159,0.3);
+
+        .grid-item {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr) 80px;
+            justify-content: center;
+            padding-left: 30px;
+        }
+
+        .service-header{
+            background: #E7E7E7;
+            font-weight: 500;
+            font-size: 16px;
+            color: #4A3A2F;
+            margin-bottom: 40px;
+
+
+            label { padding: 18px 0;}
+        }
+
+        .service-item { 
+            margin: 15px 0 30px; 
+
+            .extra-service, .price, .total {
+                font-size: 18px;
+                letter-spacing: 0.04em;
+                color: #6D6969;
+            }
+
+            .extra-service {
+                padding-left: 10px;
+
+                span { margin-left: 23px;}
+            }
+
+            .price { font-weight: 600; }
+
+            .remove-item {  cursor: pointer;  justify-self: end; padding-right: 34px ;}
+            .remove-icon { vertical-align: middle; }
+
+            .quantity { 
+                padding-left: 15px;
+                justify-self: start;
+                align-self: center;
+             }
+
+            .quantity input[type=text] {
+                font-size: 18px;
+                width: 38px;
+                padding: 6px 8px;
+                border: 1px solid rgba(129, 106, 87, 0.8);
+                border-radius: 3px;
+                text-align: center;
+            }
+
+            .quantity input[type=text]:focus { border: 1px solid #191e29}
+
+            .quantity input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                padding-left: 4px;
+            }
+        }
+
+        .add-more {
+            display: flex;
+            justify-content: flex-end;
+            cursor: pointer;
+
+            span{
+                padding-bottom: 6px;
+                border-bottom: 3px solid #4A3A2F;
+                font-size: 14px;
+                color: #4A3A2F;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .payment-detailed-info {
+        margin: 0 10px 180px; 
+    
+        .payment {
+            &-title-tag { margin: 66px 0 50px; }
+    
+            &-item{
+                padding: 0 0 35px;
+
+                &-title { font-size: 16px; }
+    
+                &-location { font-size: 14px; }
+    
+                &-properties {
+                    span { margin-right: 14px; }
+                }
+    
+                &-type {
+                    padding: 10px 19px 8px 18px;
+                    font-size: 16px;
+                }
+            }
+        }
+    
+        .booking-timestamp-edit, 
+        .payment-item-edit,
+        .payment-plan-edit {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+    
+        .booking-timestamp{
+            padding: 35px 10px;
+    
+            &-details{
+                display: flex;
+    
+                & > div:not(:first-child) { padding-left: 15px; }
+    
+                & > div:not(:last-child) { padding-right: 15px; }
+    
+                .timestamp-title { font-size: 13px; }
+    
+                .timestamp-body { font-size: 15px; }
+            }
+        }
+
+        .payment-plan { padding: 35px 0; }
+    
+        .additional-services {    
+            .add-more {
+                span{ padding-bottom: 3px; }
+            }
+        }
+    } 
+}
+
+@media (max-width: 830px) {
+    .payment-detailed-info {
+        margin: 0 0 150px; 
+    
+        .payment {
+            &-title-tag { 
+                font-size: 26px;
+                margin: 60px 0 30px;
+             }
+    
+            &-item {
+                display: grid;
+                grid-template-columns: minmax(140px, 150px) 1fr max-content;
+                grid-row: auto auto;
+                column-gap: 20px;
+                padding-bottom: 5px;
+                
+                &-overview { grid-column: 1 / 4; }
+
+                &-type { grid-column: 2 / 3; justify-self: start;}
+
+                &-edit { grid-column: 3 / 4; }
+
+                &-type, &-edit { transform:  translateY(-50%);}
+
+                &-img {
+                    width: 140px;
+                    height: 130px;
+                    margin-right: 30px;
+
+                    img { height: 120%; width: 105%;}
+                }
+            }
+        }
+
+
+    
+    
+        .booking-timestamp-edit, 
+        .payment-item-edit,
+        .payment-plan-edit { font-size: 15px; }
+    
+        .booking-timestamp{
+            flex-direction: column;
+            padding: 35px 0 5px;
+    
+            &-details{
+                & > div { min-width: 100px; }
+    
+                & > div:not(:first-child) { padding-left: 14px; }
+    
+                & > div:not(:last-child) { padding-right: 14px; }
+            }
+
+            .booking-timestamp-edit { 
+                align-self: flex-end;
+                margin-top: 20px;
+            }
+        }
+
+        .additional-services {    
+            .grid-item {
+                display: grid;
+                grid-template-columns: 2fr repeat(3, 1fr) minmax(40px, 50px);
+                padding-left: 0;
+            }
+    
+            .service-header{ padding-left: 10px;  }
+    
+            .service-item {     
+                .extra-service, .price, .total { font-size: 16px; }
+    
+                .extra-service {
+                    span { margin-left: 15px;}
+                }
+    
+                .price { font-weight: 500; }
+    
+                .remove-item { padding-right: 20px;}
+    
+                .quantity input[type=text] { font-size: 16px; }
+            }
+    
+            .add-more {
+                span{ padding-bottom: 3px; }
+            }
+        }
+
+        .pay-button {
+            &-confirm, &-cancel {
+                font-size: 20px;
+                padding: 15px 45px;
+            }
+    
+            &-cancel { margin-right: 30px; }
+        }
+    } 
+}
+
+@media (max-width: 700px) {
+    .mr-payment {
+        &-tablist {    
+            padding-left: 0; 
+            &-menu:first-child{ margin-right: 20px;}
+    
+            &-menu {
+                font-size: 16px;
+                padding: 23px 50px 23px;
+                border: 4px solid transparent;
+            }
+        }
+    
+        .mr-active-tab {
+            font-size: 17px;
+            border-bottom: 4px solid #878987;
+        }
+    }
+}
+
+@media (min-width: 740px) and (max-width: 900px) {
+    .payment-detailed-info {
+        .booking-timestamp{
+            flex-direction: row;
+            padding: 35px 0;
+
+            .booking-timestamp-edit { 
+                align-self: flex-end;
+                margin-top: 0px;
+            }
+        }
+    }
+}

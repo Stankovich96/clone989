@@ -1,0 +1,260 @@
+.book-option {
+  margin: 200px 0;
+  display: flex;
+  height: auto;
+
+  &__left {
+    width: 56%;
+    margin-right: 4%;
+
+    .control-nav {
+      display: flex;
+      margin-bottom: 10px;
+      justify-self: flex-start;
+  
+      & > span { cursor: pointer; }
+
+      & > span:last-child { margin-left: 20px; }
+
+      .control-nav-disabled {
+        opacity: 0.2;
+        z-index: 0;
+        cursor: initial;
+        transition: none;
+      }
+    }
+
+    .card-venues {
+      width: 130%;
+      padding: 15px;
+      margin-left: -30%;
+
+      .cards {
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        padding: 8px 0px 10px 19%;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        flex-grow: 1;
+    
+        .card {
+          margin: 0 20px;
+          background: #ffffff;
+          flex: 0 0 372px;
+          border-radius: 8px;
+          color: #3a2b20;
+          line-height: 150%;
+          letter-spacing: 0.04em;
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 300px;
+          }
+
+          &-body {
+            text-align: left;
+            padding: 20px 30px 10px;
+
+            &__title {
+              font-weight: 500;
+              font-size: 18px;
+              margin-top: 0;
+              margin-bottom: 5px;
+            }
+
+            &__text {
+              font-size: 13px;
+              color: #444544;
+            }
+
+            &__link {
+              font-weight: 500;
+              font-size: 17px;
+              padding: 20px 0;
+              display: flex;
+              cursor: pointer;
+
+              & span:first-child {
+                margin-right: 15px;
+              }
+
+              & span:last-child > .link-icon {
+                margin-top: 4px;
+              }
+            }
+          }
+        }
+
+        .card-ending-space::after {
+            content: "e";
+            width: "auto";
+            height: "100%";
+            color: transparent;
+            background: transparent;
+        }
+      }
+
+      .cards::-webkit-scrollbar {
+        display: none; /* Chrome */
+      }
+    }
+  }
+
+  &__right {
+    width: 45%;
+    margin-left: 25px;
+    text-align: left;
+    letter-spacing: 0.04em;
+    margin-top: 50px;
+
+    .header {
+      color: #3a2b20;
+      line-height: 1.5;
+      letter-spacing: 4%;
+      display: flex;
+
+      &__text {
+        font-weight: 600;
+        font-size: 24px;
+        align-self: flex-start;
+        flex-basis: 300px;
+      }
+
+      &__line {
+        width: 20%;
+        margin-left: 10px;
+        margin-top: -6%;
+        align-self: center;
+        border-bottom: 1px solid #3a2b20;
+      }
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #6d6969;
+      margin: 30px 0 45px 0;
+    }
+
+    button {
+      cursor: pointer;
+      background: #ffffff;
+      border: 1px solid #3a2b20;
+      color: #3a2b20;
+      padding: 12px 40px;
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      transition: background 0.2s ease-in, color 0.2s ease-in;
+
+      &:hover {
+        background: #3a2b20;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .book-option {
+    &__left { width: 50%;}
+  
+    &__right { width: 50%;  margin-left: 15px;}
+  }
+}
+
+@media (max-width: 900px) {
+  .book-option {
+    margin: 200px 0;
+    display: flex;
+    height: auto;
+  
+    &__left {
+      width: 50%;
+  
+      .control-nav { margin-bottom: 5px; }
+  
+      .card-venues {
+        width: 130%;
+        padding: 15px;
+        margin-left: -30%;
+  
+        .cards {  
+          .card {
+            flex: 0 0 320px;
+  
+            img { height: 270px; }
+  
+            &-body { padding: 15px 25px 10px; }
+          }
+        }
+      }
+    }
+  
+    &__right {
+      width: 50%;
+  
+      .header {  
+        &__text { font-size: 22px; }
+  
+        &__line { margin-top: -9%; }
+      }
+  
+      .description { font-size: 15px; }
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .book-option {
+    &__left { width: 50%;}
+  
+    &__right { width: 50%;  margin-left: 15px;}
+  }
+}
+
+@media (max-width: 900px) {
+  .book-option {  
+    &__left { margin-right: 0; }
+  
+    &__right { margin-left: 35px; }
+  }
+}
+
+@media (max-width: 800px) {
+  .book-option {
+    flex-direction: column;
+   
+    &__left {
+      width: 100%;
+      order: 1;
+  
+      .card-venues {
+        .cards {      
+          .card { flex: 0 0 350px; }
+        }
+      }
+    }
+  
+    &__right {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 80px;
+
+      .header {
+        &__text { flex-basis: auto; }
+  
+        &__line {
+          margin-left: 20px;
+          margin-top: 0;
+        }
+      }
+    
+    }
+  }
+}

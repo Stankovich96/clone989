@@ -1,0 +1,50 @@
+.SearchContainer {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.SearchContainer > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c4c4c4;
+  padding: 10px;
+  border-radius: 200px;
+}
+
+.SearchContainer > div:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.09);
+}
+
+.SearchContainer > div > .Divider{
+  width: 1px;
+  height: 70%;
+  background-color: #878987;
+  opacity: 0.5;
+  margin: 0 10px;
+}
+
+.SearchContainer > div > a > button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #575957;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.SearchContainer > div > a > button:hover {
+  background-color: #0F1310;
+}
+
+
+.SearchContainer > div > a > button > svg {
+  width: 17px;
+  height: 17px;
+}

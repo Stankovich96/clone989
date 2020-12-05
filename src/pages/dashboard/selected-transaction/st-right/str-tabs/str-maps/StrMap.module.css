@@ -1,0 +1,9 @@
+.StrMap {
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.StrMap img {
+    width: 100%;
+}

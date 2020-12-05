@@ -1,0 +1,435 @@
+.WorkspaceDescription {
+}
+
+.WorkspaceDescription .NearbyWorkspaces {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background: rgb(252, 252, 253);
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.WorkspaceDescription .NearbyWorkspaces > p {
+  font-weight: 600;
+  font-size: 35px;
+  color: #4a3a2f;
+}
+
+.WorkspaceDescription > .Body {
+  padding: 51px 0;
+  padding-top: 30px;
+  margin-top: 25px;
+  border-top: 1px solid #e2e2e7;
+}
+
+.WorkspaceDescription > .Body > .GridImage {
+  display: flex;
+  padding: 0 100px;
+  position: relative;
+}
+
+.WorkspaceDescription > .Body > .GridImage > div {
+  display: flex;
+  overflow-y: auto;
+  width: 100%;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.WorkspaceDescription > .Body > .GridImage > div::-webkit-scrollbar {
+  display: none;
+  /* Chrome */
+}
+
+.WorkspaceDescription > .Body > .GridImage > div > img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 500px;
+  border-radius: 7px;
+  
+  object-fit: cover;
+}
+
+
+.WorkspaceDescription > .Body > .GridImage > div >.MoveRight, .MoveLeft {
+  position: absolute;
+  top: 43%;
+  right: 65px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+}
+
+.WorkspaceDescription > .Body > .GridImage > div >.MoveLeft {
+  left: 65px;
+}
+
+
+.WorkspaceDescription > .Body > .GridImage > div >.MoveRight:hover, .MoveLeft:hover {
+  background-color: #f6f6f6;
+}
+
+.WorkspaceDescription > .Body > .GridImage > div > .MoveRight > svg, .MoveLeft > svg {
+    width: 22px;
+    height: 22px;
+    transform: rotate(180deg);
+}
+
+.WorkspaceDescription > .Body > .GridImage > div > .MoveLeft > svg{
+  transform: rotate(0deg);
+}
+
+
+.WorkspaceDescription > .Body > .Section2 {
+  display: flex;
+  padding: 55px 100px;
+}
+
+.WorkspaceDescription > .Body > .Section2 > .Description {
+  flex-basis: 60%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.WorkspaceDescription > .Body > .Section2 > .Description > .Title {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.WorkspaceDescription > .Body > .Section2 > .Description > .Desc {
+  font-size: 18px;
+  color: #989595;
+  text-align: left;
+  line-height: 30px;
+  width: 604px;
+}
+
+.WorkspaceDescription > .Body > .Section2 > .BookingModal {
+  margin-left: auto;
+  background-color: white;
+  filter: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.08));
+  padding: 26px 35px;
+  display: flex;
+  flex-direction: column;
+  width: 458px;
+}
+
+.WorkspaceDescription > .Body > .Section2 > .BookingModal > .TopSection {
+  display: flex;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .TopSection
+  > .NameAndLocation {
+  display: flex;
+  flex-direction: column;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .TopSection
+  > .NameAndLocation
+  > .WorkspaceName {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #4a3a2f;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .TopSection
+  > .NameAndLocation
+  > .Location {
+  font-size: 13px;
+  color: #989595;
+  margin-right: auto;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .TopSection
+  > .Pricing {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .TopSection
+  > .Pricing
+  > .PricingValue {
+  font-weight: 600;
+  font-size: 16px;
+  color: #7f6858;
+}
+
+.WorkspaceDescription > .Body > .Section2 > .BookingModal > .MidSection {
+  display: flex;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .MidSection
+  > .MoveInDate {
+  display: flex;
+  flex-direction: column;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .MidSection
+  > .MoveInDate
+  > .MoveInDateTag {
+  font-size: 13px;
+  color: #989595;
+  margin-right: auto;
+  margin-bottom: 6px;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .MidSection
+  > .MoveInDate
+  > .MoveInDateValue {
+  font-weight: 500;
+  font-size: 15px;
+  color: #4a3a2f;
+  margin-right: auto;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .MidSection
+  > .AmtOfTeammates {
+  margin: auto;
+  margin-right: 0;
+}
+
+.WorkspaceDescription > .Body > .Section2 > .BookingModal > .BottomSection {
+  display: flex;
+  padding: 13px 0;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .BottomSection
+  button {
+  padding: 19px 32px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .BottomSection
+  .BookVirtual {
+  margin-right: auto;
+  border: 1px solid #6f716f;
+  background-color: white;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .BottomSection
+  .BookVirtual:hover {
+  border: 1.5px solid #4a3a2f;
+}
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .BottomSection
+  > a:nth-child(2) {
+    margin-left: auto;
+    background-color: #6f716f;
+  
+    border-radius: 6px;
+  }
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .BottomSection
+  .Book {
+  background-color: #6f716f;
+  border: none;
+  color: white;
+  width: 100%;
+  transition: background-color .3s;
+}
+
+
+
+.WorkspaceDescription
+  > .Body
+  > .Section2
+  > .BookingModal
+  > .BottomSection
+  a:hover .Book{
+  background-color: #4a3a2f;
+}
+
+
+
+.WorkspaceDescription > .Body > .Section2 > .BookingModal .Divider {
+  width: 100%;
+  height: 0.5px;
+  background-color: #c4c4c4;
+  margin: 28px 0;
+}
+
+@media (max-width: 1300px) {
+  .WorkspaceDescription > .Body > .Section2 > .Description > .Desc { width: 570px; }
+
+  .WorkspaceDescription > .Body > .Section2 > .BookingModal { width: 400px; }
+}
+
+@media (max-width: 1200px) {
+  .WorkspaceDescription > .Body > .GridImage > .ImageA {
+    grid-column: col / span 5;
+    grid-row: row / span 2;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageB {
+    grid-column: col-end 5 / span 3;
+    grid-row: row / span 1;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageC {
+    grid-column: col-end 5 / span 3;
+    grid-row: row 2 / span 1;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageB > img { border-radius: 0px 10px 0px 0px; }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageC > img { border-radius: 0px 0px 10px 0px; }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageD {
+    grid-column: col 7 / span 3;
+    grid-row: row 2 / span 1;
+    display: none;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageD > img {
+    border-radius: 0px 0px 10px 0px;
+  }
+  
+  .WorkspaceDescription > .Body > .Section2 { flex-direction: column; }
+
+  .WorkspaceDescription > .Body > .Section2 > .Description { flex-basis: 100%; }
+
+  .WorkspaceDescription > .Body > .Section2 > .Description > .Desc { width: auto; }
+
+  .WorkspaceDescription > .Body > .Section2 > .BookingModal {
+    margin-left: 0;
+    margin-top: 40px;
+    padding: 32px 50px;
+    width: calc(100vw - 70px);
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .WorkspaceDescription > .Body > .GridImage > .ImageA {
+    grid-column: col / span 4;
+    grid-row: row / span 2;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageB {
+    grid-column: col-end 4 / span 3;
+    grid-row: row / span 1;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageC {
+    grid-column: col-end 4 / span 3;
+    grid-row: row 2 / span 1;
+  }
+}
+
+@media (max-width: 940px) {
+  .WorkspaceDescription > .Body > .GridImage { padding: 0 48px; }
+
+  .WorkspaceDescription > .Body > .Section2 { padding: 55px 48px }
+}
+
+@media (max-width: 820px) {
+  .WorkspaceDescription > .Body > .GridImage > .ImageA {
+    grid-column: col / span 3;
+    grid-row: row / span 2;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageB {
+    grid-column: col-end 3 / span 3;
+    grid-row: row / span 1;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageC {
+    grid-column: col-end 3 / span 3;
+    grid-row: row 2 / span 1;
+  }
+}
+
+@media (max-width: 750px) {
+  .WorkspaceDescription > .Body > .GridImage { 
+    grid-template-columns: 1fr;
+    padding: 0 32px;  
+   }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageA {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageA > img { border-radius: 8px; }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageB {display: none; }
+
+  .WorkspaceDescription > .Body > .GridImage > .ImageC { display: none; }
+
+  .WorkspaceDescription > .Body > .Section2 { padding: 40px 35px }
+}

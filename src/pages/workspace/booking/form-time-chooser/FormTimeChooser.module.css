@@ -1,0 +1,51 @@
+.TimeChooser {
+  border-top: 0.6px solid #c4c4c4;
+  border-bottom: 0.6px solid #c4c4c4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 70px;
+  padding-bottom: 38px;
+}
+
+.TimeChooser > p {
+  font-weight: 500;
+  font-size: 17px;
+  color: #3a2b20;
+}
+
+.TimeChooser > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TimeChooser > div > .TimeLayout {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
+
+.TimeChooser > div > .TimeLayout > .TimeLabel {
+  font-weight: 600;
+  font-size: 15px;
+  color: #6d6969;
+  margin-right: auto;
+}
+
+.TimeChooser > div > .TimeLayout > .TimeContainer {
+  border: 0.8px solid #c4c4c4;
+  padding: 1px 10px;
+  display: flex;
+  border-radius: 5px;
+}
+
+
+.TimeChooser > div > .TimeLayout > .TimeContainer > img {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 24px;
+  height: 24px;
+}

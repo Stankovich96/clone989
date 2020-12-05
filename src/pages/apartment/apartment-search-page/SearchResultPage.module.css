@@ -1,0 +1,517 @@
+.SearchResultPage {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.SearchResultPage p {
+  margin: 0;
+  padding: 0;
+}
+
+.SearchResults {
+  display: flex;
+  flex-flow: row wrap;
+  /* margin-top: 25px;  */
+  height: 100%;
+  padding: 50px 100px;
+  padding-right: 150px;
+  /* padding-right: 0; */
+  background: rgba(250, 249, 248, 0.6);
+  border-top: 1px solid #e2e2e7;
+}
+
+.SearchResults .Left {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  /* padding: 54px 0; */
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.SearchResults .Top {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  /* padding: 53px 0px 53px 10px; */
+  /* margin: auto; */
+  /* margin-left: 2%; */
+  /* margin-right: 2%; */
+  width: 100%;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.SearchResults .Left::-webkit-scrollbar {
+  display: none;
+  /* Chrome */
+}
+
+.SearchResults .Left .WorkspaceCount {
+  font-weight: 600;
+  font-size: 25px;
+  color: #4a3a2f;
+}
+
+.Filters .filterBtn {
+  cursor: pointer;
+  height: 40px;
+  width: 97px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Filters .filterSvg {
+  padding: 0 8px;
+}
+
+.SearchResults .SearchResultsItems {
+  display: flex;
+  flex-direction: row;
+  gap: 58px;
+  flex-flow: row wrap;
+  margin-bottom: 100px;
+  text-decoration: none;
+  /* flex-basis: 50%; */
+}
+
+.SingleCardSection {
+  width: 30%;
+}
+
+.filterForm {
+  margin: 0% 2.5%;
+  margin-bottom: 4%;
+  padding: 0 1%;
+  padding-left: 2%;
+  background-color: #ffffff;
+  border: 0.2px solid #575957;
+  border-radius: 10px;
+  width: 92%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.facilitiesSection {
+  display: flex;
+  align-items: center;
+}
+
+.filterForm p {
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.rangeStyle {
+  margin-top: 6%;
+}
+
+
+.filterSlider {
+  background: rgba(231, 231, 231, 0.5);
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.divider {
+  width: 61px;
+  height: 0px;
+  border: 0.3px solid #6F716F;
+  transform: rotate(90deg);
+  margin: 1% 1%;
+  align-self: center;
+}
+
+.filterName {
+  align-self: flex-start;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  /* identical to box height, or 19px */
+  padding-bottom: 2%;
+  color: #3E432F;
+}
+
+.facilityStyle {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 1%;
+}
+
+.priceStyle {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: 0% 2%;
+  padding-left: 3%;
+  margin-bottom: 1%;
+}
+
+.rc-slider-track {
+  background-color: #3E432F !important;
+}
+
+
+.Sortstyle {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* margin: 0% 1%; */
+  margin-bottom: 2%;
+}
+
+.Sortstyle p {
+  /* margin-bottom: unset; */
+  margin-left: 40px;
+}
+
+.Selectstyle {
+  background-color: inherit;
+  width: 80%;
+  /* padding: 0px 10px; */
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.filterFormBtn {
+  width: 190px;
+  height: 55px;
+  color: #ffffff;
+  background: #3E432F;
+  border-radius: 4px;
+  margin: 2% 2%;
+  margin-left: 3%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1426px) and (min-width:1368px) {
+  .SearchResults .SearchResultsItems {
+    gap: 55px;
+  }
+}
+
+@media only screen and (max-width: 1367px) and (min-width:1201px) {
+  .SearchResults .SearchResultsItems {
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .SingleCardSection {
+    width: 45%;
+  }
+
+  .SearchResults .SearchResultsItems {
+    gap: 60px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .SingleCardSection {
+    width: 69%;
+  }
+
+  .SearchResults .SearchResultsItems {
+    gap: 58px;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width:1201px) {
+
+
+  .filterForm {
+    margin: 4% 1%;
+    margin-bottom: 4%;
+    padding: 0 2%;
+    background-color: #ffffff;
+    border: 0.2px solid #575957;
+    border-radius: 10px;
+    width: 98%;
+    /* height: 350px;  */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+
+  .filterForm {
+    margin: 4% 1%;
+    margin-bottom: 4%;
+    padding: 0 2%;
+    background-color: #ffffff;
+    border: 0.2px solid #575957;
+    border-radius: 10px;
+    width: 95%;
+    /* height: 350px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filterForm p {
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  .rangeStyle {
+    margin-top: 6%;
+  }
+
+  .facilitiesSection {
+    display: flex;
+    margin: 4% 0%;
+    align-self: start;
+    /* width: 350px; */
+  }
+
+
+  .filterSlider {
+    background: rgba(231, 231, 231, 0.5);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-self: flex-end;
+    /* justify-content: center;  */
+    /* align-items: center;  */
+    cursor: pointer;
+  }
+
+  .divider {
+    width: 61px;
+    /* height: 0px; */
+    border: 0.3px solid #6F716F;
+    transform: rotate(90deg);
+    margin: 0% 1%;
+    display: none;
+  }
+
+  .filterName {
+    align-self: flex-start;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    padding-bottom: 2%;
+    color: #3E432F;
+  }
+
+  .facilityStyle {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 6%;
+  }
+
+  .priceStyle {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 2%;
+    margin-bottom: 2%;
+  }
+
+  .rc-slider-track {
+    background-color: #3E432F !important;
+  }
+
+
+  .Sortstyle {
+    /* width: 50%;  */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0% 1%;
+    padding-left: 2%;
+    margin-bottom: 2%;
+  }
+
+  .Sortstyle p {
+    /* margin-bottom: unset;  */
+    margin-left: unset;
+  }
+
+  .Selectstyle {
+    background-color: inherit;
+    width: 80%;
+    /* padding: 0px 10px; */
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .filterFormBtn {
+    /* width: 0px;  */
+    height: 60px;
+    color: #ffffff;
+    background: #3E432F;
+    border-radius: 4px;
+    margin: 2% 2%;
+    /* margin-left: 3%;  */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+
+  /* .SearchResults {
+    padding: unset;
+    justify-content: center;
+  }
+
+  .SearchResults .Top {
+    width: unset;
+    padding: 53px 0px 53px 0px;
+  }
+
+  .SearchResults .SearchResultsItems {
+    flex-direction: row;
+    flex-flow: column;
+  }
+
+  .Filters {
+    padding-left: 30px;
+  } */
+
+  .filterForm {
+    margin: 0 1%;
+    margin-bottom: 4%;
+    padding: 0 2%;
+    background-color: #ffffff;
+    border: 0.2px solid #575957;
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filterForm p {
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  .rangeStyle {
+    margin-top: 6%;
+  }
+
+  .facilitiesSection {
+    display: flex;
+    margin: 3% 8%;
+    align-self: start;
+    width: 350px;
+  }
+
+
+  .filterSlider {
+    background: rgba(231, 231, 231, 0.5);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-self: flex-end;
+    /* justify-content: center;  */
+    /* align-items: center;  */
+    cursor: pointer;
+  }
+
+  .divider {
+    width: 61px;
+    /* height: 0px;  */
+    border: 0.3px solid #6F716F;
+    transform: rotate(90deg);
+    margin: 0% 1%;
+    display: none;
+  }
+
+  .filterName {
+    align-self: flex-start;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    padding-bottom: 2%;
+    color: #3E432F;
+  }
+
+  .facilityStyle {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 6%;
+  }
+
+  .priceStyle {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 2%;
+    margin-bottom: 2%;
+  }
+
+  .rc-slider-track {
+    background-color: #3E432F !important;
+  }
+
+
+  .Sortstyle {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0% 1%;
+    margin-bottom: 2%;
+  }
+
+  .Sortstyle p {
+    /* margin-bottom: unset;  */
+    margin-left: unset;
+  }
+
+  .Selectstyle {
+    background-color: inherit;
+    width: 80%;
+    /* padding: 0px 10px;  */
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .filterFormBtn {
+    width: 350px;
+    height: 60px;
+    color: #ffffff;
+    background: #3E432F;
+    border-radius: 4px;
+    margin: 2% 2%;
+    margin-left: 3%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

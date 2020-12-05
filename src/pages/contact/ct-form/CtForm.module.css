@@ -1,0 +1,110 @@
+.Form {
+  max-width: 534px;
+  height: 689px;
+  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  background-color: white;
+  position: relative;
+  margin-left: 60px;
+  margin-top: 95px;
+  flex-basis: 50%;
+}
+
+.Form::before {
+  content: "";
+  width: 534px;
+  height: 689px;
+  background-color: #faf9f8;
+  position: absolute;
+  z-index: -10;
+  top: -60px;
+  left: -60px;
+}
+
+.Form input,
+.Form textarea {
+  outline: none;
+  border: none;
+  font-size: 15px;
+  padding: 0;
+  width: 100%;
+  color: #4A3A2F;
+  ;
+}
+
+.Form input::placeholder {
+  font-size: 14px;
+  padding: 0;
+  color: #c4c4c4;
+}
+
+.Form .CommonLayout {
+  border: 1px solid #8a8a8a;
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  color: #6c6b6b;
+  gap: 15px;
+}
+
+.Form .CommonLayout:hover {
+  border: 1px solid #3e432f;
+}
+
+.Form .TextArea {
+  font-family: "Poppins", sans-serif;
+  border-radius: 0;
+  box-sizing: border-box;
+  height: 155px;
+  resize: none;
+  padding-left: 21px;
+  margin: 0;
+  color: #4A3A2F;
+}
+
+.Form .TextArea::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #c4c4c4;
+  font-size: 14px;
+  padding: 0;
+}
+
+.Form .RobotLayout {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  text-align: left;
+  font-size: 12px;
+  cursor: pointer;
+  color: #8e8e8e;
+  margin: 0;
+}
+
+.Form .RobotLayout>input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.Form>.Send {
+  background: #3e432f;
+  padding: 14px 66px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Form>.Send:hover {
+  background: #262A27;
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .Form .CommonLayout svg {
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {}

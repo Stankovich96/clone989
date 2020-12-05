@@ -1,0 +1,44 @@
+.CRNotification {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 14px 39px;
+    cursor: pointer;
+}
+
+.CRNotification:hover {
+    background-color: #EBE9E9;
+  }
+
+.CRNotification > .TitleAndDesc  {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   margin-left: 20px;
+}
+
+.CRNotification > .TitleAndDesc > .Title {
+    font-weight: 500;
+    font-size: 15.0034px;
+    color: #4A3A2F;
+    margin-bottom: 0;
+}
+
+.CRNotification > .TitleAndDesc > .Description {
+    font-size: 12.8601px;  
+    color: #878987;
+    margin-top: 5px;
+}
+
+.CRNotification > .Date {
+    font-size: 10.7167px;
+    color: #4A3A2F;
+    padding: 8px 14px;
+    background-color: #EAEAEA;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.CRNotification:hover > .Date{
+    background-color: #D8D8D8;
+  }

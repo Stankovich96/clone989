@@ -1,0 +1,96 @@
+.SearchContainer {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 20px;
+  margin-left: 72px; */
+  width: 100%;
+  padding: 50px 100px;
+  padding-right: 150px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Selectstyle {
+  background-color: inherit;
+  width: 19.4%;
+  /* padding: 0px 29px; */
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.formRowInner {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+}
+
+.formRowInnerDate {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 10px; */
+}
+
+.dateField {
+  background-color: inherit;
+  padding: 15px 25px;
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+  font-size: 15px;
+  align-items: center;
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.inputSvg1 {
+  position: absolute;
+  top: 105px;
+  z-index: 1;
+  margin: 0 10px;
+}
+
+.SearchButton {
+  background: #3e432f;
+  border-radius: 5.92941px;
+  cursor: pointer;
+  height: 56px;
+  width: 170px;
+  color: white;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .SearchContainer {
+    padding-right: 8%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+
+  .SearchContainer {
+    justify-content: center;
+
+  }
+
+  .Container {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .Selectstyle {
+    width: 100%;
+  }
+
+  .SearchContainer button {
+    align-self: center;
+  }
+
+  /* .formRowInnerDate {} */
+}

@@ -1,0 +1,14 @@
+.BackButton {
+  display: flex;
+  margin-left: 100px;
+  cursor: pointer;
+  margin-right: auto;
+  width: 0%;
+}
+
+.BackButton p {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 19px;
+  color: #4a3a2f;
+}

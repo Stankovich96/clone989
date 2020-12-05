@@ -1,0 +1,66 @@
+.date-picker {
+  display: flex;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  color: #504b4b;
+  border-radius: 4px;
+
+  .form-date-icon {
+    margin-right: 15px;
+    height: inherit;
+    align-self: center;
+  }
+
+  .date-wrapper {
+    border: none;
+    font-size: 16px;
+    align-self: center;
+    margin-top: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 1300px){
+  .date-picker {
+    width: 200px;
+    max-width: auto;
+  
+    .form-date-icon {
+      width: 20px;
+      height: 18px;
+    }
+  
+    .date-wrapper {
+      width: 130px;
+      max-width: auto;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .date-picker {  
+    width: unset;
+
+    .form-date-icon {
+      margin-right: 10px;
+      transform: translateY(8%);
+    }
+  
+    .date-wrapper { font-size: 15px; }
+  }
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: #3e432f;
+
+  &:hover {
+    background-color: #575957;
+  }
+}

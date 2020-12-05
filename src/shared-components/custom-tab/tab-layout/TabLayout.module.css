@@ -1,0 +1,43 @@
+.TabLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.TabLayout > .Cl_Menu {
+  display: flex;
+  gap: 70px;
+}
+
+.TabLayout > .Cl_Menu > .MenuItem {
+  margin: 0;
+  font-size: 16px;
+  color: #989595;
+  position: relative;
+  cursor: pointer;
+}
+
+.TabLayout > .Cl_Menu > .MenuItem > .Dot {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #4a3a2f;
+  border-radius: 50%;
+  bottom: -70%;
+  left: 50%;
+  margin-left: -3px;
+  margin-bottom: 40px;
+}
+
+.TabLayout > .Cl_Menu > .MenuItem:hover > .TypeName {
+  color: #7f746c;
+}
+
+.TabLayout > .TabContent {
+
+  width: 100%;
+  margin-top: 25px;
+  overflow-y: auto;
+}

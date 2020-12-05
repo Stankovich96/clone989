@@ -1,0 +1,113 @@
+.SearchLayout {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    /* background-color: white; */
+    position: relative;
+    z-index: 2;
+}
+
+.SearchLayout .HeroContent {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    /* width: 486px; */
+}
+
+.SearchLayout .HeroContent .Tab {
+    background-color: #E7E7E7;
+    display: flex;
+    padding-left: 36px;
+    border-radius: 8px 8px 0 0;
+}
+
+.SearchLayout .HeroContent .Tab p {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    color: #3E432F;
+    cursor: pointer;
+    background-color: inherit;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+.SearchLayout .HeroContent .TabContent {
+    background-color: #E7E7E7;
+    padding: 0 36px;
+    padding-top: 26px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 0 0 8px 8px;
+}
+
+.SearchLayout .HeroContent .TabContentSub {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 5px;
+    padding-left: 28px;
+    color: #504B4B;
+}
+
+.SearchLayout .HeroContent .TabContentSub p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.SearchLayout .HeroContent .TabContentSub .Underline {
+    background-color: #0F1310;
+    width: 60px;
+    height: 2px;
+}
+
+.SearchLayout .HeroContent .TabContentSub .Select {
+    background-color: inherit;
+    padding: 15px;
+    padding-left: 0;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.SearchLayout .HeroContent .TabContentSub .Select option {
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.SearchLayout .HeroContent .TabContent button {
+    background-color: #262A27;
+    padding: 36px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.SearchLayout .Right {
+    flex-grow: 1;
+}
+
+.GroupHeading {
+    font-weight: bold;
+    color: #7c7979;
+    padding: 8px 0px;
+}
+
+@media (max-width: 1200px) {
+    .SearchLayout .HeroContent {
+        width: 100%;
+    }
+
+    .SearchLayout .HeroContent .TabContent {
+        padding: 26px 25px 0;
+    }
+}

@@ -1,0 +1,24 @@
+.CardLayout {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    padding: 40px 50px;
+    justify-content: center;
+}
+
+.CardLayout::-webkit-scrollbar {
+    display: none;  /* Chrome */
+}
+
+.CardLayout .ExtraPadding {
+    width: 40px;
+    opacity: 0;
+}
+
+@media (max-width: 1100px){
+    .CardLayout {
+        justify-content: unset;
+    }
+}

@@ -1,0 +1,133 @@
+.SignInWrapper {
+    margin: 40px 0 65px;
+}
+
+.SignInWrapper .SignInHeader {
+    font-weight: bold;
+    font-size: 24px;
+    color: #4A3A2F;
+    margin-bottom: 17px;
+}
+
+.SignInWrapper .SignInText {
+    font-size: 14px;
+    color: #6D6969;
+    margin-bottom: 40px;
+}
+
+.SignInWrapper label {
+    font-size: 11px;
+    color: #6D6969;
+}
+
+.SignInWrapper label:not(:last-child) { 
+    display: block; 
+    margin-top: 30px;
+}
+
+
+.SignInWrapper input[type="email"], input[type="password"] {
+    display: block;
+    border: 1px solid #8E8E8E;
+    margin-top: 7px;
+    width: 100%;
+    max-width: 480px;
+    padding: 15px 32px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+
+.SignInWrapper input[type="email"]::-webkit-input-placeholder,
+.SignInWrapper input[type="password"]::-webkit-input-placeholder { opacity: 0.3; }
+
+.SignInWrapper input[type="password"]::-webkit-input-placeholder {
+    transform: translateY(15%);
+    font-size: 20px;
+}
+  
+.SignInWrapper input[type="password"]::-moz-placeholder { /* Firefox 19+ */
+    transform: translateY(15%);
+    font-size: 20px;
+}
+
+.SignInWrapper  input[type="password"]:-ms-input-placeholder { /* IE 10+ */
+    transform: translateY(15%);
+    font-size: 20px;
+}
+
+.SignInWrapper .ForgotPassword {
+    font-size: 11px;
+    color: #4A3A2F;
+    cursor: pointer;
+    margin-top: 6px;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    max-width: 480px;
+}
+
+.SignInWrapper .ForgotPassword:hover {
+    color: #A95E1A;
+    font-weight: 500;
+}
+
+.SignInWrapper .CreateAccountQuery {
+    display: inline-block;
+    font-size: 11px;
+    color: #4A3A2F;
+    margin-top: 21px;
+}
+
+.SignInWrapper .CreateAccountQuery a { color: #A95E1A; }
+
+.SignInWrapper .CreateAccountLink {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.SignInWrapper .CreateAccountLink:hover { color: #4A3A2F; }
+
+@media (max-width: 1090px) {
+    .SignInWrapper {
+        align-self: center;
+        padding: 0 51px;
+        margin: 180px auto;
+        justify-self: center;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 850px) {
+    .SignInWrapper {
+        margin: 120px auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .SignInWrapper {
+        padding: 0;
+        max-width: 90%;
+        margin: 80px auto;
+    }
+
+    .SignInWrapper input[type="email"]::-webkit-input-placeholder,
+    .SignInWrapper input[type="password"]::-webkit-input-placeholder { font-size: 13px; transform: translateX(-10px);}
+
+    .SignInWrapper input[type="password"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 13px;
+        transform: translate(-10px, 8%);
+    }
+    
+    .SignInWrapper input[type="password"]::-moz-placeholder { /* Firefox 19+ */
+        font-size: 13px;
+        transform: translate(-10px, 8%);
+    }
+
+    .SignInWrapper  input[type="password"]:-ms-input-placeholder {  /* IE 10+ */
+        font-size: 13px;
+        transform: translate(-10px, 8%);
+    }
+
+    .SignInWrapper .SignInText { font-size: 12px; }
+}

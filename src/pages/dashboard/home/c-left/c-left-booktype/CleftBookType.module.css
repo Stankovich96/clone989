@@ -1,0 +1,23 @@
+
+.CleftBookType {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.RecentBookings {
+    font-weight: 600;
+    font-size: 20px;
+    color: #4a3a2f;
+    margin: 0;
+    margin-top: 45px;
+  }
+
+.Cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 40px;
+}

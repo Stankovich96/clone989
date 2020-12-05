@@ -1,0 +1,23 @@
+
+
+.DbBookBtn {
+    background-color: #575957;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    gap: 15px;
+    padding-right: 30px;
+    cursor: pointer;
+  }
+  
+  .DbBookBtn:hover {
+    background-color: #3d3f3d;
+  }
+  
+  .DbBookBtn > svg {
+    width: 27px;
+    height: 27px;
+  }

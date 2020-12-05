@@ -1,0 +1,165 @@
+.apartment-details {
+	background: #fafafa;
+	padding: 50px 0 5px;
+	margin-bottom: 170px;
+	height: 650px;
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		margin-left: 100px;
+		margin-right: 100px;
+		height: inherit;
+
+		.apartment-images {
+			display: flex;
+			height: inherit;
+			div {
+				width: 100%;
+				height: 100%;
+
+				img {
+					object-fit: center;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.slick-slider .slick-thumb {
+				max-width: 70%;
+				overflow: hidden;
+				overflow-x: auto;
+				-moz-scrollbars-horizontal: hidden;
+				display: flex !important;
+				flex-direction: row;
+				bottom: -100px;
+				left: 0;
+				scrollbar-color: transparent transparent;
+				scrollbar-width: none;
+			}
+
+			.slick-dots li a img {
+				border-radius: 4px;
+				opacity: 0.5;
+			}
+			.slick-dots li.slick-active a img {
+				opacity: 1;
+				border: 1px solid #000;
+			}
+
+			.show-view-option {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				color: #ffffff;
+				background: rgba(0, 0, 0, 0.5);
+				z-index: 1;
+				cursor: pointer;
+
+				.cam-icon {
+					height: 35px;
+					width: 40px;
+				}
+
+				.view-all-button {
+					background: #ffffff;
+					color: #191e29;
+					padding: 8px 12px;
+					font-size: 13px;
+					line-height: 1;
+					color: #191e29;
+					margin-top: 12px;
+					cursor: pointer;
+					border-radius: 2px;
+				}
+
+				&:hover {
+					background: rgba(0, 0, 0, 0.65);
+
+					.view-all-button {
+						color: #000000;
+						font-size: 14px;
+						color: #191e29;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.apartment-details {
+		.apartment-images {
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.apartment-details {
+		.apartment-images {
+		}
+	}
+}
+
+@media (max-width: 1020px) {
+	.apartment-details {
+		.apartment-images {
+			.show-view-option {
+				.cam-icon {
+					height: 30px !important;
+					width: 35px !important;
+				}
+
+				.view-all-button {
+					padding: 5px 9px !important;
+					font-size: 11px !important;
+					margin-top: 8px !important;
+				}
+
+				&:hover {
+					.view-all-button {
+						font-size: 12px !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.apartment-details {
+		// height: auto;
+		// margin-bottom: 30px;
+		.container {
+			width: 80%;
+			.apartment-images {
+				display: flex;
+				position: relative !important;
+				grid-template-columns: 1fr !important;
+				grid-template-rows: repeat(2, 100px) !important;
+
+				.other-images {
+					position: absolute !important;
+					right: 20px !important;
+					bottom: 15px !important;
+					width: auto !important;
+					height: auto !important;
+					padding: 10px !important;
+				}
+
+				.show-view-option {
+					background: rgba(0, 0, 0, 0.38) !important;
+
+					.cam-icon {
+						display: none !important;
+					}
+
+					.view-all-button {
+						margin-top: 0 !important;
+						background: rgba(255, 255, 255, 0.95) !important;
+					}
+				}
+			}
+		}
+	}
+}

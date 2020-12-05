@@ -1,0 +1,55 @@
+.CLeft {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 977px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  margin-left: 120px;
+}
+
+.CLeft::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.CLeft > .Reservation {
+  font-weight: 600;
+  font-size: 23px;
+  color: #4a3a2f;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.CLeft > .Cl_Menu {
+  display: flex;
+  gap: 70px;
+}
+
+.CLeft > .Cl_Menu > .MenuItem {
+  margin: 0;
+  font-size: 16px;
+  color: #989595;
+  position: relative;
+  cursor: pointer;
+}
+
+.CLeft > .Cl_Menu > .MenuItem > div {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #4a3a2f;
+  border-radius: 50%;
+  bottom: -70%;
+  left: 50%;
+  margin-left: -3px;
+  margin-bottom: 40px;
+}
+
+.CLeft > .Cl_Menu > .MenuItem:hover > .TypeName {
+  color: #7f746c;
+}

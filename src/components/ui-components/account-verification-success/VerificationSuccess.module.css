@@ -1,0 +1,18 @@
+.VerificationSuccess {
+    composes: VerificationCard from "../account-verification/AccountVerification.module.css";
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.MessageHead {
+    font-weight: bold;
+    font-size: 16px;
+    color: #4A3A2F;
+    margin-top: 21px;
+}
+
+.MessageBody {
+    font-size: 14px;
+    color: #6D6969;
+    margin-top: 6px;
+}

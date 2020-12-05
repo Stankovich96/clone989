@@ -1,0 +1,8 @@
+.TrMiddle {
+    background-color: #F6F6F6;
+    display: flex;
+    gap: 0;
+    flex-basis: 40%;
+    padding: 76px 0;
+    padding-bottom: 0;
+}

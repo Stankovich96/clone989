@@ -1,0 +1,84 @@
+.CustomersReviews {
+    display: flex;
+    padding: 130px 100px;
+}
+
+.CustomersReviews > .Left  {
+    text-align: left;
+    margin-right: 70px;
+    flex-basis: 45%;
+    padding-right: 70px;
+}
+
+.CustomersReviews > .Left > .Title {
+  font-weight: 600;
+  font-size: 35px;
+  color: #4a3a2f;
+  margin-bottom: 6px;
+}
+
+.CustomersReviews > .Left > .Description {
+  font-size: 14px;
+  line-height: 30px;
+  color: #6d6969;
+}
+
+.CustomersReviews > .Right {
+    flex-basis: 55%;
+    padding: 0;
+}
+
+@media (max-width: 1300px) {
+  .CustomersReviews > .Left  { 
+    margin-right: 60px;
+    padding-right: 0;
+    flex-basis: 48%;
+  }
+
+  .CustomersReviews > .Right { flex-basis: 52%; }
+}
+
+@media (max-width: 1100px) {
+  .CustomersReviews {
+    padding: 130px 100px;
+    flex-direction: column;
+  }
+
+  .CustomersReviews > .Left  { 
+    margin-right: 0px;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  .CustomersReviews > .Right { 
+    flex-basis: 100%;
+    padding: 0 100px;
+  }
+
+  .CustomersReviews > .Left > .Title { font-size: 28px; }
+}
+
+@media (max-width: 1000px) {
+  .CustomersReviews > .Right { padding: 0 60px; }
+}
+
+@media (max-width: 940px) {
+  .CustomersReviews { padding: 130px 48px; }
+
+  .CustomersReviews > .Right { padding: 0 50px; }
+}
+
+
+@media (max-width: 750px) {
+  .CustomersReviews { padding: 130px 32px; }
+
+  .CustomersReviews > .Right { padding: 0 34px; }
+
+  .CustomersReviews > .Left > .Title { font-size: 25px; }
+}
+
+@media (max-width: 670px) {
+  .CustomersReviews > .Right { padding: 0 24px; }
+
+  .CustomersReviews > .Left > .Title { font-size: 22px; }
+}

@@ -1,0 +1,89 @@
+.RbTransaction {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 29px 16px;
+  cursor: pointer;
+}
+
+.RbTransaction:hover {
+  background-color: white;
+  box-shadow: 0px 4px 40px rgba(74, 58, 47, 0.05);
+  border-radius: 12px;
+}
+
+.RbTransaction p {
+  margin: 0;
+}
+
+.RbTransaction svg {
+  width: 15px;
+  height: 15px;
+}
+
+.RbTransaction > .PNL {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-basis: 30%;
+}
+
+.RbTransaction > .PNL > img {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+}
+
+.RbTransaction > .PNL > .NameAndLocation {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.RbTransaction > .PNL > .NameAndLocation > .TransName {
+  font-size: 16px;
+  color: #4a3a2f;
+}
+
+.RbTransaction > .PNL > .NameAndLocation > .TransLocation {
+  font-size: 13px;
+  color: #989595;
+}
+
+.RbTransaction > .TeammateAmtLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-basis: 25%;
+}
+
+.RbTransaction > .TeammateAmtLayout > .TeammateLabel {
+  font-size: 14px;
+  color: #989595;
+}
+
+.RbTransaction > .DateLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-basis: 25%;
+}
+
+.RbTransaction > .DateLayout > .Date {
+  font-size: 14px;
+  color: #989595;
+}
+
+.RbTransaction > .BookingType {
+  background-color: #f1f1f2;
+  padding: 7px 19px;
+  border-radius: 15px;
+  font-size: 13px;
+  color: #7f6858;
+  margin-left: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

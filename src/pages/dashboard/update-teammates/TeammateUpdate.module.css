@@ -1,0 +1,117 @@
+.TeammateUpdate {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+.TeammateUpdate > .MainContent {
+  margin-left: 120px;
+  display: flex;
+  gap: 150px;
+}
+
+.TeammateUpdate > .MainContent > .Left {
+  margin-left: 182px;
+  align-self: center;
+  text-align: left;
+}
+
+.TeammateUpdate > .MainContent > .Left > .TeammateText {
+  font-weight: 500;
+  font-size: 14.0709px;
+  color: #7f6858;
+  margin-bottom: 10px;
+}
+
+.TeammateUpdate > .MainContent > .Left > .TeammateValue {
+  font-weight: 500;
+  font-size: 30px;
+  color: #4a3a2f;
+  margin: 0;
+}
+
+.TeammateUpdate > .MainContent > .Right > .HeaderText {
+  font-weight: 500;
+  font-size: 24px;
+  color: #4a3a2f;
+  margin-bottom: 30px;
+}
+
+.TeammateUpdate > .MainContent > .Right > .RightMainContent {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(152, 149, 149, 0.06);
+  border-radius: 0px 0px 13px 13px;
+  text-align: left;
+  padding: 30px 40px;
+}
+
+.TeammateUpdate > .MainContent > .Right > .RightMainContent > .InputLayout {
+  display: flex;
+  border: 0.7px solid #efeae6;
+  border-radius: 4.1579px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.TeammateUpdate
+  > .MainContent
+  > .Right
+  > .RightMainContent
+  > .InputLayout
+  > input {
+  border: none;
+  outline: none;
+}
+
+.TeammateUpdate
+  > .MainContent
+  > .Right
+  > .RightMainContent
+  > .InputLayout
+  > input::placeholder {
+    font-size: 13.8596px;    
+    color: #989595;
+}
+
+.TeammateUpdate
+  > .MainContent
+  > .Right
+  > .RightMainContent
+  > .TeammateIncreaseText {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7f6858;
+}
+
+.TeammateUpdate > .MainContent > .Right > .RightMainContent > .CostText {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7f6858;
+  margin-bottom: 0;
+  margin-top: 37px;
+}
+
+.TeammateUpdate > .MainContent > .Right > .RightMainContent > .CostValue {
+  font-weight: 600;
+  font-size: 22px;
+  color: #4a3a2f;
+  padding: 15px 26px;
+  background-color: #fafafa;
+}
+
+.TeammateUpdate > .MainContent > .Right > .RightMainContent > button {
+  background: #575957;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 14px 35px;
+  cursor: pointer;
+}
+
+.TeammateUpdate > .MainContent > .Right > .RightMainContent > button:hover {
+  background: #414341;
+}

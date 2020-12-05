@@ -1,0 +1,240 @@
+.SearchResultPage {
+  display: flex;
+  flex-flow: column wrap;
+}
+.SearchResultPage p {
+  margin: 0;
+  padding: 0;
+}
+
+.SearchResultPage > .SearchResults {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 0 100px;
+  padding-right: 0;
+  border-top: 1px solid #e2e2e7;
+}
+
+.SearchResultPage > .SearchResults .Left {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  flex-basis: 50%;
+  padding: 54px 0;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.SearchResultPage > .SearchResults .Left::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+/* Added extra css line from here */
+.SearchResultPage > .SearchResults .Left .workspaceDataContainer {
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.SearchResultPage
+  > .SearchResults
+  .Left
+  .workspaceDataContainer::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+/* End of extra css line */
+
+.SearchResultPage > .SearchResults .Left .WorkspaceCount {
+  font-weight: 600;
+  font-size: 25px;
+  color: #4a3a2f;
+}
+
+.SearchResultPage > .SearchResults .Left .WorkspaceCount .MapIcon {
+  display: none;
+}
+
+.SearchResultPage > .SearchResults .Left .Filters {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.SearchResultPage > .SearchResults > .MapLayout {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  right: 0;
+  width: 700px;
+  height: 100vh;
+  background-color: #c4c4c4;
+}
+
+.SearchResultPage > .SearchResults > .MapLayout > .MapData {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.SearchResultPage > .SearchResults > .MapLayout > .ZoomToggle {
+  display: flex;
+  flex-flow: column wrap;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  border-radius: 9px;
+}
+
+.SearchResultPage > .SearchResults > .MapLayout > .ZoomToggle button {
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.SearchResultPage > .SearchResults > .MapLayout > .ZoomToggle > .Separator {
+  width: 100%;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.SearchResultPage > .SearchResults > .MapLayout > .ZoomToggle > button > img {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1474px) {
+  .SearchResultPage > .SearchResults .Left {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .SearchResultPage > .SearchResults .Left {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 1160px) {
+  .SearchResultPage > .SearchResults {
+    padding: 0 100px;
+  }
+
+  .SearchResultPage > .SearchResults .Left {
+    margin-right: 0;
+    flex-basis: 100%;
+  }
+
+  .SearchResultPage > .SearchResults .Left .workspaceDataContainer {
+    width: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+  }
+
+  .SearchResultPage
+    > .SearchResults
+    .Left
+    .workspaceDataContainer::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+
+  .SearchResultPage > .SearchResults .Left .WorkspaceCount {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .SearchResultPage > .SearchResults .Left .WorkspaceCount .MapIcon {
+    display: flex;
+    margin-left: auto;
+    width: auto;
+    justify-self: flex-end;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .SearchResultPage > .SearchResults .Left .WorkspaceCount .MapIcon > svg {
+    vertical-align: end;
+    width: auto;
+    margin-right: 20px;
+  }
+
+  .SearchResultPage > .SearchResults > .MapLayout {
+    position: relative;
+    flex-basis: 50%;
+    height: 100vh;
+    display: none;
+  }
+
+  .PopupLayout {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .PopupLayout > img{
+    width: 100%;
+    height: 100px;
+  }
+
+  .PopupLayout > .PopBtm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .PopupLayout > .PopBtm > .Name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .PopupLayout > .PopBtm > .Location {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .PopupLayout > .Price {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1020px) {
+  .SearchResultPage > .SearchResults {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  .SearchResultPage > .SearchResults {
+    padding: 0 90px;
+  }
+
+  .SearchResultPage > .SearchResults .Left .WorkspaceCount .MapIcon > svg {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .SearchResultPage > .SearchResults {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .SearchResultPage > .SearchResults {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 601px) {
+  .SearchResultPage > * {
+    width: 100vw;
+  }
+}

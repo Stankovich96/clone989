@@ -1,0 +1,25 @@
+.EntryButtonStyle {
+    background: #3E432F;
+    color: #ffffff;
+    padding: 16px 0;
+    border-radius: 2px;
+    text-align: center;
+    width: 100%;
+    max-width: 480px;
+    cursor: pointer;
+    transition: all .15s;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+}
+
+.EntryButtonStyle:hover {
+    background:  #0F1310;
+}
+
+@media (max-width: 600px) { 
+    .EntryButtonStyle{ 
+        font-size: 14px;
+        padding: 14px 0;
+     }
+ }

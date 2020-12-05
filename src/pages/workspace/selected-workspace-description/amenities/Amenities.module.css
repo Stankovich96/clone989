@@ -1,0 +1,101 @@
+.Amenities {
+  background-color: #fafafa;
+  padding: 139px 100px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.Amenities .Left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 95px;
+}
+
+.Amenities .Left .AmenitiesLabel {
+  font-weight: 600;
+  font-size: 35px;
+  color: #4a3a2f;
+  margin:0;
+}
+
+.Amenities .Left .PageNumber {
+  font-weight: 600;
+  font-size: 17px;
+  color: #cbccd0;
+  margin-right: auto;
+}
+
+.Amenities .Left .ButtonLayout {
+  display: flex;
+  margin-top: auto;
+}
+
+.Amenities > .Left > .ButtonLayout >  button:hover {
+  border: 2px solid #575957;
+}
+
+
+.Amenities .Left button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #c4c4c4;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.Amenities .Left .BackButton {
+  transform: rotate(-180deg);
+}
+
+.Amenities .Left .ForwardButton {
+}
+
+.Amenities .Right {
+    display: flex;
+    background-color: red;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.Amenities .Right::-webkit-scrollbar {
+  display: none;  /* Chrome */
+}
+
+@media (max-width: 1060px) {
+  .Amenities .Left { margin-right: 60px; }
+
+  .Amenities .Left .PageNumber { margin-bottom: 0;}
+}
+
+@media (max-width: 940px) {
+  .Amenities { padding: 120px 78px; }
+}
+
+@media (max-width: 900px) {
+  .Amenities { flex-direction: column; }
+
+  .Amenities .Left {
+    align-items: flex-start;
+    margin-right: 0;
+  }
+
+  .Amenities .Left .PageNumber {
+    font-size: 18px;
+    margin: 20px auto 25px 8px;
+  }
+
+  .Amenities .Left .ButtonLayout { margin-bottom: 80px; }
+}
+
+@media (max-width: 750px) {
+  .Amenities { padding: 120px 48px; }
+
+  .Amenities .Left .ButtonLayout { margin-bottom: 60px; }
+}

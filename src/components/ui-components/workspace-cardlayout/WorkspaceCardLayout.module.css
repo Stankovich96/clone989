@@ -1,0 +1,251 @@
+.WorkspaceCardLayout {
+  display: flex;
+  position: relative;
+  background: #ffffff;
+  
+  box-sizing: border-box;
+  margin-bottom: 17px;
+  cursor: pointer;
+  width: 670px;
+  height: 175px;
+}
+
+.WorkspaceCardLayout .Left {
+  position: relative;
+  min-width: 260px;
+  max-width: 260px;
+}
+
+.WorkspaceCardLayout .Left img {
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.WorkspaceCardLayout > .Right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  border: 1.5px solid #F1F0EE;
+  border-left: 0.5px solid #F1F0EE;
+  border-radius: 0 10px 10px 0;
+}
+
+.WorkspaceCardLayout > .Right > .Section1 {
+  display: flex;
+  width: 100%;
+}
+
+ .Right > .Section1 > .Rating {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  font-size: 13.46px;
+  color: #7F6858;
+  font-weight: 600;
+  gap: 7px;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.Right > .Section1 > .Rating p {
+  margin-left: 3px;
+  margin-top: 5px;
+}
+
+.Right > .Section1 > .Rating img {
+width: 11px;
+margin: 0  3px;
+}
+
+ .Right > .Section1 > .WorkspaceName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Right > .Section1 > .WorkspaceName > p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: left;
+  color: #4A3A2F;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.Right > .Section1 > .WorkspaceName > span {
+  font-size: 13px;
+  color: #989595;
+}
+
+.WorkspaceCardLayout > .Right > .Section1 > .Capacity > img {
+  margin-right: 9px;
+}
+
+.WorkspaceCardLayout > .Right > .Section2 {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 18px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.WorkspaceCardLayout > .Right > .Amenities {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.WorkspaceCardLayout > .Right > .Amenities > .Amenity, .PlusBtn {
+  padding: 3px 5px;
+  border: 1px solid #C0BEBA;
+  border-radius: 9px;
+  font-size: 12px;
+  color: #4A3A2F;
+}
+
+.WorkspaceCardLayout > .Right > .Amenities > .PlusBtn {
+  padding: 3px 8px;
+  font-size: 12px;
+
+}
+
+.WorkspaceCardLayout > .Right > .Amenities > img {
+  margin: 0 20px;
+  margin-left: 0px;
+}
+
+
+
+@media (min-width: 1161px) and (max-width: 1330px) {
+  .WorkspaceCardLayout .Left { width: 100%; }
+  
+  .WorkspaceCardLayout .Left img { width: 100%; }
+
+  .WorkspaceCardLayout > .Right {
+    padding: 0 25px;
+    padding-bottom: 24px;
+    justify-content: flex-start;
+  }
+
+  .WorkspaceCardLayout > .Right > .Section2 { margin: 18px auto 0; }
+  
+  .WorkspaceCardLayout > .Right > .Section3 { margin-left: 0; }
+}
+
+@media (max-width: 1160px) {
+  .WorkspaceCardLayout {
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  .WorkspaceCardLayout .Left > img {
+    border-radius: 10px 0 0 10px;
+    max-width: 400px;
+    height: 100%;
+  }
+  
+  .WorkspaceCardLayout > .Right {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .WorkspaceCardLayout > .Right > .Section1 {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-top: 18px;
+    margin-right: auto;
+  }
+
+  .WorkspaceCardLayout > .Right > .Section1 > .Capacity {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .WorkspaceCardLayout > .Right > .Section2 {
+    flex-flow: column nowrap;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: auto;
+    align-items: flex-end;
+  }
+
+  .WorkspaceCardLayout > .Right > .Section2 > .Amenities { margin-bottom: 15px; }
+
+
+  .WorkspaceCardLayout > .Right > .Section3 { margin-top: auto; }
+}
+
+@media (max-width: 900px) {
+  .WorkspaceCardLayout .Left > img { max-width: 360px; }
+
+  .WorkspaceName > p { font-size: 20px; }
+
+  .WorkspaceName > span { font-size: 19px; }
+}
+
+ @media (max-width: 800px) {
+  .WorkspaceCardLayout .Left > img {
+    border-radius: 8px 0 0 8px;
+    max-width: 320px;
+  }
+
+  .WorkspaceName > p { font-size: 18px; }
+
+  .WorkspaceName > span { font-size: 17px; }
+}
+
+@media (max-width: 770px) {
+  .WorkspaceCardLayout { flex-flow: column wrap; }
+  
+  .WorkspaceCardLayout .Left > img {
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    min-height: 288px;
+  }
+  
+   .WorkspaceName > p { font-size: 25px; }
+  
+   .WorkspaceName > span { font-size: 20px; }
+  
+  .WorkspaceCardLayout > .Right {
+    padding: 20px 30px;
+    padding-bottom: 32px;
+    justify-content: flex-end;
+    align-items: unset;
+  }
+  
+  .WorkspaceCardLayout > .Right > .Section1 {
+    flex-flow: column wrap;
+    flex: unset;
+    margin-top: auto;
+  }
+  
+  .WorkspaceCardLayout > .Right > .Section1 > .Capacity {
+    margin-top: 18px;
+    margin-left: 0;
+  }
+  
+  .WorkspaceCardLayout > .Right > .Section2 {
+    flex-flow: column wrap;
+    margin-top: 18px;
+    margin-left: auto;
+  }
+  
+  .WorkspaceCardLayout > .Right > .Section2 > .Amenities { margin-bottom: 18px; }
+  
+  .WorkspaceCardLayout > .Right > .Section3 { margin-left: auto; }
+}
+
+@media (max-width: 600px) {}

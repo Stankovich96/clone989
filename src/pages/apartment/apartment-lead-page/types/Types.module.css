@@ -1,0 +1,113 @@
+.TypesSection {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.TypesSection .Left {
+    text-align: left;
+    width: 527px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 100px;
+    position: relative;
+}
+
+.TypesSection .Right {
+    text-align: left;
+    width: 527px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.TypesSection .Title {
+    line-height: 150%;
+    font-size: 30px;
+    color: #3a2b20;
+    font-weight: bold;
+    width: 318px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.TypesSection .Desc {
+    line-height: 180%;
+    font-size: 18px;
+    color: #6d6969;
+    margin-bottom: 30px;
+    margin-top: 7px;
+    width: 524px;
+}
+
+.TypesSection .Arrow {
+    padding-left: 10px;
+}
+
+.TypesSection .TypesButtonLeft {
+    background-color: #ffffff;
+    height: 70px;
+    width: 300px;
+    font-size: 13px;
+    cursor: pointer;
+    ;
+}
+
+.TypesSection>.Right a {
+    position: absolute;
+    bottom: 6%;
+    left: 37%;
+    z-index: 3;
+}
+
+
+.TypesSection>.Left a {
+    position: absolute;
+    bottom: 6%;
+    right: -5%;
+    z-index: 3;
+}
+
+.TypesSection .TypesButtonRight {
+    background-color: #ffffff;
+    height: 70px;
+    width: 300px;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.exploreImage {
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+    .TypesSection {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .TypesSection .Left {
+        margin-bottom: 80px;
+    }
+
+    .TypesSection .Right {
+        margin-right: 100px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+    .TypesSection {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .TypesSection .Left {
+        margin-bottom: 80px;
+    }
+}

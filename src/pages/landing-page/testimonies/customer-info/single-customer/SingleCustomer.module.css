@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+.CustomerInfo {
+    margin: 0 90px;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    cursor: pointer;
+}
+
+.CustomerInfo .CustomerNameOnly {
+    background: rgba(34, 32, 32, 1);
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 340px;
+    z-index: 0;
+    padding-bottom: 0;
+}
+
+.CustomerInfo .CustomerNameOnly .Name {
+    margin-bottom: 30px;
+}
+
+.CustomerInfo .CustomerData,
+.CustomerNameOnly {
+    background: rgba(34, 32, 32, 0.8);
+    padding: 36px;
+    max-height: 340px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: -15%;
+    right: 15%;
+}
+
+
+.CustomerInfo .CustomerData .Name,
+.CustomerNameOnly .Name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.CustomerInfo .CustomerData .WorkRole {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.CustomerInfo .CustomerData .Divider {
+    width: 50px;
+    height: 1px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.CustomerInfo .CustomerData .PersonalInfo {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.CustomerInfo .CustomerData .MediaIcons {
+    display: flex;
+    margin-top: 32px;
+}
+
+.CustomerInfo .CustomerData .MediaIcons img {
+    margin: 0 20px;
+}
+
+.CustomerInfo .CustImgHolder {
+    display: flex;
+    min-height: 340px;
+    position: relative;
+    z-index: 1;
+}
+
+.CustomerInfo .CustImgHolder img {
+    width: 100%;
+}
+
+.CustomerInfoTab {
+    width: 50%;
+    margin: 150px 90px;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.CustomerInfoTab .CustomerDataTab {
+    background: rgba(34, 32, 32, 0.8);
+    padding: 36px;
+    max-height: 1040px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 1%;
+    left: -10%;
+    right: 5%;
+}
+
+.CustomerInfoTab .CustomerDataTab .NameTab {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.CustomerInfoTab .CustomerDataTab .WorkRoleTab {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 5px 0;
+
+}
+
+.CustomerInfoTab .CustomerDataTab .DividerTab {
+    width: 50px;
+    height: 1px;
+    margin: 10px 0;
+    background-color: white;
+
+}
+
+.CustomerInfoTab .CustomerDataTab .PersonalInfoTab {
+    font-weight: normal;
+    font-size: 12px;
+
+}
+
+.CustomerInfoTab .CustomerDataTab .MediaIconsTab {
+    display: flex;
+    margin-top: 32px;
+
+}
+
+.CustomerInfoTab .CustomerDataTab .MediaIconsTab img {
+    margin: 0 20px;
+
+}
+
+.CustomerInfoTab .CustImgHolderTab {
+    display: flex;
+    min-height: 100px;
+    position: relative;
+    z-index: 3;
+    display: none;
+
+}
+
+.CustomerInfoTab .CustImgHolderTab img {
+    width: 20%;
+    border-radius: 50%;
+
+}
+
+@media only screen and (max-width: 1430px) and (min-width:1201px) {
+    .CustomerInfo {
+        margin: 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+    .CustomerInfo {
+        margin: 0px 40px;
+    }
+}
+
+/* @media only screen and (max-width: 900px) and (min-width:601px) {
+    .CustomerInfo {
+        width: 45%;
+        margin: 50px 90px;
+    }
+} */
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+
+    .CustomerInfo {
+        display: none;
+    }
+
+    .CustomerInfo .CustImgHolder {
+        display: none;
+    }
+
+    .CustomerInfoTab {
+        width: 50%;
+        margin: 30px 90px;
+        margin-bottom: 350px;
+        display: flex;
+        flex-flow: column;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .CustomerInfoTab .CustomerDataTab {
+        background: rgba(34, 32, 32, 0.8);
+        padding: 36px;
+        padding-top: 70px;
+        max-height: 1040px;
+        color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: -1%;
+        right: 1%;
+    }
+
+    .CustomerInfoTab .CustomerDataTab .NameTab {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .CustomerInfoTab .CustomerDataTab .WorkRoleTab {
+        font-weight: normal;
+        font-size: 18px;
+        margin: 5px 0;
+
+    }
+
+    .CustomerInfoTab .CustomerDataTab .DividerTab {
+        width: 50px;
+        height: 1px;
+        margin: 10px 0;
+        margin-top: unset;
+        background-color: white;
+
+    }
+
+    .CustomerInfoTab .CustomerDataTab .PersonalInfoTab {
+        font-weight: normal;
+        font-size: 12px;
+
+    }
+
+    .CustomerInfoTab .CustomerDataTab .MediaIconsTab {
+        display: flex;
+        margin-top: 32px;
+
+    }
+
+    .CustomerInfoTab .CustomerDataTab .MediaIconsTab img {
+        margin: 0 20px;
+
+    }
+
+    .CustomerInfoTab .CustImgHolderTab {
+        display: flex;
+        min-height: 100px;
+        position: relative;
+        z-index: 3;
+
+    }
+
+    .CustomerInfoTab .CustImgHolderTab img {
+        width: 20%;
+        border-radius: 50%;
+    }
+
+    .CustomerInfoTab .ImageTab {
+        width: 20%;
+        border-radius: 49%;
+        border: 5px solid #faf9f8;
+    }
+
+    .CustomerInfoTab .ImageContainer {
+        display: flex;
+        width: 100%;
+        border-radius: 50%;
+        z-index: 3;
+        justify-content: center;
+    }
+}

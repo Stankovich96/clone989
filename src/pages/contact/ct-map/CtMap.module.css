@@ -1,0 +1,7 @@
+.CtMap {
+    background-color: red;
+    width: 100%;
+    height: 725px;
+    flex-basis: 50%;
+    margin-top: 40px;
+}

@@ -1,0 +1,124 @@
+.TrmCard {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 4px 50px rgba(127, 104, 88, 0.04);
+  border-radius: 15px;
+  padding: 26px;
+  text-align: left;
+  cursor: pointer;
+  margin: 0 66px; 
+  transition: border .3s, box-shadow .3s;
+}
+
+.TrmCard:hover {
+  border: 1px solid rgba(127, 104, 88, 0.2);
+  box-shadow: 3px 8px 50px rgba(127, 104, 88, 0.1);
+  cursor: pointer;
+}
+
+.TrmCard img {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+}
+
+.TrmCard > .NameAndDate {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 28px;
+}
+
+.TrmCard > .NameAndDate > .Top {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.TrmCard > .NameAndDate > .Top > .Name {
+  font-size: 16px;
+  color: #4a3a2f;
+  margin: 0;
+}
+
+.TrmCard > .NameAndDate > .Top > .Location {
+  font-size: 12.5px;
+  color: #989595;
+  margin: 0;
+}
+
+.TrmCard > .NameAndDate > .Bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.TrmCard > .NameAndDate > .Bottom > .BookText {
+  font-size: 11px;
+  color: #989595;
+  margin: 0;
+}
+
+.TrmCard > .NameAndDate > .Bottom > .DateLayout {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.TrmCard > .NameAndDate > .Bottom > .DateLayout > .Date {
+  font-weight: 500;
+  font-size: 13px;
+  color: #7f6858;
+  margin: 0;
+}
+
+.TrmCard > .NameAndDate > .Bottom > .DateLayout > svg {
+  width: 12px;
+  height: 12px;
+}
+
+.TrmCard > .TypeAndRating {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.TrmCard > .TypeAndRating > .Type {
+  font-weight: 500;
+  font-size: 11px;
+  color: #7f6858;
+  padding: 6px 16px;
+  background-color: #f5f5f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.TrmCard > .TypeAndRating > .RatingLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 7px;
+}
+
+.TrmCard > .TypeAndRating > .RatingLayout > .RatingText {
+  font-weight: 600;
+  font-size: 13.4px;
+  color: #7f6858;
+  margin: 0;
+  padding: 0;
+}
+
+.TrmCard > .TypeAndRating > .RatingLayout img {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  padding: 0;
+}
+
+.TrmCard > .TypeAndRating > .RatingLayout img:first-child {
+  margin-left: 0;
+}

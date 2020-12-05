@@ -1,0 +1,118 @@
+.ApartmentSection {
+  display: flex;
+  background-color: #0f1310;
+  color: white;
+  padding: 160px 134px;
+}
+
+.ApartmentSection .Left {
+  display: flex;
+  flex-flow: column;
+  padding-right: 55px;
+  text-align: left;
+}
+
+.ApartmentSection .Left .Navigator {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.ApartmentSection .Left .Navigator span {
+  border-radius: 59px;
+  width: 95px;
+  height: 7px;
+  margin-right: 20px;
+  background-color: #ece6e6;
+  cursor: pointer;
+  transition: border .3s;
+}
+
+.ApartmentSection .Left .Navigator span:hover {
+  border: 2px solid #989592;
+}
+
+.ApartmentSection .Left .Title {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+
+.ApartmentSection .Left .Description {
+  line-height: 175%;
+  color: #ece6e6;
+}
+
+.ApartmentSection .Right {
+  display: flex;
+  height: 400px;
+}
+
+.ApartmentSection .Right img {
+  width: 744px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1430px) and (min-width:1201px) {
+  .ApartmentSection .Left {
+    width: 60%;
+  }
+
+  .ApartmentSection .Right {
+    width: 100%;
+  }
+
+  .ApartmentSection>.Right img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .ApartmentSection {
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+
+  .ApartmentSection .Left {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 50%;
+  }
+
+  .ApartmentSection .Right {
+    padding-left: 30px;
+  }
+
+  .ApartmentSection>.Right img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .ApartmentSection {
+    justify-content: center;
+    align-items: center;
+    padding-left: unset;
+    padding-right: unset;
+    flex-direction: column
+  }
+
+  .ApartmentSection .Left {
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 15%;
+    /* padding-left: 50px; */
+    /* padding-right: unset; */
+    padding-bottom: 50px;
+  }
+
+  .ApartmentSection .Right {
+    /* padding-left: 50px; */
+    margin: 0px 14%;
+  }
+
+  .ApartmentSection>.Right img {
+    align-self: center;
+    width: 90%;
+    /* margin: 0px 5%; */
+  }
+}

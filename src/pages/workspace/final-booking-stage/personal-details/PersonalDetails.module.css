@@ -1,0 +1,109 @@
+.PersonalDetails {
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.PersonalDetails>.Header {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.PersonalDetails>.Header>.Title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #3a2b20;
+  margin: 0;
+}
+
+.PersonalDetails>.Header>.LoginQuestion {
+  font-size: 15px;
+  color: #989595;
+  margin-top: 7px;
+}
+
+.PersonalDetails>.Header>.LoginQuestion>span {
+  font-weight: 500;
+  color: #7f6858;
+  cursor: pointer;
+}
+
+.PersonalDetails>.Form {
+  border: 0.4px solid #c4a287;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(127, 104, 88, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.PersonalDetails>.Form>.InputLayout {
+  width: 100%;
+  text-align: left;
+  padding: 0 37px;
+  margin-bottom: 20px;
+}
+
+.PersonalDetails>.Form input {
+  border: none;
+  outline: none;
+  border-bottom: 0.8px solid #c4c4c4;
+  font-size: 18px;
+  color: #7f6858;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.PersonalDetails>.Form input:focus {
+  border-bottom: 1px solid #262A27;
+}
+
+.PersonalDetails>.Form ::placeholder {
+  color: #c4c4c4;
+}
+
+.PersonalDetails>.Form ::-webkit-input-placeholder {
+  /* Edge */
+  color: #c4c4c4;
+}
+
+.PersonalDetails>.Form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c4c4c4;
+}
+
+.PersonalDetails>.Form .Label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #989595;
+}
+
+.PersonalDetails>.Form>button {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #7f6858;
+  cursor: pointer;
+  transition: background-color .3s, color .3s;
+  border-radius: 0 0 10px 10px;
+}
+
+.PersonalDetails>.Form>button:hover {
+  background-color: #575957;
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 901px) {}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+  .PersonalDetails>.Header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}

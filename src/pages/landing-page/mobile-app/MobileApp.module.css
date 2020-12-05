@@ -1,0 +1,122 @@
+.MobileApp {
+  display: flex;
+  padding: 60px 150px;
+  padding-bottom: 0;
+}
+
+.MobileApp .Left img {
+  margin-bottom: -200px;
+  position: relative;
+  z-index: 0;
+}
+
+.MobileApp .Right {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.MobileApp .Right .Title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #3a2b20;
+  margin-bottom: 0;
+}
+
+.MobileApp .Right .Desc {
+  font-size: 18px;
+  font-weight: normal;
+  color: #6d6969;
+}
+
+.MobileApp .Right .Stores {
+  display: flex;
+  margin-top: 60px;
+}
+
+.MobileApp .Right .Stores img {
+  margin-right: 50px;
+}
+
+
+@media only screen and (max-width: 1430px) and (min-width:1201px) {
+  .MobileApp {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  /* .MobileApp .Left {
+    width: 100%;
+  }
+
+  .MobileApp .Left img {
+    width: 100%;
+  } */
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .MobileApp {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .MobileApp .Left {
+    width: 100%;
+  }
+
+  .MobileApp .Left img {
+    width: 80%;
+  }
+
+  .MobileApp .Right .Title {
+    font-size: 26px;
+  }
+
+  .MobileApp .Right .Desc {
+    line-height: 25px;
+  }
+
+  .MobileApp .Right .Stores {
+    margin-top: unset;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .MobileApp {
+    flex-direction: column-reverse;
+    padding: unset;
+  }
+
+  .MobileApp .Right {
+    align-items: center;
+    text-align: center;
+    margin: 0 30px;
+    margin-bottom: 10%;
+  }
+
+  .MobileApp .Right .Title {
+    font-size: 26px;
+  }
+
+  .MobileApp .Right .Desc {
+    line-height: 25px;
+    font-weight: 300;
+  }
+
+  .MobileApp .Right .Stores {
+    margin-top: unset;
+    margin-bottom: 30px;
+  }
+
+  .MobileApp .Left {
+    width: 100%;
+  }
+
+  .MobileApp .Left img {
+    width: 60%;
+  }
+
+}

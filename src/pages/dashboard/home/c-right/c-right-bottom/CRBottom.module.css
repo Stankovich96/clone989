@@ -1,0 +1,29 @@
+.CRBottom {
+  flex-basis: 50%;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.CRBottom > .NotificationTitle {
+  font-weight: 600;
+  font-size: 21.4334px;
+  color: #4a3a2f;
+  margin-top: 44px;
+  margin-left: 39px;
+  margin-right: auto;
+}
+
+.CRBottom > .NotificationEmpty {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  gap: 20px;
+}
+
+.CRBottom > .NotificationEmpty > .NoNotificationText {
+  font-weight: 500;
+  font-size: 13px;
+  color: #7f6858;
+}

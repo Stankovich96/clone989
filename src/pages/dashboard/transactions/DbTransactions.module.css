@@ -1,0 +1,72 @@
+.DbTransactions {
+  display: flex;
+  background-color: #fafafa;
+  
+}
+
+.DbTransactions > .MainContent {
+  display: flex;
+  overflow-y: auto;
+  width: 100%;
+  margin-left: 120px;
+}
+
+.DbTransactions  .Left,
+.DbTransactions  .Middle,
+.DbTransactions  .Right {
+  display: flex;
+  flex-direction: column;
+}
+
+.DbTransactions  .Left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  flex-basis: 20%;
+  padding: 42px;
+  padding-top: 22px;
+  align-items: center;
+}
+
+.DbTransactions  .Left > .TransactionText {
+  font-weight: 500;
+  font-size: 24px;
+  color: #4a3a2f;
+  margin-bottom: 47px;
+}
+
+.DbTransactions  .Left > .MonthLayout {
+  padding: 25px 31px;
+  background: rgba(239, 234, 230, 0.5);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: border .3s, box-shadow .3s;
+}
+
+.DbTransactions  .Left > .MonthLayout:hover {
+  box-shadow: 0px 2px 15px rgba(114, 100, 92, 0.1);
+  border: 1px solid rgba(114, 100, 92, 0.1); 
+}
+
+.DbTransactions  .Left > .MonthLayout > .Month {
+  font-weight: 500;
+  font-size: 19px;
+  color: #989595;
+  margin: 0;
+}
+
+.DbTransactions  .Left > .MonthLayout > .Year {
+  font-weight: 500;
+  font-size: 14px;
+  color: #c0beba;
+  margin: 0;
+}
+
+.DbTransactions .Middle {
+  background: #e7e7e7;
+}

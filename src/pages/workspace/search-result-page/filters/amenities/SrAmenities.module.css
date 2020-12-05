@@ -1,0 +1,55 @@
+.SrAmenities {
+  margin-right: 15px;
+}
+
+.Options {
+  display: flex;
+  border-bottom: 1px solid #e7e9ed;
+  padding: 19px 20px;
+  padding-left: 20px;
+  background-color: white;
+}
+
+.Options input {
+  margin-right: 17px;
+  cursor: pointer;
+}
+
+.Options > img {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Menu {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.Menu .Bottom {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+}
+
+.Menu .Bottom p {
+  font-size: 13px;
+  color: #3e432f;
+  cursor: pointer;
+}
+
+.Menu .Bottom button {
+  background-color: #575957;
+  padding: 12px 30px;
+  border-radius: 5px;
+  color: white;
+  margin-left: auto;
+  cursor: pointer;
+}

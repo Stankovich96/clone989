@@ -1,0 +1,102 @@
+.Parent {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  z-index: 500000;
+  background-color: rgb(15, 19, 16, 0.5);
+}
+
+.TimePicker {
+  max-height: 430px;
+}
+
+.TimePicker > .Top,
+.Middle,
+.Bottom {
+  display: flex;
+}
+
+.TimePicker > .Top {
+  background-color: #0F1310;
+  height: 30px;
+}
+
+.TimePicker > .Middle {
+  max-height: 330px;
+}
+
+.TimePicker > .Middle > .Hour,
+.Minute,
+.Meridian {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  max-height: inherit;
+  width: 130px;
+}
+
+.TimePicker > .Middle > .Meridian {
+  overflow-y: hidden;
+}
+
+.TimePicker > .Middle > .Hour p,
+.Minute p,
+.Meridian p {
+  margin: 7px 0;
+  font-size: 20px;
+  color: #444;
+  transition: font-size .3s;
+  cursor: pointer;
+}
+
+.TimePicker > .Middle > .Hour p:hover,
+.Minute p:hover,
+.Meridian p:hover {
+  font-size: 32px;
+}
+
+/* width */
+.TimePicker > .Middle > .Hour::-webkit-scrollbar,
+.Minute::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.TimePicker > .Middle > .Hour::-webkit-scrollbar-track,
+.Minute::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.TimePicker > .Middle > .Hour::-webkit-scrollbar-thumb,
+.Minute::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle */
+.TimePicker > .Middle > .Hour::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.TimePicker > .Bottom {
+  display: flex;
+  background-color: #fafafa;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 8px 0;
+  padding-right: 40px;
+  gap: 40px;
+}
+
+
+.TimePicker > .Bottom p {
+  cursor: pointer;
+}

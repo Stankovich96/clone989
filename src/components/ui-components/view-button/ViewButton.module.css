@@ -1,0 +1,22 @@
+.ViewButton {
+    display: flex;
+    flex-flow: column wrap;
+    cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ViewButton p {
+    font-weight: 600;
+    font-size-adjust: 16px;
+    margin-bottom: 5px;
+    color: #6D6969;
+  }
+  
+ .ViewButton div {
+    width: 43px;
+    height: 3px;
+    background: #262a27;
+  }

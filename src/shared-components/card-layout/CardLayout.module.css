@@ -1,0 +1,29 @@
+.CardLayout {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    padding: 40px 50px;
+}
+
+.CardLayout a {
+    text-decoration: none;
+}
+
+.CardLayout::-webkit-scrollbar {
+    display: none;
+    /* Chrome */
+}
+
+.CardLayout .ExtraPadding {
+    width: 40px;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 900px) and (min-width:600px) {
+    .CardLayout {
+        padding-left: unset;
+        /*  padding-right: 160px; */
+    }
+}

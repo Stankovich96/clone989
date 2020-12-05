@@ -1,0 +1,112 @@
+.BookTypeCard {
+  display: flex;
+  flex-direction: column;
+  background: #FCFBFA;
+  border: 1px solid #EFEAE6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(127, 104, 88, 0.03);
+  border-radius: 20px;
+  width: 329px;
+  margin: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.BookTypeCard:hover {
+    border: 0.5px solid #989595;
+    box-shadow: 3px 6px 10px 0 rgba(127, 104, 88,.07)
+  }
+
+.BookTypeCard svg {
+    width: 10px;
+    height: 10px;
+}
+
+.BookTypeCard > .NameAndLocation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 25px;
+}
+
+.BookTypeCard > .NameAndLocation > .Name {
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0;
+  color: #4a3a2f;
+}
+
+.BookTypeCard > .NameAndLocation > .Location {
+  font-weight: 500;
+  font-size: 13px;
+  color: #989595;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.BookTypeCard > .DateAndRating {
+padding: 25px;
+padding-top: 0;
+display: flex;
+text-align: left;
+align-items: center;
+}
+
+.BookTypeCard > .DateAndRating > .NumAndDate {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 13px;
+  color: #989595;
+  gap: 10px;
+}
+
+.BookTypeCard > .DateAndRating > .NumAndDate p {
+   margin: 0;
+  }
+  
+
+.BookTypeCard > .DateAndRating > .NumAndDate > .ProfileLayout {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.BookTypeCard > .DateAndRating > .NumAndDate > .DateLayout {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.BookTypeCard > .DateAndRating > .RatingLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: auto;
+  }
+
+  
+.BookTypeCard > .DateAndRating > .RatingLayout img {
+   width: 10px;
+   height: 10px;
+  }
+  
+
+.BookTypeCard > .DateAndRating > .RatingLayout > .Rating {
+  font-weight: 600;
+  font-size: 11.4805px;
+  color: #6f716f;
+  margin: 0;
+  margin-bottom: 7px;
+  margin-left: 6px;
+}
+
+.BookTypeCard >  img {
+  width: 100%;
+  height: 200px;
+  border-radius: 0px 0px 20px 20px;
+}

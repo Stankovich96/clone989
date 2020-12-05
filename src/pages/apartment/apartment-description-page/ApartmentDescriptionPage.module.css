@@ -1,0 +1,14 @@
+.ApartmentLandingPage {
+  background-color: #fafafa;
+}
+
+.ApartmentLandingPageBody {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1470px) {
+  .ApartmentLandingPageBody {
+    align-items: center;
+  }
+}

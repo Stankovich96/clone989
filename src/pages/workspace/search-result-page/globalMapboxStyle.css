@@ -1,0 +1,6 @@
+/*global mapbox style*/
+.mapboxgl-popup-content {
+  background-color: white;
+  padding: 0;
+  border-radius: 10px;
+}

@@ -1,0 +1,177 @@
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OverviewSection {
+    display: flex;
+    flex-direction: column;
+    margin: 0 90px;
+    padding: 0;
+    padding-top: 100px;
+}
+
+.OverviewSection .Top {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 1165px;
+}
+
+.OverviewSection .TopLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.OverviewSection .OverviewNumber {
+    color: #A95E1A;
+    font-size: 36px;
+    font-weight: bold;
+    width: 79px;
+    margin: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.OverviewDesc {
+    color: #6D6969;
+    font-size: 24px;
+    width: 318px;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    text-align: left
+}
+
+.OverviewSection .TopRight {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0;
+    margin-left: auto;
+    cursor: pointer;
+    width: 300px;
+}
+
+
+.OverviewSection .OverviewList {
+    color: #4A3A2F;
+    line-height: 52px;
+    font-size: 14px;
+    width: 101px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.OverviewSection .Line {
+    stroke: #A95E1A;
+    stroke-width: 3px;
+    cursor: pointer;
+}
+
+.OverviewSection .Bottom {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+.OverviewSection .imageA {
+    width: 375px;
+    margin: 10px;
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); */
+    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.08));
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.textBottom {
+    background: #FFFFFF;
+    height: 142px;
+}
+
+.OverviewSection .imageText {
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.OverviewSection .imagePrice {
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.OverviewSection .imageTextCity {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 13px;
+    color: #6D6969;
+}
+
+.OverviewSection .bottomLine {
+    border: 1px solid #EEDFD1;
+    width: 1440px;
+}
+
+@media only screen and (max-width: 1439px) and (min-width:1201px) {}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+    .OverviewSection .Top {
+        width: 850px;
+    }
+
+    .OverviewSection {
+        margin: 0;
+    }
+
+    .OverviewSection .imageA {
+        width: 280px;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+    .all {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .OverviewSection {
+        margin: unset;
+    }
+
+    .OverviewSection .Top {
+        width: unset;
+    }
+
+    .OverviewSection .Bottom {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        align-items: unset;
+        margin-right: unset;
+        margin-left: 130px;
+        ;
+    }
+
+    .OverviewSection .TopLeft {
+        margin-left: 50px;
+    }
+
+    .OverviewSection .TopRight {
+        margin: unset;
+        width: 250px;
+    }
+}

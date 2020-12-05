@@ -1,0 +1,31 @@
+.Parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+
+.StrAmenities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 0.0982584px solid #f1c19d;
+  box-sizing: border-box;
+  border-radius: 20px;
+  justify-content: center;
+  gap: 5px;
+  width: 170px;
+  height: 157px;
+}
+
+.StrAmenities > img {
+    width: 36px;
+    height: 36px;
+}
+
+.StrAmenities > p {
+  font-weight: 600;
+  font-size: 12px;
+  color: #4a3a2f;
+}

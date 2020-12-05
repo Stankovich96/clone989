@@ -1,0 +1,105 @@
+.home {
+  line-height: normal;
+  font-size: 19px;
+  color: #3a2b20;
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  border-radius: 11px;
+  color: #3a2b20;
+  width: 261px;
+  margin-right: 70px;
+}
+
+.link:focus {
+  border: 0.2px solid #7F6858;
+}
+
+.link:hover {
+  border: 0.2px solid #7F6858;
+}
+
+.ApartmentTypes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  padding: 0;
+}
+
+.ApartmentTypes .Title {
+  line-height: 36px;
+  font-size: 24px;
+  color: #3a2b20;
+  font-weight: 500;
+  /* width: 423px; */
+}
+
+.ApartmentTypes .Options {
+  display: flex;
+  justify-content: center;
+}
+
+.ApartmentTypes .formField {
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: center;
+  padding-top: 10px;
+}
+
+input:focus {
+  outline: hsl(0, 0%, 31%);
+}
+
+.ApartmentTypes .imageA {
+  width: 261px;
+  height: 261px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px Solid #9FA09F;
+  /* border: 0.2px solid #7F6858; */
+  /* box-shadow: 0 3px 10px 0 rgb(200, 200, 200, 0.2), 0 3px 10px 0 rgb(200, 200, 200, 0.2); */
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+
+.ApartmentTypes .svgImage {
+  width: 176px;
+  height: 115px;
+  margin-top: 10px;
+}
+
+.inputField {
+  margin-right: 10px;
+}
+
+/* @media only screen and (max-width: 1200px) and (min-width:901px) {} */
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .ApartmentTypes .Options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ApartmentTypes .imageA {
+    margin-right: unset;
+    margin-bottom: 50px;
+  }
+
+  .link {
+    margin-right: unset;
+    margin-bottom: 70px;
+    height: 261px;
+  }
+}

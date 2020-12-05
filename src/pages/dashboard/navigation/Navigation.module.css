@@ -1,0 +1,51 @@
+.Navigation {
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  width: 120px;
+  height: 100vh;
+  position: fixed;
+  align-items: center;
+  z-index: 24;
+}
+
+.Navigation > svg {
+min-width: 32px;
+min-height: 32px;
+}
+
+.Navigation > .NavBody > svg {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.Navigation > .NavBody {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.Navigation  svg:hover {
+  -webkit-filter: contrast(145%) brightness(60%) saturate(46%);
+  filter: contrast(145%) brightness(60%) saturate(46%);
+  -moz-filter: contrast(145%) brightness(60%) saturate(46%);
+
+}
+
+.Navigation .ActiveClass {
+  filter: grayscale(22%) sepia(8%) brightness(26%) hue-rotate(192deg)
+    saturate(168%) contrast(96%);
+  -webkit-filter: grayscale(22%) sepia(8%) brightness(26%) hue-rotate(192deg)
+    saturate(168%) contrast(96%);
+  -moz-filter: grayscale(22%) sepia(8%) brightness(26%) hue-rotate(192deg)
+    saturate(168%) contrast(96%);
+}
+
+.Navigation > .Logout {
+  margin-top: auto;
+  width: 21px;
+  height: 21px;
+}

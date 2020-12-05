@@ -1,0 +1,577 @@
+.result {
+    background: #FAF9F8;
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    &-body {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px 0 80px;
+        line-height: 1.5;
+
+
+        &__query-found {
+            display: flex;
+            color: #000000;
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        &__cards { margin: 20px 0 30px; }
+    }
+
+    &-map {
+        overflow: hidden;
+        position: relative;
+        width: auto;
+        margin: 0;
+        display: none;
+
+        img { 
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 15px;
+        background: transparent;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track { background: transparent; }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #8E8E8E; 
+        border-radius: 10px;
+        border: solid 5px #FAF9F8;
+    }
+
+    //For firefox
+    scrollbar-color: #8e8e8e transparent;
+    //For Firefox
+    scrollbar-width: thin;
+}
+
+.resultOverlay{
+    position: relative;
+    transition: all .2s ease-out;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(250, 249, 248, 0.8);
+        z-index: 51;
+    }
+}
+
+.resultOverlay::after{
+    -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.resultWMap{
+    height: 100vh;
+    position: relative;
+}
+
+.resultFieldWmap{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-left: 132px;
+    margin-right: 20px;
+}
+
+.mapFieldWmap{
+    display: flex;
+    width: 50%;
+}
+
+.result-query-field{
+    text-align: left;
+    height: auto;  //use definite height
+}
+
+.pagination-field {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    align-self: flex-end;
+    height: auto;
+}
+
+.paginationFieldWmap {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    align-self: flex-end;
+    height: 0%; 
+}
+
+.resultField {
+    height: 100%; //use definite height
+    overflow-y: auto;
+    //For Firefox
+    scrollbar-width: thin;
+}
+
+.result .close-map-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: #ffffff;
+    color: gray;
+    border: 1px solid rgba($color: #a8a8a8, $alpha: 0.5);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08), 0px 0px 5px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    z-index: 20;
+    display: none;
+}
+
+
+
+// From ResultSearch.utils
+.result .result-body .result-body__cards {
+    .card-landsc{ min-width: 580px; }
+
+    .card {
+        display: flex;
+        padding: 21px 15px;
+        background: #ffffff;
+        border: 2px solid #EBEAEA;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .2s;
+
+        .card-img{
+            position: relative;
+            width: 187px;
+            height: 191px; 
+
+            img {
+                border-radius: 4px;
+                object-fit: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            span {
+                font-size: 12px;
+                line-height: 1;
+                color: #4A3A2F;
+                padding: 5px 7px;
+                background: rgba(250, 249, 248, 0.8);
+                border-radius: 2px;
+                position: absolute;
+                right: 10px;
+                bottom: 8px;
+
+                .room-capacity{
+                    vertical-align: middle;
+                    margin-right: 6px;
+                    width: 11px;
+                    height: 12px;
+                }
+            }
+        }
+
+        .card-info{
+            padding-left: 15px;
+            text-align: left;
+            letter-spacing: 4%;
+
+            .room-name {
+                font-weight: 600;
+                font-size: 16px;
+                color: #191E29;
+            }
+
+            .room-type {
+                font-weight: 600;
+                font-size: 14px;
+                color: #565656;
+                letter-spacing: 1%;
+                margin: 5px 0;
+            }
+
+            .room-location {
+                font-weight: 500;
+                font-size: 12px;
+                color: #8E8E8E;
+                margin-top: 5px;
+            }
+
+            .room-amenities {
+                margin: 23px 0;
+
+                .amenities { margin-right: 10px; }
+
+                .amenities-extra {
+                    background: #FAF9F8;
+                    border-radius: 50%;
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #989595;
+                    padding: 2px;
+                }
+            }
+
+            .room-price {
+                display: flex;
+                justify-content: space-between;
+
+                &__card {
+                    background: #FAF9F8;
+                    border-radius: 2px;
+                    padding: 6px 17px 6px 14px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .rate {
+                        font-weight: 500;
+                        font-size: 11px;
+                        color: #4A3A2F;
+                    }
+
+                    .rate-price {
+                        font-weight: bold;
+                        font-size: 12px;
+                        color: #4A3A2F;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+
+        &:hover {  border: 2px solid #7F6858; }
+    }
+}
+
+.resultWMap .result-body .resultField {
+    .card { 
+        margin-bottom: 15px;
+
+        .card-img{
+            width: 240px;
+            min-width: 187px;
+        }
+
+        .card-info{
+            .room-name, .room-location {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    } 
+}
+
+.result .result-body .result-body__cards.grid-landscape-2,
+.result .result-body .result-body__cards.grid-landscape-4 {
+    display: grid;
+    row-gap: 25px;
+    column-gap: 19px;
+}
+
+.result .result-body .result-body__cards.grid-landscape-1{ 
+    grid-template-columns: minmax(580px, 1fr); 
+    row-gap: 15px ;  
+}
+
+.result .result-body .result-body__cards.grid-landscape-2{ grid-template-columns: repeat(2, minmax(580px, 1fr)); }
+
+@media (max-width: 1300px) {
+    .result {
+        &-body { max-width: 1100px;   }
+    }
+    
+    // From ResultSearch.utils
+    .result .result-body .result-body__cards {
+        .card-landsc{ min-width: 450px; }
+    
+        .card {
+            padding: 10px;
+    
+            .card-img{
+                height: 189px;
+                align-self: center;
+    
+                span {
+                    .room-capacity{ vertical-align: unset; }
+                }
+            }
+    
+            .card-info{   
+                padding-right: 15px; 
+
+                .room-name { font-size: 15px; }
+    
+                .room-type { font-size: 13px; }
+    
+                .room-amenities { margin: 18px 0; }
+    
+                .room-price {    
+                    &__card {
+                        padding: 6px 14px;
+    
+                        .rate { font-size: 10px; }
+                    }
+                }
+            }
+        }
+    }
+        
+    .result .result-body .result-body__cards.grid-landscape-2,
+    .result .result-body .result-body__cards.grid-landscape-4 {
+        display: grid;
+        row-gap: 22px;
+        column-gap: 15px;
+    }
+        
+    .result .result-body .result-body__cards.grid-landscape-2{ grid-template-columns: repeat(2, minmax(450px, 1fr)); }
+    
+    .result .result-body .result-body__cards.grid-landscape-1{ grid-template-columns: minmax(450px, 1fr); }    
+}
+
+// Media Query For Tablet Landscape
+@media (max-width: 1200px) {
+    .result {
+        &-body {
+            max-width: 100%;
+            margin-left: 48px;
+            margin-right: 48px;            
+    
+            &__query-found { font-size: 18px; }
+    
+            &__cards { margin: 20px 0 90px; }
+        }
+    }  
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+    .result {
+        &-body {
+            margin-left: 58px;
+            margin-right: 58px;            
+        }
+    }  
+
+    .result .result-body .result-body__cards.grid-landscape-2{ grid-template-columns: repeat(2, minmax(282px, 1fr)); } 
+    .result .result-body .result-body__cards.grid-landscape-2 {
+        display: grid;
+        row-gap: 30px;
+        column-gap: 25px;
+    }
+
+    .result .result-body__cards.grid-landscape-2 {
+        .card-landsc {
+            min-width: 282px;
+    
+            .card-img{
+                position: relative;
+                width: 100%;
+                height: 250px;
+    
+                img { border-radius: 0; }
+            }
+    
+            .card-info{
+                padding: 10px 13px;
+    
+                .room-name { font-size: 16px; }
+                .room-location { font-size: 13px; }
+                .room-type { font-size: 14px; }
+    
+                .room-name, .room-location {
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+    
+                .room-amenities { margin: 18px 0 18px 6px; }
+    
+                .room-price {
+                    justify-content: unset;
+
+                    &__card { padding: 8px 12px;  min-width: 100px; }
+
+                    &__card:not(:last-child){ margin-right: 20px;}
+                }
+            }
+        }
+    
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 6px;
+        }
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .result .result-body__cards.grid-landscape-2 {
+        .card-landsc {    
+            .card-img{
+                height: 280px;
+            }
+        }
+    }
+}
+
+// Media Query For Tablet Portrait
+@media (max-width: 900px) {
+    .result {  
+        flex-direction: column;
+
+        &-body {
+            max-width: 100%;
+            margin-left: 58px;
+            margin-right: 58px; 
+        }
+    }
+    
+    // From ResultSearch.utils
+    .result .result-body .result-body__cards {
+        .card-landsc{ min-width: 620px; width: 100%;}
+    
+        .card {
+            padding: 17px 15px;
+    
+            .card-img{ width: 280px; }
+    
+            .card-info{
+                padding-left: 25px;
+                flex-grow: 1;
+
+                .room-type { font-size: 14px; }
+    
+                .room-price {   
+                    &__card {
+                        .rate { font-size: 14px; }
+                    }
+                }
+            }
+        }
+    }
+
+    // ================================================================================================>
+        
+    .result .result-body .result-body__cards.grid-landscape-1,
+    .result .result-body .result-body__cards.grid-landscape-2{ grid-template-columns: minmax(620px, 1fr); }
+
+    // ==================================================================================================>
+}
+
+@media (max-width: 772px) {
+    .result {
+        &-body {
+            margin-left: 38px;
+            margin-right: 38px;            
+        }
+    }  
+
+    // From ResultSearch.utils
+    .result .result-body .result-body__cards {
+    
+        .card { 
+            padding: 10px;
+
+            .card-img{ width: 240px; }
+    
+            .card-info{ padding-left: 20px; }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    // From ResultSearch.utils
+    .result .result-body .result-body__cards {
+    
+        .card {     
+            .card-img{ width: 230px; }
+    
+            .card-info{ padding-right: 0; }
+        }
+    }
+}
+
+@media (max-width: 665px) {
+    .result {
+        &-body {
+            margin-left: auto;
+            margin-right: auto;            
+        }
+    }  
+
+    .result .result-body .result-body__cards.grid-landscape-2{ grid-template-columns: repeat(1, minmax(400px, 470px)); } 
+    .result .result-body .result-body__cards.grid-landscape-2 { row-gap: 40px; }
+
+    .result .result-body__cards.grid-landscape-2 {
+        .card-landsc {
+            min-width: 282px;
+    
+            .card-img{
+                position: relative;
+                width: 100%;
+                height: 270px;
+    
+                img { border-radius: 0; }
+            }
+    
+            .card-info{
+                padding: 18px 0 10px 5px;
+                
+                .room-name { font-size: 16px; }
+                .room-location { font-size: 13px; }
+                .room-type { font-size: 14px; }
+    
+                .room-price {
+                   &__card { padding: 8px 12px;  min-width: 100px; }
+                }
+            }
+        }
+    
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+    }
+}
+
+// When the map is open at smaller width, the map should occupy 100% of the device width
+@media(max-width: 1140px){
+    .resultWMap .resultFieldWmap { overflow: hidden;  }
+
+    .resultWMap .mapFieldWmap{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        display: block;
+        width: 100%;
+        z-index: 50;
+
+        // .close-map-button{ display: block; }
+    }
+}

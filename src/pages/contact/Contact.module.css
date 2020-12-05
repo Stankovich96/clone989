@@ -1,0 +1,171 @@
+.Contact {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.Contact>.IntroMsg {
+  padding: 100px;
+  text-align: left;
+  width: 50%;
+}
+
+.Contact>.IntroMsg>.IntroTitle {
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+  color: #3a2b20;
+  position: relative;
+}
+
+.Contact>.IntroMsg>.IntroTitle::after {
+  content: "";
+  position: absolute;
+  right: 28%;
+  top: 50%;
+  width: 200px;
+  height: 1.5px;
+  background-color: #191e29;
+  margin: 0 30px;
+}
+
+.Contact .IntroMsg .IntroDesc {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #6c6b6b;
+}
+
+.Contact .Location {
+  background-color: teal;
+  position: relative;
+  margin-top: 60px;
+}
+
+.Contact .Location .ContactImg {
+  width: 100%;
+}
+
+.Contact .Location .LocationData {
+  width: 379px;
+  height: 422px;
+  background-color: #262a27;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: left;
+  position: absolute;
+  left: 100px;
+  top: -80px;
+}
+
+.Contact .Location .LocationData>.Ld_HeadOffice {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Contact .Location .LocationData>.Ld_Number {
+  font-size: 13px;
+}
+
+.Contact .Location .LocationData>.Ld_State {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: auto;
+}
+
+.Contact .Location .LocationData>.Ld_Email {
+  margin: 0;
+  font-size: 14px;
+}
+
+.Contact .Location .LocationData>.Ld_FullStreetAddress {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Contact .ContactForm {
+  padding: 95px 100px;
+  display: flex;
+  gap: 70px;
+}
+
+.Contact .ContactForm .ContactImg {}
+
+.Contact>.Enquiry {
+  display: flex;
+  border-radius: 8px;
+  color: white;
+  background-color: #3E432F;
+  margin: 100px;
+  margin-top: 60px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.Contact>.Enquiry>p {
+  margin: 33px 70px;
+  margin-bottom: 40px;
+}
+
+.Contact>.Enquiry>svg {
+  height: 100%;
+  margin-top: 17px;
+}
+
+@media only screen and (min-width:1201px) {
+  .Contact>.IntroMsg>.IntroTitle::after {
+    right: unset;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .Contact>.IntroMsg>.IntroTitle::after {
+    right: unset;
+  }
+
+  .Contact .ContactForm {
+    margin-top: 100px;
+    /* padding: 95px 30px; */
+  }
+
+
+
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .Contact>.IntroMsg {
+    padding: unset;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    width: 90%;
+  }
+
+  .Contact>.IntroMsg>.IntroTitle::after {
+    display: none;
+  }
+
+  .Contact .ContactForm {
+    margin-top: 100px;
+    /* padding: 95px 30px; */
+  }
+
+  .Contact>.Enquiry {
+    margin: unset;
+    width: 100%;
+    border-radius: unset;
+  }
+
+  .Contact>.Enquiry>p {
+    margin: 20px 20px;
+  }
+
+  .Contact>.Enquiry>svg {
+    height: inherit;
+    margin-top: 1px;
+    width: inherit;
+  }
+}

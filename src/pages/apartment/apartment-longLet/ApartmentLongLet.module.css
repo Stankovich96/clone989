@@ -1,0 +1,391 @@
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  height: 95px;
+  border-bottom: 0.1px solid #9FA09F;
+}
+
+
+.headerTitle {
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 22px;
+}
+
+.headerSection .bottomLine {
+  border: 2px solid #3a2b20;
+  width: 300px;
+  align-self: flex-end;
+}
+
+.ApartmentShortLet .home {
+  line-height: normal;
+  font-size: 19px;
+  color: #3a2b20;
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #3a2b20;
+}
+
+.ApartmentShortLet {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.ApartmentShortLet .Title {
+  line-height: normal;
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: normal;
+  width: 662px;
+  align-self: center;
+  margin-left: 200px;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 710px;
+  margin-left: 350px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 1px Solid #9FA09F;
+  /* box-shadow: 0 3px 10px 0 rgb(200, 200, 200, 0.2), 0 3px 10px 0 rgb(200, 200, 200, 0.2); */
+}
+
+.formSection .formStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 57px;
+  margin-right: 57px;
+  margin-top: 10px;
+}
+
+.formSection .InputTitle {
+  line-height: normal;
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: normal;
+  align-self: flex-start;
+}
+
+.formSection .formTitle {
+  line-height: 21px;
+  font-size: 14px;
+  color: #3a2b20;
+  font-weight: normal;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.formSection .formRow {
+  display: flex;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.formSection .formRowInner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+
+.formSection .formRowInnerDate {
+  display: flex;
+  flex-direction: column;
+  width: 57%;
+  padding: 5px 0px 0px 5px;
+  margin-right: 24px;
+}
+
+.formSection .formRowInnerDuration {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 65%;
+  padding: 5px 0px 0px 5px;
+  margin-left: 14px;
+  margin-right: 5px;
+}
+
+.formSection .Selectstyle {
+  background-color: inherit;
+  /* padding: 15px;
+  padding-left: 0; */
+  width: 90%;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.formSection .SelectstyleDuration {
+  background: #575957;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 40%;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.formSection .dateField {
+  background-color: inherit;
+  padding: 15px 10px;
+  padding-right: 0;
+  min-height: 56px;
+  width: 90%;
+  opacity: 0.7;
+  /* cursor: pointer; */
+  font-size: 15px;
+  align-items: center;
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.formSection .dateFieldDuration {
+  background-color: inherit;
+  padding: 15px 9px;
+  min-height: 56px;
+  width: 50%;
+  font-size: 15px;
+  align-items: center;
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 7px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.date-picker {
+  width: 90%;
+}
+
+.dateInput {
+  border-radius: 7px;
+  min-height: 57px;
+  padding: 15px;
+}
+
+.datePicker {
+  display: flex;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  color: #504b4b;
+  border-radius: 7px !important;
+  width: 100%;
+  min-height: 57px;
+  padding: 15px !important;
+}
+
+.formDateIcon {
+  height: inherit;
+  align-self: center;
+  width: 9%;
+}
+
+.dateWrapper {
+  border: none;
+  font-size: 16px;
+  align-self: center;
+  margin-top: 5px;
+}
+
+.dateWrapper:focus {
+  outline: none;
+}
+
+
+element {}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: #3e432f;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected:hover {
+  background-color: #575957;
+}
+
+input:focus {
+  outline: hsl(0, 0%, 80%);
+}
+
+/* :focus {
+  outline: -webkit-focus-ring-color auto 1px;
+} */
+
+::placeholder {
+  color: #6D6969;
+  font-size: 16px;
+  padding: 10px;
+  opacity: 0.7;
+}
+
+.formSection .apartmentButton {
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: bold;
+  margin-top: 50px;
+  height: 104px;
+  cursor: pointer;
+}
+
+
+.formSection .inputSvg1 {
+  position: absolute;
+  top: 488px;
+  z-index: 0;
+  margin: 0 10px;
+}
+
+.formSection .Inputimage {
+  padding: 0 10px;
+}
+
+textarea {
+  margin: 20px 0px;
+  margin-top: 30px;
+  padding-left: 15px;
+  opacity: 0.7;
+  border-radius: 8px;
+  border-color: hsl(0, 0%, 80%);
+  font-family: inherit;
+}
+
+input[type="checkbox"] {
+  margin: 5px;
+  margin-right: 10px;
+}
+
+.checkboxSection {
+  display: flex;
+}
+
+.modalTitle {
+  line-height: normal;
+  font-size: 24px;
+  color: #3a2b20;
+  font-weight: normal;
+}
+
+.modalImage {
+  margin-bottom: 50px;
+}
+
+.modalButton {
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: bold;
+  cursor: pointer;
+  width: 573px;
+  height: 100px;
+}
+
+@media (min-width:1490px) {
+  .formSection {
+    margin-left: 30%;
+  }
+
+  .ApartmentShortLet .Title {
+    margin-left: 22%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .all {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ApartmentShortLet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ApartmentShortLet .Title {
+    line-height: normal;
+    font-size: 20px;
+    color: #3a2b20;
+    font-weight: normal;
+    width: 450px;
+    align-self: center;
+    margin-left: inherit;
+  }
+
+  .formSection {
+    margin-left: unset;
+    /* width: 550px; */
+  }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .all {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ApartmentShortLet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ApartmentShortLet .Title {
+    line-height: normal;
+    font-size: 20px;
+    color: #3a2b20;
+    font-weight: normal;
+    width: 450px;
+    align-self: center;
+    margin-left: unset;
+  }
+
+  .formSection {
+    margin-left: unset;
+    width: 550px;
+  }
+
+  .formSection .formStyle {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .formSection .formRowInnerDuration {
+    margin-left: unset;
+  }
+
+  .formSection .formRowInnerDate {
+    width: 45%;
+  }
+
+
+}

@@ -1,0 +1,29 @@
+.Services {
+  padding: 111px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.Services .Heading {
+  font-size: 35px;
+  color: #3a2b20;
+  margin: 0;
+  font-weight: bold;
+}
+
+.Services .Description {
+  font-size: 16px;
+  color: #6d6969;
+  width: 736px;
+  line-height: 30px;
+}
+
+@media (max-width: 900px) {
+  .Services .Description { 
+    margin: 12px 50px 0;
+    font-size: 14px;
+    width: auto;
+    max-width: 736px;
+  }
+}

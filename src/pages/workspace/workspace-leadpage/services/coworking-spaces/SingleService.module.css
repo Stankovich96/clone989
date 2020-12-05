@@ -1,0 +1,202 @@
+.CoworkingSpaces {
+  background-color: #faf9f8;
+  padding: 120px 0;
+}
+
+.CoworkingSpaces  .ImageAndText {
+  padding: 0;
+  padding-left: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.CoworkingSpaces .WorkspaceSummary {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+}
+
+.CoworkingSpaces .WorkspaceSummary .SummaryTitle {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 35px;
+  font-weight: bold;
+  color: #3a2b20;
+}
+
+.CoworkingSpaces .WorkspaceSummary .SummaryDesc {
+  font-size: 16px;
+  color: #6d6969;
+  line-height: 30px;
+  width: 90%;
+}
+
+.CoworkingSpaces > .ImageAndText > .ImageLayout {
+  display: flex;
+  width: 60%;
+  height: 100%;
+}
+
+.CoworkingSpaces > .ImageAndText  > .ImageLayout > .CoworkSpaceFirstImg {
+  min-width: 700px;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+
+@media (max-width: 1300px) {
+  .CoworkingSpaces .ImageAndText {
+    padding: 0 150px;
+    padding-right: 100px;
+  }
+
+  .CoworkingSpaces .CoworkSpaceLastImg {
+    width: 363px;
+    height: 354px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .CoworkingSpaces .Heading p {
+    font-size: 65px;
+  }
+
+  .CoworkingSpaces .ImageAndText {
+    padding: 0 100px;
+  }
+
+  .CoworkingSpaces .WorkspaceSummary .SummaryTitle {
+    font-size: 30px;
+  }
+
+  .CoworkingSpaces .WorkspaceSummary {
+    margin-left: 58px;
+  }
+
+  .CoworkingSpaces .CoworkSpaceLastImg {
+    width: 333px;
+    height: 324px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .CoworkingSpaces .Body .ImageAndText {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .CoworkingSpaces .Body .CoworkSecImg {
+    display: none;
+  }
+
+  .CoworkingSpaces .Heading p {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .CoworkingSpaces .Heading {
+    justify-content: flex-start;
+  }
+
+  .CoworkingSpaces .Heading img {
+    display: none;
+  }
+
+  .CoworkingSpaces .Heading p {
+    margin-left: 100px;
+  }
+
+  .CoworkingSpaces .Heading p::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: #3a2b20;
+    margin-left: 30px;
+    transform: translateY(-15px);
+  }
+
+  .CoworkingSpaces .Body {
+    padding: 0 85px;
+  }
+
+  .CoworkingSpaces .Body .CoworkSpaceLastImg {
+    display: none;
+  }
+
+  .CoworkingSpaces .Body .CoworkSpaceFirstImg {
+    order: 1;
+    margin-left: 58px;
+  }
+
+  .CoworkingSpaces .Body .WorkspaceSummary {
+    margin-left: 0;
+  }
+
+  .CoworkingSpaces .Body .WorkspaceSummary .SummaryTitle {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 800px) {
+  .CoworkingSpaces .Heading p {
+    margin-left: 50px;
+  }
+
+  .CoworkingSpaces .Body {
+    padding: 0 80px;
+  }
+
+  .CoworkingSpaces .Heading p {
+    font-size: 40px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    opacity: 0.3;
+  }
+
+  .CoworkingSpaces .Body .CoworkSpaceFirstImg {
+    width: 250px;
+    height: 241px;
+    margin-left: 40px;
+  }
+
+  .CoworkingSpaces .Body .WorkspaceSummary .SummaryTitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .CoworkingSpaces .Body {
+    padding: 0 50px;
+  }
+
+  .CoworkingSpaces .Heading p {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .CoworkingSpaces .Body .ImageAndText {
+    flex-direction: column;
+  }
+
+  .CoworkingSpaces .Body .CoworkSpaceFirstImg {
+    order: 0;
+    margin: 0;
+    width: 510px;
+    height: 360px;
+  }
+
+  .CoworkingSpaces .Body .WorkspaceSummary {
+    margin-top: 50px;
+    padding-right: 20px;
+  }
+}

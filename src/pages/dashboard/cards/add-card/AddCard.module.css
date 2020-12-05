@@ -1,0 +1,90 @@
+.AddCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.AddCard > .AddCardText {
+  font-weight: 600;
+  font-size: 24px;
+  color: #4a3a2f;
+  margin-bottom: 9px;
+}
+
+.AddCard > .Desc {
+  font-size: 16px;
+  text-align: center;
+  color: #989595;
+  width: 56ch;
+  margin: 0 auto;
+}
+
+.AddCard > .MainContent {
+  display: flex;
+  flex-direction: column;
+  margin: 75px 350px;
+  max-width: 450px;
+  align-self: center;
+}
+
+.AddCard > .MainContent input {
+  font-size: 20px;
+  line-height: 36px;
+  color: #575957;
+  border: none;
+  border-bottom: 1px solid #c0beba;
+  padding-bottom: 6px;
+  padding-left: 6px;
+}
+
+.AddCard > .MainContent input::placeholder {
+  font-size: 20px;
+  line-height: 36px;
+  color: #c4c4c4;
+  padding: 0;
+}
+
+.BtmInput {
+  width: 100%;
+}
+
+.AddCard > .MainContent > .SecondSection {
+  display: flex;
+  text-align: left;
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+
+.AddCard > .MainContent > .SecondSection > .ExpiryLayout {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 44%;
+}
+
+.AddCard > .MainContent > .SecondSection > .ExpiryLayout > .ExpiryDate {
+  font-weight: 500;
+  font-size: 14px;
+  color: #989595;
+}
+
+.AddCard > .MainContent > .SecondSection > .CVV {
+  margin-left: auto;
+  margin-top: auto;
+  flex-basis: 44%;
+}
+
+.AddCard > .MainContent > button {
+  background: #575957;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 16px 178px;
+  color: white;
+  margin: 20px 0;
+}
+
+.AddCard > .MainContent > .SecureLayout {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}

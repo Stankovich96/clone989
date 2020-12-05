@@ -1,0 +1,63 @@
+.ReservationSelection {
+  background: #fafafa;
+  padding: 40px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+}
+
+.ReservationSelection > .SpecificReserv {
+  font-weight: 600;
+  font-size: 23px;
+  color: #3e432f;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.ReservationSelection > .BookingTypeLayout {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ReservationSelection > .BookingTypeLayout svg {
+  width: 135px;
+  height: 100px;
+}
+
+.ReservationSelection > .BookingTypeLayout .BookingType {
+  display: flex;
+  flex-direction: column;
+  border: 0.573604px solid #7f6858;
+  box-sizing: border-box;
+  border-radius: 11.4721px;
+  padding: 33px 43px;
+  box-shadow: 0px 4px 20px rgba(127, 104, 88, 0.07);
+  gap: 30px;
+  transition: all 0.1s ease-in-out;
+}
+
+.ReservationSelection > .BookingTypeLayout .BookingType:hover {
+  border: 1px solid #575957;
+  filter: drop-shadow(0px 4px 25px rgba(127, 104, 88, 0.08));
+  box-shadow: 0px 4px 20px rgba(127, 104, 88, 0.2);
+  transform: scale(1.1);
+}
+
+.ReservationSelection > .BookingTypeLayout .BookingType > div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReservationSelection label {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3e432f;
+  cursor: pointer;
+}

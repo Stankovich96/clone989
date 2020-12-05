@@ -1,0 +1,6 @@
+.Dashboard {
+    display: flex;
+    background: #fafafa;
+    overflow-y: hidden;
+    height: 100vh;
+}

@@ -1,0 +1,76 @@
+
+
+.SingleCard > .NumAndCard {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.SingleCard > .NumAndCard:last-child {
+  margin-bottom: 80px;
+}
+
+.SingleCard > .NumAndCard > .Numbering {
+  align-self: center;
+  font-size: 14.7757px;
+  color: #4a3a2f;
+}
+
+.SingleCard > .NumAndCard > .CardContent {
+  box-sizing: border-box;
+  display: flex;
+  width: 321.9px;
+  height: 194.58px;
+  position: relative;
+  filter: drop-shadow(0px 2.84238px 28.4238px rgba(74, 58, 47, 0.1));
+}
+
+.SingleCard > .NumAndCard > .CardContent > svg {
+  width: 100%;
+}
+
+.SingleCard > .NumAndCard > .CardContent > .ImgTexts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  text-align: left;
+  width: 100%;
+  padding: 27px;
+  z-index: 2;
+}
+
+.SingleCard > .NumAndCard > .CardContent > .ImgTexts > .SingleCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.SingleCard > .NumAndCard > .CardContent > .ImgTexts > .SingleCard > .Last4Digits {
+  font-weight: 500;
+  font-size: 14.9225px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.SingleCard > .NumAndCard > .CardContent > .ImgTexts > .SingleCard > .ExpDate {
+  font-weight: 500;
+  font-size: 11.3695px;
+  color: #efeae6;
+  margin: 0;
+}
+
+.SingleCard > .NumAndCard > .CardContent > .ImgTexts > .SingleCard > .ExpDate > span {
+  color: #c0beba;
+  margin-right: 12px;
+}
+
+.SingleCard > .NumAndCard > .CardContent > .ImgTexts > .Type {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 17.0543px;
+  color: #f1c19d;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-top: auto;
+}

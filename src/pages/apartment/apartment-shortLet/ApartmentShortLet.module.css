@@ -1,0 +1,383 @@
+/* .all {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  height: 95px;
+  border-bottom: 0.1px solid #9FA09F;
+}
+
+.picker {
+  width: 90%;
+}
+
+.DateInput_datePicker {
+  width: 90%;
+}
+
+.headerTitle {
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 22px;
+}
+
+.headerSection .bottomLine {
+  border: 2px solid #3a2b20;
+  width: 300px;
+  align-self: flex-end;
+}
+
+.ApartmentShortLet .home {
+  line-height: normal;
+  font-size: 19px;
+  color: #3a2b20;
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #3a2b20;
+}
+
+.ApartmentShortLet {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.ApartmentShortLet .Title {
+  line-height: normal;
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: normal;
+  width: 662px;
+  align-self: center;
+  margin-left: 225px;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 550px;
+  width: 630px;
+  margin-left: 410px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 1px Solid #9FA09F;
+  /* box-shadow: 0 3px 10px 0 rgb(200, 200, 200, 0.2), 0 3px 10px 0 rgb(200, 200, 200, 0.2); */
+}
+
+.formSection .formStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 57px;
+  margin-right: 57px;
+  margin-top: 22px;
+}
+
+.formSection .InputTitle {
+  line-height: normal;
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: normal;
+  align-self: flex-start;
+}
+
+.formSection .formRow {
+  display: flex;
+  width: 100%;
+}
+
+.formSection .formRowInner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+
+.formSection .formRowInner2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+
+.formSection .formRowInner2 p {
+  margin-left: 5%;
+}
+
+.formSection .formRowInnerDate {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 3px;
+}
+
+.formSection .formRowInnerDate1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 3px;
+}
+
+.formSection .formRowInnerDate2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+  padding: 3px;
+}
+
+.formSection .formRowInnerDate2 p {
+  margin-left: 5%;
+}
+
+.formSection .Selectstyle {
+  background-color: inherit;
+  width: 95%;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.formSection .Selectstyle1 {
+  background-color: inherit;
+  align-self: flex-start;
+  width: 95%;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.formSection .Selectstyle2 {
+  background-color: inherit;
+  align-self: flex-end;
+  width: 95%;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.formSection .dateField {
+  background-color: inherit;
+  padding: 15px 25px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  align-items: center;
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+::placeholder {
+  color: #6D6969;
+  font-size: 16px;
+  opacity: 0.7;
+  padding: 5px;
+}
+
+.formSection .apartmentButton {
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: bold;
+  margin-top: 40px;
+  height: 104px;
+  cursor: pointer;
+}
+
+.formSection .Inputimage {
+  padding: 0 10px;
+}
+
+.formSection .inputSvg {
+  position: absolute;
+  top: 415px;
+  z-index: 2;
+  margin: 24px 23px;
+}
+
+
+.formSection .inputSvg1 {
+  position: absolute;
+  top: 543px;
+  z-index: 0;
+  margin: 0 10px;
+}
+
+.formSection .inputSvg2 {
+  position: absolute;
+  top: 543px;
+  left: 771px;
+  z-index: 0;
+  margin: 0 10px;
+}
+
+.menu {
+  z-index: 1;
+}
+
+.formSection .inputSvg3 {
+  position: absolute;
+  top: 676px;
+  z-index: 1;
+  margin: 35px 15px;
+}
+
+/* .modal {
+  width: 573px;
+  height: 500px;
+} */
+
+.modalTitle {
+  line-height: normal;
+  font-size: 24px;
+  color: #3a2b20;
+  font-weight: normal;
+}
+
+.modalImage {
+  margin-bottom: 50px;
+}
+
+.modalButton {
+  font-size: 20px;
+  color: #3a2b20;
+  font-weight: bold;
+  cursor: pointer;
+  width: 573px;
+  height: 100px;
+}
+
+.apartmentDatePicker {
+  display: flex;
+  border: 1px solid #cccccc;
+  /* opacity: 0.7; */
+  background-color: #ffffff;
+  color: #504b4b;
+  border-radius: 7px !important;
+  width: 95%;
+  min-height: 57px;
+  padding: 10px 3px 15px 15px;
+}
+
+.apartmentFormDateIcon {
+  height: inherit;
+  align-self: center;
+  width: 10%;
+}
+
+.apartmentDateWrapper {
+  border: none;
+  font-size: 16px;
+  align-self: center;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.apartmentDateWrapper:focus {
+  outline: none;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: #3e432f;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected:hover {
+  background-color: #575957;
+}
+
+@media (min-width:1490px) {
+  .formSection {
+    margin-left: 30%;
+  }
+
+  .ApartmentShortLet .Title {
+    margin-left: 19%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .all {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ApartmentShortLet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ApartmentShortLet .Title {
+    line-height: normal;
+    font-size: 20px;
+    color: #3a2b20;
+    font-weight: normal;
+    width: 450px;
+    align-self: center;
+    margin-left: inherit;
+  }
+
+  .formSection {
+    margin-left: unset;
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .all {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ApartmentShortLet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ApartmentShortLet .Title {
+    line-height: normal;
+    font-size: 20px;
+    color: #3a2b20;
+    font-weight: normal;
+    width: 450px;
+    align-self: center;
+    margin-left: unset;
+  }
+
+  .formSection {
+    margin-left: unset;
+    width: 550px;
+  }
+
+  button {
+    align-self: unset;
+  }
+}

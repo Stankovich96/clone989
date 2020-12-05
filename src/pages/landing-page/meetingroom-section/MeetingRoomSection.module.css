@@ -1,0 +1,93 @@
+.MeetingRoomSection {
+  background-color: #faf9f8;
+  padding-top: 10px;
+  padding-bottom: 167px;
+  color: #3a2b20;
+  display: flex;
+}
+
+
+.MeetingRoomSection .Left {
+  background-color: #faf9f8;
+  width: 52%;
+}
+
+.MeetingRoomSection .Right {
+  margin-top: 3%;
+  text-align: left;
+  padding-left: 70px;
+  font-size: 16px;
+}
+
+.MeetingRoomSection .Right .MeetingRoomTitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.MeetingRoomSection .Right .MeetingRoomDesc {
+  color: #6d6969;
+  line-height: 180%;
+  font-size: 16px;
+  width: 486px;
+}
+
+@media only screen and (max-width: 1430px) and (min-width:1201px) {
+  .MeetingRoomSection .Right {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+}
+
+/* @media only screen and (max-width: 1330px) and (min-width:1201px) {
+  .MeetingRoomSection .Left {
+    margin-right: 5%;
+  }
+} */
+
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .MeetingRoomSection {
+    padding-left: 70px;
+    padding-right: 40px;
+  }
+
+  .MeetingRoomSection .Right {
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
+  .MeetingRoomSection .Left {
+    margin-right: 5%;
+  }
+
+
+  .MeetingRoomSection .Right .MeetingRoomDesc {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width:601px) {
+  .MeetingRoomSection {
+    flex-direction: column-reverse;
+  }
+
+  .MeetingRoomSection .Left {
+    width: 80%;
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  .MeetingRoomSection .Right {
+    padding-left: unset;
+    margin: 0px 10%;
+    /* padding-right: 60px; */
+  }
+
+  .MeetingRoomSection .Right .MeetingRoomDesc {
+    width: 100%;
+  }
+
+  .MeetingRoomSection .Right .Transparentbutton {
+    margin-top: 7%;
+  }
+}

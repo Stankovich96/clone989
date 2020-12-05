@@ -1,0 +1,389 @@
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+
+    &-input {
+        display: flex;
+        line-height: 1.5;
+        
+        & > * { margin-right: 10px; }
+
+        &__location{
+            width: 190px;
+        }
+
+        &__when, &__filter, &__attendees {
+            background: #FFFFFF;
+            border: 1px solid #EEDFD1;
+            border-radius: 5px;
+            font-size: 15px;
+            color: #504B4B;
+            padding: 10px 18px;
+            cursor: pointer;
+
+            .dropdown-icon {
+                vertical-align: middle;
+                margin-left: 2px;
+                fill: inherit;
+
+                &:hover {
+                    fill: #4D4D4D;
+                }
+            }
+
+            &:hover {
+                border-color: #4D4D4D;
+                font-weight: 500;
+                color: #4D4D4D;
+            }
+        }
+
+        &__search-button {
+            background: #3E432F;
+            color: #FFFFFF;
+            border-radius: 5px;
+            padding: 10px 24px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all .2s;
+            cursor: pointer;
+
+            .nav-right {
+                fill: #000;
+                color: #FFFFFF;
+                width: 25px;
+                height: 12px;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+
+            &:hover {
+                background: #000000;
+                transform: translateX(1px);
+            }
+        }
+    }
+
+    &-format {
+        display: flex;
+        align-items: center;
+        
+        .map-switch-button {
+            cursor: pointer;
+            .map-toggle:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bg-colorLight{
+    background: #E7E7E7;
+}
+
+.AttendeesFilter {
+    position: relative;
+
+    .list-body{
+        background: #FFFFFF;
+        width: 300px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+    }
+
+    .list-item{
+        font-size: 15px;
+        line-height: 150%;
+        color: #6D6969;
+        padding: 15px 25px;
+        cursor: pointer;
+        text-align: left;
+        border-bottom: 1px solid #E7E9ED;
+
+        button {
+            padding: 0;
+            font: inherit;
+            background: inherit;
+            text-align: left;
+            cursor: inherit;
+            width: 100%;
+        }
+    }
+
+    .list-item-selected {
+        font-weight: 600;
+        color: #4A3A2F;
+        background: #E7E7E7;
+    }
+
+    .list-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 25px;
+        padding-bottom: 0;
+        font-size: 14px;
+        line-height: 150%;
+        color: #575957;
+        
+        span {cursor: pointer;}
+    }
+
+    .filter-card {
+        position: absolute;
+        left: 2px;
+        z-index: 100;
+        padding: 15px 0 21px;
+        border: 1px solid #e1e1e1;
+    }
+}
+
+.AttendeesFilter, .WhenFilter, .FilterTab {
+    .list-ok{
+        background: #3E432F;
+        color: #FFFFFF;
+        border-radius: 3px;
+        padding: 7px 21px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .list-cancel { 
+        padding: 0 6px;
+        align-self: center;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+.WhenFilter {
+    position: relative;
+
+    .when-dropdown {
+        display: flex;
+        flex-direction: column;
+        width: 313px;
+        font-size: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+
+        &__footer {
+            margin-top: 45px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .duration, .choose-date, .timestamp-start, .timestamp-end {
+        padding: 11px 20px;
+        border: 1px solid rgba(169, 94, 26, 0.2);
+        border-radius: 2px;
+        margin-bottom: 25px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .duration{
+        display: flex;
+        justify-content: space-between;
+
+        span.duration-icon{
+            svg{ vertical-align: middle; }
+        }
+    }
+
+    .timestamp{
+        display: flex;
+        justify-content: space-between;
+
+        &-start { margin-right: 7px;}
+        &-start, &-end { 
+            flex-basis: 50%;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+
+    .filter-card {
+        position: absolute;
+        left: 2px;
+        z-index: 100;
+        padding: 25px 23px 22px;
+        border: 1px solid #e1e1e1;
+    }
+    
+    .list-cancel{
+        margin-left: 6px;
+    }
+}
+
+.FilterTab {
+    position: relative;
+
+    .filterBy{
+        input[type="checkbox"]{
+            margin: 0;
+            margin-right: 9px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #6F716F;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        input[type="checkbox"]:checked{ filter: saturate(3.3%) hue-rotate(240deg) ;  }
+
+        &-venue, &-amenities {
+            .header, .body { 
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 20px;
+                row-gap: 14px;
+                justify-items: start;
+            }
+
+            .header{ 
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 150%;
+                margin-bottom: 22px;
+                color: #6D6969;
+
+                .filterBy-select-all > * { vertical-align: middle; }
+
+                label{
+                    font-weight: normal;
+                    font-size: 13px;
+                    vertical-align: bottom;
+                }
+            }
+
+            .body{
+                font-size: 13px;
+                .venue-item > * , .amenities-item > * { vertical-align:  middle;  cursor: pointer;}
+            }
+        }
+
+        &-amenities{ 
+            margin-top: 38px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .list-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        padding-bottom: 0;
+        font-size: 14px;
+        line-height: 150%;
+        color: #575957;
+        
+        span {cursor: pointer;}
+
+        span.list-ok {  margin-right: 5px; }
+    }
+
+    .filter-card {
+        position: absolute;
+        left: 2px;
+        z-index: 100;
+        padding: 30px 38px 40px;
+        background: #FFFFFF;
+        width: 430px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        border: 1px solid #e1e1e1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .search {  
+        &-input {
+    
+            &__location{
+                width: 155px;
+            }
+    
+            &__when, &__filter, &__attendees { font-size: 14px; }
+    
+            &__search-button {
+                font-size: 15px;
+    
+                .nav-right { width: 20px; }
+            }
+        }
+    
+        &-format {
+            .page-view { margin-left: 30px; }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .search {
+        margin: 30px 18px;
+    
+        &-input {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 45px;
+            gap: 10px;
+            width: 500px;
+            
+            & > * { margin-right: 0; }
+    
+            &__location{ width: 190px; }
+    
+            &__search-button {
+                height: 100%;
+                grid-column: 2 / 4;
+
+                .nav-right { 
+                    width: 25px;
+                }
+            }
+        }
+    
+        &-format { 
+            align-self: flex-start;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 772px) {
+    .search {
+        margin: 30px 0;
+
+        &-input { max-width: 480px; }
+    }
+
+    .search .search-input .AttendeesFilter {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .FilterTab {   
+        .filter-card { transform: translate(-72.5%, 2%); }
+    }
+}
+
+@media (max-width: 710px) {
+    .search {
+        &-input{
+            max-width: 410px;
+        }
+    }
+
+    .WhenFilter{
+        .filter-card {
+            left: -80%;
+        }
+    }
+}

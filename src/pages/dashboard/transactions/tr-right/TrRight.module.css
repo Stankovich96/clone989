@@ -1,0 +1,182 @@
+.TrRight {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  flex-basis: 45%;
+  padding: 163px 78px;
+  padding-bottom: 115px;
+  text-align: left;
+  height: 100%;
+}
+
+.TrRight p {
+  margin: 0;
+}
+
+.TrRight > .ImageLayout {
+  display: flex;
+  position: relative;
+  margin-bottom: 46px;
+}
+
+.TrRight > .ImageLayout > img {
+  border-radius: 24px;
+  width: 434px;
+  height: 339px;
+  object-fit: cover;
+}
+
+.TrRight > .ImageLayout > .BookType {
+  font-weight: 500;
+  font-size: 11px;
+  color: #7f6858;
+  padding: 6px 16px;
+  border-radius: 10px;
+  background-color: #cbccd0;
+  position: absolute;
+  bottom: 22px;
+  right: 42px;
+}
+
+.TrRight > .Section1,
+.TrRight > .Section2,
+.TrRight > .Section3,
+.TrRight > .Section4 {
+  display: flex;
+}
+
+.TrRight > .Section1 > .NameAndLocation,
+.RatingLayout,
+.BookedOnLayout,
+.ExpiredLayout,
+.AmountLayout,
+.WorkspaceLayout,
+.StartTimeLayout,
+.EndTimeLayout,
+.TeammateLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.TrRight .Text {
+  font-size: 13.1359px;
+  color: #989595;
+}
+
+.TrRight > .LeftDivider,
+.RightDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #cbccd0;
+  position: relative;
+  margin: 32px 0;
+}
+
+.TrRight > .LeftDivider::after,
+.RightDivider::after {
+  content: "";
+  width: 20%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f1c19d;
+  position: absolute;
+  left: 0;
+  bottom: -175%;
+}
+
+.TrRight > .RightDivider::after {
+  left: auto;
+  right: 0;
+  background-color: #c4a287;
+}
+
+.TrRight > .Section1 > .NameAndLocation > .Name {
+  font-weight: normal;
+  font-size: 20px;
+  color: #4a3a2f;
+}
+
+.TrRight > .Section1 > .NameAndLocation > .Location {
+  font-size: 14px;
+  color: #989595;
+}
+
+.TrRight > .Section1 > .RatingLayout {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.TrRight > .Section1 > .RatingLayout,
+.ExpiredLayout,
+.WorkspaceLayout {
+  margin-left: auto;
+}
+
+.TrRight > .Section1 > .RatingLayout img {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+}
+
+.TrRight > .Section1 > .RatingLayout img:first-child {
+  margin-left: 0;
+}
+
+.TrRight > .Section1 > .RatingLayout > .Rating {
+  font-weight: 600;
+  font-size: 13.4618px;
+  color: #7f6858;
+  margin-bottom: 3px;
+}
+
+.TrRight .DateLayout {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.TrRight .DateLayout > svg {
+  width: 14px;
+}
+.TrRight > .Section2 > .BookedOnLayout > .DateLayout > .BookedDate,
+.ExpireDate {
+  font-weight: 500;
+  font-size: 15.5243px;
+  color: #7f6858;
+}
+
+.TrRight > .Section3 > .AmountLayout > .AmountValue {
+  font-weight: 600;
+  font-size: 18px;
+  color: #7f6858;
+}
+
+.TrRight > .Section3 > .WorkspaceLayout > .WorkspaceValue {
+  font-weight: 500;
+  font-size: 15.5243px;
+  color: #7f6858;
+}
+
+.TrRight > .Section4 {
+  justify-content: space-between;
+}
+
+.TrRight > .Section4 .Sec4SharedStyle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.TrRight > .Section4 .Sec4SharedStyle svg {
+  width: 16px;
+  height: 16px;
+}
+
+.TrRight > .Section4 > .StartTimeLayout > .Sec4SharedStyle > .StartTimeValue,
+.EndTimeValue,
+.TeammateValue {
+  font-weight: 500;
+  font-size: 15.5243px;
+  color: #7f6858;
+}

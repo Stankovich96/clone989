@@ -1,0 +1,63 @@
+ /* Custom Slick Dots */
+ .slick-dots {
+   position: absolute;
+   left: 60px;
+   bottom: 19%;
+   text-align: left;
+   width: auto;
+ }
+
+ .ft-slick__dots--custom {
+   height: 10px;
+   width: auto;
+   background-color: #e5e7e9;
+   border-radius: 5px;
+   position: relative;
+ }
+
+ .slick-dots li {
+   width: 70px;
+   height: 100%;
+   margin: 0 2px;
+   margin-right: 10px;
+   border-radius: 5px;
+   border: 1px solid #ffffff;
+ }
+
+ .slick-dots li .ft-slick__dots--custom {
+   background-color: #ffffff;
+   border-radius: 5px;
+   border: 1px solid #ffffff;
+ }
+
+ .slick-dots .slick-active .ft-slick__dots--custom {
+   width: 70px;
+   overflow: hidden;
+   background: #3E432F;
+ }
+
+ .slick-prev {
+   left: 0px;
+   z-index: 10;
+ }
+
+ .slick-next,
+ .slick-prev {
+   font-size: 0;
+   line-height: 0;
+   top: 50%;
+   width: 20px;
+   height: 20px;
+ }
+
+ .slick-next:before,
+ .slick-prev:before {
+   font-size: 45px;
+   line-height: 1;
+   opacity: 1;
+   color: #fafafa;
+ }
+
+ .slick-next {
+   right: 25px;
+ }

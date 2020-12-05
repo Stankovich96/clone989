@@ -1,0 +1,146 @@
+.Parent {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  height: 100vh;
+  text-align: left;
+}
+
+.Parent > .ProfileText {
+  font-weight: 500;
+  font-size: 24px;
+  color: #4a3a2f;
+  margin-left: 180px;
+  margin-top: 46px;
+}
+
+.Parent > .MainContent {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.Parent > .MainContent > .Left {
+  display: flex;
+  margin: 0 99px;
+  align-items: center;
+}
+
+.Parent > .MainContent > .Left > div {
+  position: relative;
+  margin-top: -80px;
+}
+
+.Parent > .MainContent > .Left > div > .PlusLayout {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 2.51537px 18.8653px rgba(74, 58, 47, 0.08);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.PlusLayout svg {
+  width: 15px;
+  height: 15px;
+  -webkit-filter: contrast(195%) brightness(43%) saturate(67%);
+  filter: contrast(195%) brightness(43%) saturate(67%);
+}
+
+
+.Parent > .MainContent > .Left > div > img {
+  object-fit: cover;
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+}
+
+.Parent > .MainContent > .Right {
+  display: flex;
+  flex-direction: column;
+}
+
+.Parent > .MainContent > .Right > .TopSection,
+.BottomSection {
+  display: flex;
+  gap: 50px;
+}
+
+.BottomSection {
+ align-items: flex-end;
+}
+
+.Parent > .MainContent > .Right .VertLayout {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.Parent > .MainContent > .Right .Text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #989595;
+}
+
+.Parent > .MainContent > .Right .Input {
+  border: none;
+  border-bottom: 1px solid #c0beba;
+  font-weight: normal;
+  font-size: 20px;
+  color: #7f6858;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+
+
+.Parent > .MainContent > .Right input::placeholder {
+  font-size: 20px;
+  color: #c4c4c4;
+  padding: 0;
+  background-color: transparent;
+}
+
+.Parent > .MainContent > .Right input[type="password"],
+.Parent > .MainContent > .Right input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #c0beba;
+  font-weight: normal;
+  font-size: 20px;
+  color: #7f6858;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-top: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.Parent > .MainContent > .Right input[type="password"]::placeholder,
+.Parent > .MainContent > .Right input[type="password"]::placeholder {
+  font-size: 20px;
+  color: #7f6858;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+
+
+
+
+.Parent > .MainContent > .Right > button {
+  background: #575957;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 16px 63px;
+  margin-left: auto;
+}
